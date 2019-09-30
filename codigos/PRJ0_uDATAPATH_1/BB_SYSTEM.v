@@ -29,7 +29,7 @@ module BB_SYSTEM (
 //  PARAMETER declarations
 //=======================================================
 // uDATAPATH WIDTH BUS.
-parameter DATAWIDTH_BUS = 16;
+parameter DATAWIDTH_BUS = 32;
 // SHIFTREGISTER CONTROL BUS.
 parameter DATAWIDTH_REGSHIFTER_SELECTION = 2;
 // DECODER CONTROL INPUT BUS.

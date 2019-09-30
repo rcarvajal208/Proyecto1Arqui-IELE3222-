@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module uDATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATAWIDTH_DECODER_OUT=4, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_MUX_SELECTION=3, parameter DATA_REGFIXED_INIT_0=8'b00001001, parameter DATA_REGFIXED_INIT_1=8'b00001111)(
+module uDATAPATH #(parameter DATAWIDTH_BUS=8, parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATAWIDTH_DECODER_OUT=4, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_MUX_SELECTION=3, parameter DATA_REGFIXED_INIT_0=8'b00001001, parameter DATA_REGFIXED_INIT_1=8'b00001111)(
 	//////////// OUTPUTS //////////
 	uDATAPATH_data_OutBUS,
 	uDATAPATH_overflow_OutLow,
@@ -140,17 +140,17 @@ SC_RegFIXED #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATA_REGFIXED_INIT(DATA_REGFIXED_I
 );
 //-------------------------------------------------------
 //-------------------------------------------------------
-//// SHIFT_REGISTER
-//SC_RegSHIFTER #(.RegSHIFTER_DATAWIDTH(DATAWIDTH_BUS)) SC_RegSHIFTER_u0 (
-//// port map - connection between master ports and signals/registers   
-//	.SC_RegSHIFTER_data_OutBUS(RegSHIFTER_2_RegGENERAL_dataC_wireBUS),
-//	.SC_RegSHIFTER_CLOCK_50(uDATAPATH_CLOCK_50),
-//	.SC_RegSHIFTER_RESET_InHigh(uDATAPATH_RESET_InHigh),
-//	.SC_RegSHIFTER_clear_InLow(uDATAPATH_regSHIFTERclear_InLow),
-//	.SC_RegSHIFTER_load_InLow(uDATAPATH_regSHIFTERload_InLow),
-//	.SC_RegSHIFTER_shiftselection_InLow(uDATAPATH_regSHIFTERshiftselection_InLow),
-//	.SC_RegSHIFTER_data_InBUS(ALU_2_RegSHIFTER_data_wireBUS)
-//);
+// SHIFT_REGISTER
+SC_RegSHIFTER #(.RegSHIFTER_DATAWIDTH(DATAWIDTH_BUS)) SC_RegSHIFTER_u0 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegSHIFTER_data_OutBUS(RegSHIFTER_2_RegGENERAL_dataC_wireBUS),
+	.SC_RegSHIFTER_CLOCK_50(uDATAPATH_CLOCK_50),
+	.SC_RegSHIFTER_RESET_InHigh(uDATAPATH_RESET_InHigh),
+	.SC_RegSHIFTER_clear_InLow(uDATAPATH_regSHIFTERclear_InLow),
+	.SC_RegSHIFTER_load_InLow(uDATAPATH_regSHIFTERload_InLow),
+	.SC_RegSHIFTER_shiftselection_InLow(uDATAPATH_regSHIFTERshiftselection_InLow),
+	.SC_RegSHIFTER_data_InBUS(ALU_2_RegSHIFTER_data_wireBUS)
+);
 //-------------------------------------------------------
 //-------------------------------------------------------
 // 
@@ -217,24 +217,6 @@ CC_ALU #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATAWIDTH_ALU_SELECTION(DATAWIDTH_ALU_S
 );
 //-------------------------------------------------------
 assign uDATAPATH_data_OutBUS = RegGENERAL_2_MUX_data3_wireBUS;
-
-
-
-CC_AMUXX #(.DATAWIDTH_MUX_SELECTION(DATAWIDTH_MUX_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS)) CC_AMUXX_u1
-(
-// port map - connection between master ports and signals/registers   
-	.CC_AMUX_data_OutBUS(MUX_2_ALU_dataB_wireBUS),
-	.CC_AMUX_data0_InBUS(RegGENERAL_2_MUX_data0_wireBUS), 
-	.CC_AMUX_data1_InBUS(RegGENERAL_2_MUX_data1_wireBUS), 
-	.CC_AMUX_data2_InBUS(RegGENERAL_2_MUX_data2_wireBUS), 
-	.CC_AMUX_data3_InBUS(RegGENERAL_2_MUX_data3_wireBUS), 
-	.CC_AMUX_data4_InBUS(RegFIXED_2_MUX_data0_wireBUS), 
-	.CC_AMUX_data5_InBUS(RegFIXED_2_MUX_data1_wireBUS),
-	.CC_AMUX_data6_InBUS(RegGENERAL_2_MUX_data0_wireBUS), //REPEATED BUT MUST CHANGE
-	.CC_AMUX_data7_InBUS(RegGENERAL_2_MUX_data0_wireBUS), //REPEATED BUT MUST CHANGE
-	.CC_AMUX_selection_InBUS(uDATAPATH_muxselectionBUSB_InBUS)
-);
-
 
 endmodule
 
