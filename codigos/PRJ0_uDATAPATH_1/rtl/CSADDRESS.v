@@ -1,11 +1,11 @@
 /*######################################################################
+//#	G0B1T: HDL EXAMPLES. 2018.
 //######################################################################
-//# 
 //# This program is free software: you can redistribute it and/or modify
 //# it under the terms of the GNU General Public License as published by
 //# the Free Software Foundation, version 3 of the License.
 //#
-//# This program is distributed in the hope that it will be useful,
+//# This program is distributed in the hope that it will be eful,
 //# but WITHOUT ANY WARRANTY; without even the implied warranty of
 //# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //# GNU General Public License for more details.
@@ -16,19 +16,19 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MAIN_MEMORY #(parameter DATAWIDTH_BUS=32)(
+module CSADDRESS #(parameter DATAWIDTH_CSADDRESS=11, parameter DATAWIDTH_OPS=8, parameter DATAWIDTH_CBL=2)(
 	//////////// OUTPUTS //////////
-	MAIN_MEMORY_ACK_Out,
-	MAIN_MEMORY_Data_OutBus,	
+	CSADDRESS_CSAddress_OutBus,
 	
 	//////////// INPUTS //////////
-	MAIN_MEMORY_CLOCK_50,
-	MAIN_MEMORY_ResetInHigh_In,
-	MAIN_MEMORY_A_InBus,
-	MAIN_MEMORY_B_InBus,
-	MAIN_MEMORY_RD_In,
-	MAIN_MEMORY_WRMain_In
-	
+	CSADDRESS_CSAI_InBus,
+	CSADDRESS_CLOCK_50,
+	CSADDRESS_ResetInHigh_In,
+	CSADDRESS_DecodeOp_InBus,
+	CSADDRESS_Simm13_InBus,
+	CSADDRESS_Tipo_InBus,
+	CSADDRESS_JumpAddress_InBus
+
 );
 //=======================================================
 //  PARAMETER declarations
@@ -38,25 +38,32 @@ module MAIN_MEMORY #(parameter DATAWIDTH_BUS=32)(
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	MAIN_MEMORY_ACK_Out;
-output 	[DATAWIDTH_BUS-1:0]  MAIN_MEMORY_Data_OutBus;
+output	[DATAWIDTH_CSADDRESS-1:0]	CSADDRESS_CSAddress_OutBus;
 
-//////////// INPUTS //////////
-input 	MAIN_MEMORY_CLOCK_50;
-input 	MAIN_MEMORY_ResetInHigh_In;
-input	   [DATAWIDTH_BUS-1:0] MAIN_MEMORY_A_InBus;
-input		[DATAWIDTH_BUS-1:0] MAIN_MEMORY_B_InBus;
-input		MAIN_MEMORY_RD_In;
-input		MAIN_MEMORY_WRMain_In;
-
+/////////// INPUTS //////////
+input		CSADDRESS_CLOCK_50;
+input		CSADDRESS_ResetInHigh_In;
+input		CSADDRESS_Simm13_InBus;
+input		[DATAWIDTH_CBL-1:0] CSADDRESS_Tipo_InBus;	
+input		[DATAWIDTH_OPS-1:0] CSADDRESS_DecodeOp_InBus;
+input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_CSAI_InBus;
+input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_JumpAddress_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
+reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Register;
+reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Signal;
 
 //=======================================================
 //  Structural coding
 //=======================================================
+//INPUT LOGIC: COMBINATIONAL
+
+
+//=======================================================
+//  Outputs
+//=======================================================
+//OUTPUT LOGIC: COMBINATIONAL
 
 
 endmodule

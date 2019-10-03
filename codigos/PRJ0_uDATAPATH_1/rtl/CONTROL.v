@@ -37,7 +37,8 @@ module CONTROL #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_ALU_SELECT
 	CONTROL_FlagOverflow_In,
 	CONTROL_FlagNegative_In,
 	CONTROL_FlagCarry_In,
-	CONTROL_FlagZero_In
+	CONTROL_FlagZero_In,
+	CONTROL_SetCodes_In
 );
 //=======================================================
 //  PARAMETER declarations
@@ -67,7 +68,7 @@ input		CONTROL_FlagOverflow_In;
 input		CONTROL_FlagNegative_In;
 input		CONTROL_FlagCarry_In;
 input		CONTROL_FlagZero_In;
-
+input		CONTROL_SetCodes_In;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================

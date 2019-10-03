@@ -18,30 +18,14 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATAWIDTH_DECODER_OUT=4, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_MUX_SELECTION=3, parameter DATA_REGFIXED_INIT_0=8'b00001001, parameter DATA_REGFIXED_INIT_1=8'b00001111)(
+module ADDRESS_INCREMENTER #(parameter CSAI_DATAWIDTH=11)(
 	//////////// OUTPUTS //////////
-	DATAPATH_A_OutBus,
-	DATAPATH_B_OutBus,
-	DATAPATH_ConditionCode_Out,
-	DATAPATH_DecodeOP_OutBus,
-	DATAPATH_IR13_Out,
-	DATAPATH_FlagOverflow_Out,
-	DATAPATH_FlagNegative_Out,
-	DATAPATH_FlagCarry_Out,
-	DATAPATH_FlagZero_Out,
-	
+	ADDRESS_INCREMENTER_CSAI_OutBus,
 	//////////// INPUTS //////////
-	DATAPATH_CLOCK_50,
-	DATAPATH_ResetInHigh_In,
-	DATAPATH_MemoryData_InBUS,
-	DATAPATH_RD_In,
-	DATAPATH_DirA_InBus,
-	DATAPATH_DirB_InBus,
-	DATAPATH_DirC_InBus,
-	DATAPATH_SelectA_In,
-	DATAPATH_SelectB_In,
-	DATAPATH_SelectC_In
-	
+	ADDRESS_INCREMENTER_CLOCK_50,
+	ADDRESS_INCREMENTER_RESET_InHigh,
+	ADDRESS_INCREMENTER_ACK,
+	ADDRESS_INCREMENTER_CSAddress_InBus
 );
 //=======================================================
 //  PARAMETER declarations
@@ -50,39 +34,40 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, p
 //=======================================================
 //  PORT declarations
 //=======================================================
-//////////// OUTPUTS //////////
-	output [DATAWIDTH_BUS-1:0] DATAPATH_A_OutBus;
-	output [DATAWIDTH_BUS-1:0] DATAPATH_B_OutBus;
-	output DATAPATH_ConditionCode_Out;
-	output [DATAWIDTH_DECODEROP-1:0] DATAPATH_DecodeOP_OutBus;
-	output DATAPATH_IR13_Out;
-	output DATAPATH_FlagOverflow_Out;
-	output DATAPATH_FlagNegative_Out;
-	output DATAPATH_FlagCarry_Out;
-	output DATAPATH_FlagZero_Out;
-	
-	//////////// INPUTS //////////
-	input DATAPATH_CLOCK_50;
-	input DATAPATH_ResetInHigh_In;
-	input [DATAWIDTH_BUS-1:0] DATAPATH_MemoryData_InBUS;
-	input DATAPATH_RD_In;
-	input [DATAWIDTH_DIRECTION-1:0] DATAPATH_DirA_InBus;
-	input [DATAWIDTH_DIRECTION-1:0] DATAPATH_DirB_InBus;
-	input [DATAWIDTH_DIRECTION-1:0] DATAPATH_DirC_InBus;
-	input DATAPATH_SelectA_In;
-	input DATAPATH_SelectB_In;
-	input DATAPATH_SelectC_In;
+output		[CSAI_DATAWIDTH-1:0]	ADDRESS_INCREMENTER_CSAI_OutBus;
+input		ADDRESS_INCREMENTER_CLOCK_50;
+input		ADDRESS_INCREMENTER_RESET_InHigh;
+input		ADDRESS_INCREMENTER_ACK;
+input		[CSAI_DATAWIDTH-1:0]	ADDRESS_INCREMENTER_CSAddress_InBus;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
-
+reg [CSAI_DATAWIDTH-1:0] CSAI_ADDRESS = ADDRESS_INCREMENTER_CSAddress_InBus;
+reg [CSAI_DATAWIDTH-1:0] CSAI_Signal;
 //=======================================================
 //  Structural coding
 //=======================================================
-
-//-------------------------------------------------------
-//GENERAL_REGISTERS
+//INPUT LOGIC: COMBINATIONAL
+always @(*)
+begin
+	if (ADDRESS_INCREMENTER_ACK == 1'b0)
+		CSAI_Signal = CSAI_ADDRESS + 1;
+	else
+		CSAI_Signal = CSAI_ADDRESS;
+	end	
+//STATE REGISTER: SEQUENTIAL
+always @(posedge ADDRESS_INCREMENTER_CLOCK_50, posedge ADDRESS_INCREMENTER_RESET_InHigh)
+begin
+	if (ADDRESS_INCREMENTER_RESET_InHigh == 1'b1)
+		CSAI_ADDRESS <= 0;
+	else
+		CSAI_ADDRESS <= CSAI_Signal;
+end
+//=======================================================
+//  Outputs
+//=======================================================
+//OUTPUT LOGIC: COMBINATIONAL
+assign ADDRESS_INCREMENTER_CSAI_OutBus = CSAI_ADDRESS;
 
 endmodule
-

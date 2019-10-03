@@ -16,7 +16,8 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MICROCODE_STORE #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, DATAWIDTH_JUMPADDRESS=11)(
+module MICROCODE_STORE #(parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, DATAWIDTH_JUMPADDRESS=11)(
+	
 	//////////// OUTPUTS //////////
 	MICROCODE_STORE_SelectA_OutBus,
 	MICROCODE_STORE_SelectB_OutBus,
@@ -25,14 +26,14 @@ module MICROCODE_STORE #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_AL
 	MICROCODE_STORE_DirB_Out,
 	MICROCODE_STORE_DirC_Out,
 	MICROCODE_STORE_RD_Out,
-	MICROCODE_STORE_WR_Out,
+	MICROCODE_STORE_WRMain_Out,
 	MICROCODE_STORE_ALUOperation_OutBus,
 	MICROCODE_STORE_Condition_OutBus,
 	MICROCODE_STORE_JumpAddress_OutBus,
 	//////////// INPUTS //////////
 	MICROCODE_STORE_CLOCK_50,
 	MICROCODE_STORE_ResetInHigh_In,
-	MICROCODE_STORE_Address_InBus
+	MICROCODE_STORE_CSAddress_InBus
 	
 );
 //=======================================================
@@ -43,22 +44,22 @@ module MICROCODE_STORE #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_AL
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	[DATAWIDTH_SELECTION-1:0]	MICROCODE_STORE_SelectA_OutBus;
-output 	[DATAWIDTH_SELECTION-1:0]  MICROCODE_STORE_SelectB_OutBus;
-output 	[DATAWIDTH_SELECTION-1:0]	MICROCODE_STORE_SelectC_OutBus;
-output 	MICROCODE_STORE_DirA_Out;
-output 	MICROCODE_STORE_DirB_Out;
-output 	MICROCODE_STORE_DirC_Out;
+output 	MICROCODE_STORE_SelectA_OutBus;
+output 	MICROCODE_STORE_SelectB_OutBus;
+output 	MICROCODE_STORE_SelectC_OutBus;
+output 	[DATAWIDTH_DIRECTION-1:0]	MICROCODE_STORE_DirA_Out;
+output 	[DATAWIDTH_DIRECTION-1:0]	MICROCODE_STORE_DirB_Out;
+output 	[DATAWIDTH_DIRECTION-1:0]	MICROCODE_STORE_DirC_Out;
 output 	MICROCODE_STORE_RD_Out;
-output	MICROCODE_STORE_WR_Out;
+output	MICROCODE_STORE_WRMain_Out;
 output	[DATAWIDTH_ALU_SELECTION-1:0] MICROCODE_STORE_ALUOperation_OutBus;
 output	[DATAWIDTH_CONDITION -1:0] MICROCODE_STORE_Condition_OutBus;
-output	[DATAWIDTH_ JUMPADDRESS -1:0] MICROCODE_STORE_JumpAddress_OutBus;
+output	[DATAWIDTH_JUMPADDRESS -1:0] MICROCODE_STORE_JumpAddress_OutBus;
 
 //////////// INPUTS //////////
 input 	MICROCODE_STORE_CLOCK_50;
 input 	MICROCODE_STORE_ResetInHigh_In;
-input		[DATAWIDTH_JUMPADDRESS-1:0]	MICROCODE_STORE_Address_InBus;
+input		[DATAWIDTH_JUMPADDRESS-1:0]	MICROCODE_STORE_CSAddress_InBus;
 
 //=======================================================
 //  REG/WIRE declarations

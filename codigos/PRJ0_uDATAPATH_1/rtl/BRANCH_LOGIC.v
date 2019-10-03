@@ -22,10 +22,10 @@ module BRANCH_LOGIC #(parameter BRANCH_LOGIC_PSR=4, parameter BRANCH_LOGIC_CONDI
 	
 	//////////// INPUTS //////////
 	BRANCH_LOGIC_CLOCK_50,
-	BRANCH_LOGIC _ResetInHigh_In,
+	BRANCH_LOGIC_ResetInHigh_In,
 	BRANCH_LOGIC_IR13_In,
 	BRANCH_LOGIC_Condition_InBus,
-	BRANCH_LOGIC_Psr_InBus,
+	BRANCH_LOGIC_Psr_InBus
 	
 );
 //=======================================================

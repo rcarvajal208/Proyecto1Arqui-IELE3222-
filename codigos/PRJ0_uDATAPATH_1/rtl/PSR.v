@@ -16,19 +16,19 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MAIN_MEMORY #(parameter DATAWIDTH_BUS=32)(
+module PSR #(parameter PSR_PSR=4)(
 	//////////// OUTPUTS //////////
-	MAIN_MEMORY_ACK_Out,
-	MAIN_MEMORY_Data_OutBus,	
+	PSR_Psr_OutBus
 	
 	//////////// INPUTS //////////
-	MAIN_MEMORY_CLOCK_50,
-	MAIN_MEMORY_ResetInHigh_In,
-	MAIN_MEMORY_A_InBus,
-	MAIN_MEMORY_B_InBus,
-	MAIN_MEMORY_RD_In,
-	MAIN_MEMORY_WRMain_In
-	
+	PSR_CLOCK_50,
+	PSR_ResetInHigh_In,
+	PSR_FlagOverflow_In,
+	PSR_FlagNegative_In,
+	PSR_FlagCarry_In,
+	PSR_FlagZero_In,
+	PSR_SetCodes_In //ask Sure?
+
 );
 //=======================================================
 //  PARAMETER declarations
@@ -38,17 +38,16 @@ module MAIN_MEMORY #(parameter DATAWIDTH_BUS=32)(
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	MAIN_MEMORY_ACK_Out;
-output 	[DATAWIDTH_BUS-1:0]  MAIN_MEMORY_Data_OutBus;
+output 	[PSR_PSR-1:0]	PSR_Psr_OutBus;
 
 //////////// INPUTS //////////
-input 	MAIN_MEMORY_CLOCK_50;
-input 	MAIN_MEMORY_ResetInHigh_In;
-input	   [DATAWIDTH_BUS-1:0] MAIN_MEMORY_A_InBus;
-input		[DATAWIDTH_BUS-1:0] MAIN_MEMORY_B_InBus;
-input		MAIN_MEMORY_RD_In;
-input		MAIN_MEMORY_WRMain_In;
-
+input 	PSR_CLOCK_50;
+input		PSR_ResetInHigh_In;
+input		PSR_FlagOverflow_In;
+input		PSR_FlagNegative_In;
+input		PSR_FlagCarry_In;
+input		PSR_FlagZero_In;
+input		PSR_SetCodes_In;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -59,4 +58,6 @@ input		MAIN_MEMORY_WRMain_In;
 //=======================================================
 
 
+
 endmodule
+

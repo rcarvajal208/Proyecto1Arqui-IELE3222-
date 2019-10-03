@@ -266,3 +266,6 @@ set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_
 set_global_assignment -name VERILOG_FILE rtl/DATAPATH.v
 set_global_assignment -name VERILOG_FILE rtl/MICROCODE_STORE.v
 set_global_assignment -name VERILOG_FILE rtl/BRANCH_LOGIC.v
+set_global_assignment -name VERILOG_FILE rtl/ADDRESS_INCREMENTER.v
+set_global_assignment -name VERILOG_FILE rtl/CSADDRESS.v
+set_global_assignment -name VERILOG_FILE rtl/PSR.v
