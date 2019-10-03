@@ -1,11 +1,11 @@
 /*######################################################################
-//#	G0B1T: HDL EXAMPLES. 2018.
 //######################################################################
+//# 
 //# This program is free software: you can redistribute it and/or modify
 //# it under the terms of the GNU General Public License as published by
 //# the Free Software Foundation, version 3 of the License.
 //#
-//# This program is distributed in the hope that it will be eful,
+//# This program is distributed in the hope that it will be useful,
 //# but WITHOUT ANY WARRANTY; without even the implied warranty of
 //# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //# GNU General Public License for more details.
@@ -16,17 +16,18 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CSADDRESS #(parameter DATAWIDTH_CSADDRESS=11, parameter DATAWIDTH_OPS=8, parameter DATAWIDTH_CBL=2)(
+module PSR #(parameter PSR_PSR=4)(
 	//////////// OUTPUTS //////////
-	CSADDRESS_CSAddress_OutBus,
+	PSR_Psr_OutBus
 	
 	//////////// INPUTS //////////
-	CSADDRESS_CSAI_InBus,
-	CSADDRESS_CLOCK_50,
-	CSADDRESS_ResetInHigh_In,
-	CSADDRESS_DecodeOp_InBus,
-	CSADDRESS_Tipo_InBus,
-	CSADDRESS_JumpAddress_InBus
+	PSR_CLOCK_50,
+	PSR_ResetInHigh_In,
+	PSR_FlagOverflow_In,
+	PSR_FlagNegative_In,
+	PSR_FlagCarry_In,
+	PSR_FlagZero_In,
+	PSR_SetCodes_In //ask Sure?
 
 );
 //=======================================================
@@ -37,31 +38,26 @@ module CSADDRESS #(parameter DATAWIDTH_CSADDRESS=11, parameter DATAWIDTH_OPS=8, 
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output	[DATAWIDTH_CSADDRESS-1:0]	CSADDRESS_CSAddress_OutBus;
+output 	[PSR_PSR-1:0]	PSR_Psr_OutBus;
 
-/////////// INPUTS //////////
-input		CSADDRESS_CLOCK_50;
-input		CSADDRESS_ResetInHigh_In;
-input		[DATAWIDTH_CBL-1:0] CSADDRESS_Tipo_InBus;	
-input		[DATAWIDTH_OPS-1:0] CSADDRESS_DecodeOp_InBus;
-input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_CSAI_InBus;
-input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_JumpAddress_InBus;
+//////////// INPUTS //////////
+input 	PSR_CLOCK_50;
+input		PSR_ResetInHigh_In;
+input		PSR_FlagOverflow_In;
+input		PSR_FlagNegative_In;
+input		PSR_FlagCarry_In;
+input		PSR_FlagZero_In;
+input		PSR_SetCodes_In;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Register;
-reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Signal;
+
 
 //=======================================================
 //  Structural coding
 //=======================================================
-//INPUT LOGIC: COMBINATIONAL
 
-
-//=======================================================
-//  Outputs
-//=======================================================
-//OUTPUT LOGIC: COMBINATIONAL
 
 
 endmodule
+

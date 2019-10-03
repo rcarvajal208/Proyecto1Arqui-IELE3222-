@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MICROCODE_STORE #(parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, DATAWIDTH_JUMPADDRESS=11)(
+module MICROCODE_STORE #(parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, parameter DATAWIDTH_JUMPADDRESS=11)(
 	
 	//////////// OUTPUTS //////////
 	MICROCODE_STORE_SelectA_OutBus,

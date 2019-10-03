@@ -25,6 +25,7 @@ module CSADDRESS #(parameter DATAWIDTH_CSADDRESS=11, parameter DATAWIDTH_OPS=8, 
 	CSADDRESS_CLOCK_50,
 	CSADDRESS_ResetInHigh_In,
 	CSADDRESS_DecodeOp_InBus,
+	CSADDRESS_Simm13_InBus,
 	CSADDRESS_Tipo_InBus,
 	CSADDRESS_JumpAddress_InBus
 
@@ -42,6 +43,7 @@ output	[DATAWIDTH_CSADDRESS-1:0]	CSADDRESS_CSAddress_OutBus;
 /////////// INPUTS //////////
 input		CSADDRESS_CLOCK_50;
 input		CSADDRESS_ResetInHigh_In;
+input		CSADDRESS_Simm13_InBus;
 input		[DATAWIDTH_CBL-1:0] CSADDRESS_Tipo_InBus;	
 input		[DATAWIDTH_OPS-1:0] CSADDRESS_DecodeOp_InBus;
 input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_CSAI_InBus;

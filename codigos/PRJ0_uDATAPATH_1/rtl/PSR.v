@@ -18,7 +18,7 @@
 //=======================================================
 module PSR #(parameter PSR_PSR=4)(
 	//////////// OUTPUTS //////////
-	PSR_Psr_OutBus
+	PSR_Psr_OutBus,
 	
 	//////////// INPUTS //////////
 	PSR_CLOCK_50,
