@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_DECODER_SELECTION=3, parameter DATAWIDTH_DECODER_OUT=4, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_MUX_SELECTION=3, parameter DATA_REGFIXED_INIT_0=8'b00001001, parameter DATA_REGFIXED_INIT_1=8'b00001111)(
+module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_ALU_SELECTION=4)(
 	//////////// OUTPUTS //////////
 	DATAPATH_A_OutBus,
 	DATAPATH_B_OutBus,
@@ -29,6 +29,7 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, p
 	DATAPATH_FlagNegative_Out,
 	DATAPATH_FlagCarry_Out,
 	DATAPATH_FlagZero_Out,
+	DATAPATH_DataOut_OutBus,
 	
 	//////////// INPUTS //////////
 	DATAPATH_CLOCK_50,
@@ -40,8 +41,8 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, p
 	DATAPATH_DirC_InBus,
 	DATAPATH_SelectA_In,
 	DATAPATH_SelectB_In,
-	DATAPATH_SelectC_In
-	
+	DATAPATH_SelectC_In,
+	DATAPATH_ALUOperation_InBus
 );
 //=======================================================
 //  PARAMETER declarations
@@ -60,6 +61,7 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, p
 	output DATAPATH_FlagNegative_Out;
 	output DATAPATH_FlagCarry_Out;
 	output DATAPATH_FlagZero_Out;
+	output [DATAWIDTH_BUS-1:0] DATAPATH_DataOut_OutBus;
 	
 	//////////// INPUTS //////////
 	input DATAPATH_CLOCK_50;
@@ -72,6 +74,7 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DIRECTION=6, p
 	input DATAPATH_SelectA_In;
 	input DATAPATH_SelectB_In;
 	input DATAPATH_SelectC_In;
+	input [DATAWIDTH_ALU_SELECTION-1:0] DATAPATH_ALUOperation_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================

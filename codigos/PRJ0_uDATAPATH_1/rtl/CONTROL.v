@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CONTROL #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
+module CONTROL #(parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
 	//////////// OUTPUTS //////////
 	CONTROL_SelectA_OutBus,
 	CONTROL_SelectB_OutBus,
@@ -30,7 +30,7 @@ module CONTROL #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_ALU_SELECT
 	
 	//////////// INPUTS //////////
 	CONTROL_CLOCK_50,
-	uDATAPATH_ResetInHigh_In,
+	CONTROL_ResetInHigh_In,
 	CONTROL_ACK_In,
 	CONTROL_DecodeOP_InBus,
 	CONTROL_IR13_In,
@@ -48,9 +48,9 @@ module CONTROL #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_ALU_SELECT
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	[DATAWIDTH_SELECTION-1:0]	CONTROL_SelectA_OutBus;
-output 	[DATAWIDTH_SELECTION-1:0]  CONTROL_SelectB_OutBus;
-output 	[DATAWIDTH_SELECTION-1:0]	CONTROL_SelectC_OutBus;
+output 	[DATAWIDTH_DIRECTION-1:0]	CONTROL_SelectA_OutBus;
+output 	[DATAWIDTH_DIRECTION-1:0]  CONTROL_SelectB_OutBus;
+output 	[DATAWIDTH_DIRECTION-1:0]	CONTROL_SelectC_OutBus;
 output 	CONTROL_DirA_Out;
 output 	CONTROL_DirB_Out;
 output 	CONTROL_DirC_Out;
