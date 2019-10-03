@@ -16,23 +16,16 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MICROCODE_STORE #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, DATAWIDTH_JUMPADDRESS=11)(
+module CONTROL_BRANCH_LOGIC #(parameter CONTROL_BRANCH_LOGIC_PSR=4, parameter CONTROL_BRANCH_LOGIC_CONDITION=3, parameter CONTROL_BRANCH_LOGIC_TIPO=2)(
 	//////////// OUTPUTS //////////
-	MICROCODE_STORE_SelectA_OutBus,
-	MICROCODE_STORE_SelectB_OutBus,
-	MICROCODE_STORE_SelectC_OutBus,
-	MICROCODE_STORE_DirA_Out,
-	MICROCODE_STORE_DirB_Out,
-	MICROCODE_STORE_DirC_Out,
-	MICROCODE_STORE_RD_Out,
-	MICROCODE_STORE_WR_Out,
-	MICROCODE_STORE_ALUOperation_OutBus,
-	MICROCODE_STORE_Condition_OutBus,
-	MICROCODE_STORE_JumpAddress_OutBus,
+	CONTROL_BRANCH_LOGIC_Tipo_OutBus,
+	
 	//////////// INPUTS //////////
-	MICROCODE_STORE_CLOCK_50,
-	MICROCODE_STORE_ResetInHigh_In,
-	MICROCODE_STORE_Address_InBus
+	CONTROL_BRANCH_LOGIC_CLOCK_50,
+	CONTROL_BRANCH_LOGIC _ResetInHigh_In,
+	CONTROL_BRANCH_LOGIC_IR13_In,
+	CONTROL_BRANCH_LOGIC_Condition_InBus,
+	CONTROL_BRANCH_LOGIC_Psr_InBus,
 	
 );
 //=======================================================
@@ -43,23 +36,14 @@ module MICROCODE_STORE #(parameter DATAWIDTH_SELECTION=6, parameter DATAWIDTH_AL
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	[DATAWIDTH_SELECTION-1:0]	MICROCODE_STORE_SelectA_OutBus;
-output 	[DATAWIDTH_SELECTION-1:0]  MICROCODE_STORE_SelectB_OutBus;
-output 	[DATAWIDTH_SELECTION-1:0]	MICROCODE_STORE_SelectC_OutBus;
-output 	MICROCODE_STORE_DirA_Out;
-output 	MICROCODE_STORE_DirB_Out;
-output 	MICROCODE_STORE_DirC_Out;
-output 	MICROCODE_STORE_RD_Out;
-output	MICROCODE_STORE_WR_Out;
-output	[DATAWIDTH_ALU_SELECTION-1:0] MICROCODE_STORE_ALUOperation_OutBus;
-output	[DATAWIDTH_CONDITION -1:0] MICROCODE_STORE_Condition_OutBus;
-output	[DATAWIDTH_ JUMPADDRESS -1:0] MICROCODE_STORE_JumpAddress_OutBus;
+output 	[CONTROL_BRANCH_LOGIC_TIPO-1:0]	CONTROL_BRANCH_LOGIC_Tipo_OutBus;
 
 //////////// INPUTS //////////
-input 	MICROCODE_STORE_CLOCK_50;
-input 	MICROCODE_STORE_ResetInHigh_In;
-input		[DATAWIDTH_JUMPADDRESS-1:0]	MICROCODE_STORE_Address_InBus;
-
+input 	CONTROL_BRANCH_LOGIC_CLOCK_50;
+input 	CONTROL_BRANCH_LOGIC_ResetInHigh_In;
+input	   CONTROL_BRANCH_LOGIC_IR13_In;
+input	[CONTROL_BRANCH_LOGIC_CONDITION-1:0]	CONTROL_BRANCH_LOGIC_Condition_InBus;
+input	[CONTROL_BRANCH_LOGIC_PSR-1:0]	CONTROL_BRANCH_LOGIC_Psr_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -72,3 +56,4 @@ input		[DATAWIDTH_JUMPADDRESS-1:0]	MICROCODE_STORE_Address_InBus;
 
 
 endmodule
+
