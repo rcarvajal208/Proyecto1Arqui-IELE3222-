@@ -18,9 +18,9 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_RegFIXED #(parameter DATAWIDTH_BUS=32, parameter DATA_REGFIXED_INIT=8'b00000000)(
+module SC_RegFIXED #(parameter DATAWIDTH_BUS=32, parameter DATA_REGFIXED_INIT=6'b000000)(
 	//////////// OUTPUTS //////////
-	SC_RegFIXED_data_OutBUS,
+	SC_RegFIXED_data_OutBus,
 	//////////// INPUTS //////////
 	SC_RegFIXED_CLOCK_50,
 	SC_RegFIXED_RESET_InHigh
@@ -32,7 +32,7 @@ module SC_RegFIXED #(parameter DATAWIDTH_BUS=32, parameter DATA_REGFIXED_INIT=8'
 //=======================================================
 //  PORT declarations
 //=======================================================
-output reg		[DATAWIDTH_BUS-1:0] SC_RegFIXED_data_OutBUS;
+output reg		[DATAWIDTH_BUS-1:0] SC_RegFIXED_data_OutBus;
 input			SC_RegFIXED_CLOCK_50;
 input			SC_RegFIXED_RESET_InHigh;
 //=======================================================
@@ -57,7 +57,7 @@ always @ ( posedge SC_RegFIXED_CLOCK_50 , posedge SC_RegFIXED_RESET_InHigh)
 //=======================================================
 // OUTPUT LOGIC : COMBINATIONAL
 	always @ (*)
-		SC_RegFIXED_data_OutBUS = RegFIXED_Register;  
+		SC_RegFIXED_data_OutBus = RegFIXED_Register;  
 
 endmodule
 

@@ -34,7 +34,7 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_SEL
 	//////////// INPUTS //////////
 	DATAPATH_CLOCK_50,
 	DATAPATH_ResetInHigh_In,
-	DATAPATH_MemoryData_InBUS,
+	DATAPATH_MemoryData_InBus,
 	DATAPATH_RD_In,
 	DATAPATH_DirA_InBus,
 	DATAPATH_DirB_InBus,
@@ -47,7 +47,9 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_SEL
 //=======================================================
 //  PARAMETER declarations
 //=======================================================
-
+parameter DATA_REGFIXED_INIT_0 = 6'b000000;
+parameter DATA_REGFIXED_INIT_1 = 6'b000001;
+parameter DATA_REGMEMORY = 6'b000010;
 //=======================================================
 //  PORT declarations
 //=======================================================
@@ -66,7 +68,7 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_SEL
 	//////////// INPUTS //////////
 	input DATAPATH_CLOCK_50;
 	input DATAPATH_ResetInHigh_In;
-	input [DATAWIDTH_BUS-1:0] DATAPATH_MemoryData_InBUS;
+	input [DATAWIDTH_BUS-1:0] DATAPATH_MemoryData_InBus;
 	input DATAPATH_RD_In;
 	input [DATAWIDTH_MIR_DIRECTION-1:0] DATAPATH_DirA_InBus;
 	input [DATAWIDTH_MIR_DIRECTION-1:0] DATAPATH_DirB_InBus;
@@ -78,155 +80,256 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_SEL
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-wire [DATAWIDTH_DECODER_OUT-1:0] DECODER_A;
-wire [DATAWIDTH_DECODER_OUT-1:0] DECODER_B;
-wire [DATAWIDTH_DECODER_OUT-1:0] DECODER_C;
-wire [DATAWIDTH_MIR_DIRECTION-1:0] MUXA_ADRESS;
-wire [DATAWIDTH_MIR_DIRECTION-1:0] MUXB_ADRESS;
-wire [DATAWIDTH_MIR_DIRECTION-1:0] MUXC_ADRESS;  
+wire [DATAWIDTH_BUS-1:0] ALU_DATA; 
+wire [DATAWIDTH_BUS-1:0] BUS_A_DATA; 
+wire [DATAWIDTH_BUS-1:0] BUS_B_DATA;
+wire [DATAWIDTH_BUS-1:0] MUX_C_DATA;
+wire [DATAWIDTH_DECODER_OUT-1:0] CLEAR;
+wire [DATAWIDTH_DECODER_OUT-1:0] LOAD; 
 // REGISTROS 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data0; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data1;
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data2; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data3; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data4; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data5;
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data6; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data7; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data8; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data9;
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data10; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data11; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data12; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data13;
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data14; 
-wire [DATAWIDTH_BUS-1:0] REGISTRO_data15; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_0; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_1;
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_2; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_3; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_4; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_5;
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_6; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_7; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_8; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_9;
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_10; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_11; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_12; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_13;
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_14; 
+wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_15; 
 
 //=======================================================
 //  Structural coding
 //=======================================================
-// FIXED_REGISTERS
-SC_RegFIXED #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATA_REGFIXED_INIT(DATA_REGFIXED_INIT_0)) SC_RegFIXED_u0 (
-// port map - connection between master ports and signals/registers   
-	.SC_RegFIXED_data_OutBUS(REGISTRO_data0),
-	.SC_RegFIXED_CLOCK_50(DATAPATH_CLOCK_50),
-	.SC_RegFIXED_RESET_InHigh(DATAPATH_ResetInHigh_In)
-);
-SC_RegFIXED #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATA_REGFIXED_INIT(DATA_REGFIXED_INIT_1)) SC_RegFIXED_u1 (
-// port map - connection between master ports and signals/registers   
-	.SC_RegFIXED_data_OutBUS(REGISTRO_data1),
-	.SC_RegFIXED_CLOCK_50(DATAPATH_CLOCK_50),
-	.SC_RegFIXED_RESET_InHigh(DATAPATH_ResetInHigh_In)
-); 
-//GENERAL_REGISTERS
 
+//ALU
+CC_ALU #( .DATAWIDTH_BUS(DATAWIDTH_BUS), .DATAWIDTH_ALU_SELECTION(DATAWIDTH_ALU_SELECTION)) CC_ALU_u0(
+// port map - connection between master ports and signals/registers    
+	.CC_ALU_overflow_OutLow(DATAPATH_FlagOverflow_Out),
+	.CC_ALU_carry_OutLow(DATAPATH_FlagCarry_Out),
+	.CC_ALU_negative_OutLow(DATAPATH_FlagNegative_Out),
+	.CC_ALU_zero_OutLow(DATAPATH_FlagZero_Out),
+	.CC_ALU_data_OutBus(ALU_DATA), 
+	.CC_ALU_dataA_InBus(BUS_A_DATA),
+	.CC_ALU_dataB_InBus(BUS_B_DATA),
+	.CC_ALU_selection_InBus(DATAPATH_ALUOperation_InBus)
 
-//DECODER
-CC_DECODER #(.DATAWIDTH_DECODER_SELECTION(DATAWIDTH_DECODER_SELECTION), .DATAWIDTH_DECODER_OUT(DATAWIDTH_DECODER_OUT)) CC_DECODER_u0
-(
-// port map - connection between master ports and signals/registers   
-	.CC_DECODER_datadecoder_OutBUS(DECODER_A),
-	.CC_DECODER_selection_InBUS(MUXA_ADRESS)
 );
-// 
-CC_DECODER #(.DATAWIDTH_DECODER_SELECTION(DATAWIDTH_DECODER_SELECTION), .DATAWIDTH_DECODER_OUT(DATAWIDTH_DECODER_OUT)) CC_DECODER_u1
-(
-// port map - connection between master ports and signals/registers   
-	.CC_DECODER_datadecoder_OutBUS(DECODER_B),
-	.CC_DECODER_selection_InBUS(MUXB_ADRESS)
-);
-// 
-CC_DECODER #(.DATAWIDTH_DECODER_SELECTION(DATAWIDTH_DECODER_SELECTION), .DATAWIDTH_DECODER_OUT(DATAWIDTH_DECODER_OUT)) CC_DECODER_u1
-(
-// port map - connection between master ports and signals/registers   
-	.CC_DECODER_datadecoder_OutBUS(DECODER_C),
-	.CC_DECODER_selection_InBUS(MUXC_ADRESS)
-);
-//-------------------------------------------------------
 //-------------------------------------------------------
 //MUX
-CC_MUXX #(.DATAWIDTH_SCRATCHPAD_SELECTION(DATAWIDTH_SCRATCHPAD_SELECTION), .DATAWIDTH_MIR_SELECTION(DATAWIDTH_MIR_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS) ) CC_MUXX_u0
-(
-// port map - connection between master ports and signals/registers   
-	//////////// OUTPUTS //////////
-	.CC_MUX_data_OutBus(),
-	.CC_MUX_Address_OutBus(MUXA_ADRESS),
-	.CC_MUX_data0_InBus(REGISTRO_data0),
-	.CC_MUX_data1_InBus(REGISTRO_data1),
-	.CC_MUX_data2_InBus(REGISTRO_data2),
-	.CC_MUX_data3_InBus(REGISTRO_data3),	
-	.CC_MUX_data4_InBus(REGISTRO_data4),	
-	.CC_MUX_data5_InBus(REGISTRO_data5),	
-	.CC_MUX_data6_InBus(REGISTRO_data6),	
-	.CC_MUX_data7_InBus(REGISTRO_data7),	
-	.CC_MUX_data8_InBus(REGISTRO_data8),
-	.CC_MUX_data9_InBus(REGISTRO_data9),
-	.CC_MUX_data10_InBus(REGISTRO_data10),
-	.CC_MUX_data11_InBus(REGISTRO_data11),	
-	.CC_MUX_data12_InBus(REGISTRO_data12),
-	.CC_MUX_data13_InBus(REGISTRO_data13),
-	.CC_MUX_data14_InBus(REGISTRO_data14),
-	.CC_MUX_data15_InBus(REGISTRO_data15), 
+CC_MUXX #(.DATAWIDTH_SCRATCHPAD_SELECTION(DATAWIDTH_SCRATCHPAD_SELECTION), .DATAWIDTH_MIR_SELECTION(DATAWIDTH_MIR_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS) ) CC_MUXX_u0 (
+// port map - connection between master ports and signals/registers    
+	.CC_MUX_data_OutBus(BUS_A_DATA), 
+	.CC_MUX_data0_InBus(REGISTRO_DATA_0),
+	.CC_MUX_data1_InBus(REGISTRO_DATA_1),
+	.CC_MUX_data2_InBus(REGISTRO_DATA_2),
+	.CC_MUX_data3_InBus(REGISTRO_DATA_3),	
+	.CC_MUX_data4_InBus(REGISTRO_DATA_4),	
+	.CC_MUX_data5_InBus(REGISTRO_DATA_5),	
+	.CC_MUX_data6_InBus(REGISTRO_DATA_6),	
+	.CC_MUX_data7_InBus(REGISTRO_DATA_7),	
+	.CC_MUX_data8_InBus(REGISTRO_DATA_8),
+	.CC_MUX_data9_InBus(REGISTRO_DATA_9),
+	.CC_MUX_data10_InBus(REGISTRO_DATA_10),
+	.CC_MUX_data11_InBus(REGISTRO_DATA_11),	
+	.CC_MUX_data12_InBus(REGISTRO_DATA_12),
+	.CC_MUX_data13_InBus(REGISTRO_DATA_13),
+	.CC_MUX_data14_InBus(REGISTRO_DATA_14),
+	.CC_MUX_data15_InBus(REGISTRO_DATA_15), 
 	.CC_MUX_Select_In(DATAPATH_SelectA_In),
 	.CC_MUX_MIRSelection_InBus(DATAPATH_DirA_InBus),
 	.CC_MUX_ScratchpadSelection_InBus()
 
 );
 //
-CC_MUXX #(.DATAWIDTH_SCRATCHPAD_SELECTION(DATAWIDTH_SCRATCHPAD_SELECTION), .DATAWIDTH_MIR_SELECTION(DATAWIDTH_MIR_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS) ) CC_MUXX_u1
-(
-// port map - connection between master ports and signals/registers   
-	//////////// OUTPUTS //////////
-	.CC_MUX_data_OutBus(),
-	.CC_MUX_Address_OutBus(MUXB_ADRESS),
-	.CC_MUX_data0_InBus(REGISTRO_data0),
-	.CC_MUX_data1_InBus(REGISTRO_data1),
-	.CC_MUX_data2_InBus(REGISTRO_data2),
-	.CC_MUX_data3_InBus(REGISTRO_data3),	
-	.CC_MUX_data4_InBus(REGISTRO_data4),	
-	.CC_MUX_data5_InBus(REGISTRO_data5),	
-	.CC_MUX_data6_InBus(REGISTRO_data6),	
-	.CC_MUX_data7_InBus(REGISTRO_data7),	
-	.CC_MUX_data8_InBus(REGISTRO_data8),
-	.CC_MUX_data9_InBus(REGISTRO_data9),
-	.CC_MUX_data10_InBus(REGISTRO_data10),
-	.CC_MUX_data11_InBus(REGISTRO_data11),	
-	.CC_MUX_data12_InBus(REGISTRO_data12),
-	.CC_MUX_data13_InBus(REGISTRO_data13),
-	.CC_MUX_data14_InBus(REGISTRO_data14),
-	.CC_MUX_data15_InBus(REGISTRO_data15), 
+CC_MUXX #(.DATAWIDTH_SCRATCHPAD_SELECTION(DATAWIDTH_SCRATCHPAD_SELECTION), .DATAWIDTH_MIR_SELECTION(DATAWIDTH_MIR_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS) ) CC_MUXX_u1 (
+// port map - connection between master ports and signals/registers    
+	.CC_MUX_data_OutBus(BUS_B_DATA), 
+	.CC_MUX_data0_InBus(REGISTRO_DATA_0),
+	.CC_MUX_data1_InBus(REGISTRO_DATA_1),
+	.CC_MUX_data2_InBus(REGISTRO_DATA_2),
+	.CC_MUX_data3_InBus(REGISTRO_DATA_3),	
+	.CC_MUX_data4_InBus(REGISTRO_DATA_4),	
+	.CC_MUX_data5_InBus(REGISTRO_DATA_5),	
+	.CC_MUX_data6_InBus(REGISTRO_DATA_6),	
+	.CC_MUX_data7_InBus(REGISTRO_DATA_7),	
+	.CC_MUX_data8_InBus(REGISTRO_DATA_8),
+	.CC_MUX_data9_InBus(REGISTRO_DATA_9),
+	.CC_MUX_data10_InBus(REGISTRO_DATA_10),
+	.CC_MUX_data11_InBus(REGISTRO_DATA_11),	
+	.CC_MUX_data12_InBus(REGISTRO_DATA_12),
+	.CC_MUX_data13_InBus(REGISTRO_DATA_13),
+	.CC_MUX_data14_InBus(REGISTRO_DATA_14),
+	.CC_MUX_data15_InBus(REGISTRO_DATA_15), 
 	.CC_MUX_Select_In(DATAPATH_SelectB_In),
 	.CC_MUX_MIRSelection_InBus(DATAPATH_DirB_InBus),
 	.CC_MUX_ScratchpadSelection_InBus()
 
-); 
-//
-CC_MUXX #(.DATAWIDTH_SCRATCHPAD_SELECTION(DATAWIDTH_SCRATCHPAD_SELECTION), .DATAWIDTH_MIR_SELECTION(DATAWIDTH_MIR_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS) ) CC_MUXX_u2
-(
+);  
+//-------------------------------------------------------
+//MUX_LOAD
+CC_MUXX_LOAD #(.DATAWIDTH_SCRATCHPAD_SELECTION(DATAWIDTH_SCRATCHPAD_SELECTION), .DATAWIDTH_MIR_SELECTION(DATAWIDTH_MIR_SELECTION), .DATAWIDTH_BUS(DATAWIDTH_BUS), .DATAWIDTH_DECODER_OUT(DATAWIDTH_DECODER_OUT), .DATA_REGMEMORY(DATA_REGMEMORY) ) CC_MUXX_LOAD_u0 (
 // port map - connection between master ports and signals/registers   
-	//////////// OUTPUTS //////////
-	.CC_MUX_data_OutBus(),
-	.CC_MUX_Address_OutBus(MUXC_ADRESS),
-	.CC_MUX_data0_InBus(REGISTRO_data0),
-	.CC_MUX_data1_InBus(REGISTRO_data1),
-	.CC_MUX_data2_InBus(REGISTRO_data2),
-	.CC_MUX_data3_InBus(REGISTRO_data3),	
-	.CC_MUX_data4_InBus(REGISTRO_data4),	
-	.CC_MUX_data5_InBus(REGISTRO_data5),	
-	.CC_MUX_data6_InBus(REGISTRO_data6),	
-	.CC_MUX_data7_InBus(REGISTRO_data7),	
-	.CC_MUX_data8_InBus(REGISTRO_data8),
-	.CC_MUX_data9_InBus(REGISTRO_data9),
-	.CC_MUX_data10_InBus(REGISTRO_data10),
-	.CC_MUX_data11_InBus(REGISTRO_data11),	
-	.CC_MUX_data12_InBus(REGISTRO_data12),
-	.CC_MUX_data13_InBus(REGISTRO_data13),
-	.CC_MUX_data14_InBus(REGISTRO_data14),
-	.CC_MUX_data15_InBus(REGISTRO_data15), 
-	.CC_MUX_Select_In(DATAPATH_SelectC_In),
-	.CC_MUX_MIRSelection_InBus(DATAPATH_DirC_InBus),
-	.CC_MUX_ScratchpadSelection_InBus()
-
+	.CC_MUXX_LOAD_data_OutBus(MUX_C_DATA),
+	.CC_MUXX_LOAD_Load_OutBus(LOAD),
+	.CC_MUXX_LOAD_Clear_OutBus(CLEAR),
+	.CC_MUXX_LOAD_RD_In(DATAPATH_RD_In),
+	.CC_MUXX_LOAD_Select_In(DATAPATH_SelectC_In),	
+	.CC_MUXX_LOAD_ALU_data_InBus(ALU_DATA),	
+	.CC_MUXX_LOAD_Memory_data_InBus(DATAPATH_MemoryData_InBus),
+	.CC_MUXX_LOAD_MIRSelection_InBus(DATAPATH_DirC_InBus),
+	.CC_MUXX_LOAD_ScratchpadSelection_InBus()
 ); 
+//-------------------------------------------------------
+// FIXED_REGISTERS
+SC_RegFIXED #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATA_REGFIXED_INIT(DATA_REGFIXED_INIT_0)) SC_RegFIXED_u0 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegFIXED_data_OutBus(REGISTRO_DATA_0),
+	.SC_RegFIXED_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegFIXED_RESET_InHigh(DATAPATH_ResetInHigh_In)
+);
+SC_RegFIXED #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATA_REGFIXED_INIT(DATA_REGFIXED_INIT_1)) SC_RegFIXED_u1 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegFIXED_data_OutBus(REGISTRO_DATA_1),
+	.SC_RegFIXED_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegFIXED_RESET_InHigh(DATAPATH_ResetInHigh_In)
+); 
+//-------------------------------------------------------
+//GENERAL_REGISTER_MEMORY
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u0 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_2),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[0]),
+	.SC_RegGENERAL_load_InLow(LOAD[0]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+//-------------------------------------------------------
+//GENERAL_REGISTERS
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u1 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_3),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[1]),
+	.SC_RegGENERAL_load_InLow(LOAD[1]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u2 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_4),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[2]),
+	.SC_RegGENERAL_load_InLow(LOAD[2]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u3 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_5),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[3]),
+	.SC_RegGENERAL_load_InLow(LOAD[3]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u4 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_6),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[4]),
+	.SC_RegGENERAL_load_InLow(LOAD[4]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u5 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_7),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[5]),
+	.SC_RegGENERAL_load_InLow(LOAD[5]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u6 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_8),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[6]),
+	.SC_RegGENERAL_load_InLow(LOAD[6]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u7 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_9),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[7]),
+	.SC_RegGENERAL_load_InLow(LOAD[7]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u8 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_10),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[8]),
+	.SC_RegGENERAL_load_InLow(LOAD[8]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u9 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_11),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[9]),
+	.SC_RegGENERAL_load_InLow(LOAD[9]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u10 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_12),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[10]),
+	.SC_RegGENERAL_load_InLow(LOAD[10]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u11 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_13),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[11]),
+	.SC_RegGENERAL_load_InLow(LOAD[11]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u12 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_14),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[12]),
+	.SC_RegGENERAL_load_InLow(LOAD[12]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+);
+SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_u13 (
+// port map - connection between master ports and signals/registers   
+	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_15),
+	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In),
+	.SC_RegGENERAL_clear_InLow(CLEAR[13]),
+	.SC_RegGENERAL_load_InLow(LOAD[13]),
+	.SC_RegGENERAL_data_InBus(MUX_C_DATA)
+); 
+
 endmodule
 

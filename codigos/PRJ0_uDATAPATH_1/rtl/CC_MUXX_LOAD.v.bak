@@ -1,0 +1,72 @@
+/*######################################################################
+//#	G0B1T: HDL EXAMPLES. 2018.
+//######################################################################
+//# Copyright (C) 2018. F.E.Segura-Quijano (FES) fsegura@uniandes.edu.co
+//# 
+//# This program is free software: you can redistribute it and/or modify
+//# it under the terms of the GNU General Public License as published by
+//# the Free Software Foundation, version 3 of the License.
+//#
+//# This program is distributed in the hope that it will be useful,
+//# but WITHOUT ANY WARRANTY; without even the implied warranty of
+//# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//# GNU General Public License for more details.
+//#
+//# You should have received a copy of the GNU General Public License
+//# along with this program.  If not, see <http://www.gnu.org/licenses/>
+//####################################################################*/
+//=======================================================
+//  MODULE Definition
+//=======================================================
+module CC_MUXX_LOAD #(parameter DATAWIDTH_SCRATCHPAD_SELECTION=5,parameter DATAWIDTH_MIR_SELECTION=6, parameter DATAWIDTH_BUS=32)(
+	//////////// OUTPUTS //////////
+	CC_MUXX_LOAD_data_OutBUS,
+	
+	//////////// INPUTS //////////  
+	
+	CC_MUXX_LOAD_Select_In,
+	CC_MUXX_LOAD_MIRSelection_InBus,
+	CC_MUXX_LOAD_ScratchpadSelection_InBus
+);
+//=======================================================
+//  PARAMETER declarations
+//=======================================================
+
+//=======================================================
+//  PORT declarations
+//=======================================================
+output reg	[DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_data_OutBUS; 
+input 		CC_MUXX_LOAD_Select_In;
+input			[DATAWIDTH_MIR_SELECTION-1:0] CC_MUXX_LOAD_MIRSelection_InBus;
+input			[DATAWIDTH_SCRATCHPAD_SELECTION-1:0] CC_MUXX_LOAD_ScratchpadSelection_InBus;
+//=======================================================
+//  REG/WIRE declarations
+//=======================================================
+reg [DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_SignalMIR;
+reg [DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_SignalScratchpad; 
+//=======================================================
+//  Structural coding
+//=======================================================
+//INPUT LOGIC: COMBINATIONAL
+always@(*)
+begin
+	case (CC_MUXX_LOAD_selection_InBUS)	
+	// Example to more outputs: WaitStart: begin sResetCounter = 0; sCuenteUP = 0; end
+		3'b000: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data0_InBUS;
+		3'b001: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data1_InBUS;
+		3'b010: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data2_InBUS;
+		3'b011: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data3_InBUS;
+		3'b100: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data4_InBUS;
+		3'b101: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data5_InBUS;
+		3'b110: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data6_InBUS;
+		3'b111: CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data7_InBUS;
+		default :   CC_MUXX_LOAD_data_OutBUS = CC_MUXX_LOAD_data0_InBUS; // channel 0 is selected 
+	endcase
+end
+//=======================================================
+//  Outputs
+//=======================================================
+// OUTPUT LOGIC : COMBINATIONAL
+
+endmodule
+

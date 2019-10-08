@@ -18,15 +18,15 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_RegGENERAL #(parameter RegGENERAL_DATAWIDTH=32)(
+module SC_RegGENERAL #(parameter DATAWIDTH_BUS=32)(
 	//////////// OUTPUTS //////////
-	SC_RegGENERAL_data_OutBUS,
+	SC_RegGENERAL_data_OutBus,
 	//////////// INPUTS //////////
 	SC_RegGENERAL_CLOCK_50,
 	SC_RegGENERAL_RESET_InHigh,
 	SC_RegGENERAL_clear_InLow, 
 	SC_RegGENERAL_load_InLow, 
-	SC_RegGENERAL_data_InBUS
+	SC_RegGENERAL_data_InBus
 );
 //=======================================================
 //  PARAMETER declarations
@@ -35,18 +35,18 @@ module SC_RegGENERAL #(parameter RegGENERAL_DATAWIDTH=32)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output		[RegGENERAL_DATAWIDTH-1:0]	SC_RegGENERAL_data_OutBUS;
+output		[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_OutBus;
 input		SC_RegGENERAL_CLOCK_50;
 input		SC_RegGENERAL_RESET_InHigh;
 input		SC_RegGENERAL_clear_InLow;
 input		SC_RegGENERAL_load_InLow;	
-input		[RegGENERAL_DATAWIDTH-1:0]	SC_RegGENERAL_data_InBUS;
+input		[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_InBus;
 
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Register;
-reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Signal;
+reg [DATAWIDTH_BUS-1:0] RegGENERAL_Register;
+reg [DATAWIDTH_BUS-1:0] RegGENERAL_Signal;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -56,7 +56,7 @@ begin
 	if (SC_RegGENERAL_clear_InLow == 1'b0)
 		RegGENERAL_Signal = 0;
 	else if (SC_RegGENERAL_load_InLow == 1'b0)
-		RegGENERAL_Signal = SC_RegGENERAL_data_InBUS;
+		RegGENERAL_Signal = SC_RegGENERAL_data_InBus;
 	else
 		RegGENERAL_Signal = RegGENERAL_Register;
 	end	
@@ -72,6 +72,6 @@ end
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-assign SC_RegGENERAL_data_OutBUS = RegGENERAL_Register;
+assign SC_RegGENERAL_data_OutBus = RegGENERAL_Register;
 
 endmodule
