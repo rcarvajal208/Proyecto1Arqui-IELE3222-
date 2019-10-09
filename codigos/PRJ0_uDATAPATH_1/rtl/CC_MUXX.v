@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CC_MUXX #(parameter DATAWIDTH_SCRATCHPAD_SELECTION=5,parameter DATAWIDTH_MIR_SELECTION=6, parameter DATAWIDTH_BUS=32)(
+module CC_MUXX #(parameter DATAWIDTH_SCRATCHPAD_DIRECTION=5,parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_BUS=32)(
 	//////////// OUTPUTS //////////
 	CC_MUX_data_OutBus, 
 	//////////// INPUTS //////////
@@ -49,7 +49,7 @@ module CC_MUXX #(parameter DATAWIDTH_SCRATCHPAD_SELECTION=5,parameter DATAWIDTH_
 //=======================================================
 //  PORT declarations
 //=======================================================
-output reg	[DATAWIDTH_BUS-1:0] CC_MUX_data_OutBus; 
+output 		[DATAWIDTH_BUS-1:0] CC_MUX_data_OutBus; 
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data0_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data1_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data2_InBus;
@@ -67,8 +67,8 @@ input			[DATAWIDTH_BUS-1:0] CC_MUX_data13_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data14_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data15_InBus; 
 input 		CC_MUX_Select_In;
-input			[DATAWIDTH_MIR_SELECTION-1:0] CC_MUX_MIRSelection_InBus;
-input			[DATAWIDTH_SCRATCHPAD_SELECTION-1:0] CC_MUX_ScratchpadSelection_InBus;
+input			[DATAWIDTH_MIR_DIRECTION-1:0] CC_MUX_MIRSelection_InBus;
+input			[DATAWIDTH_SCRATCHPAD_DIRECTION-1:0] CC_MUX_ScratchpadSelection_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================

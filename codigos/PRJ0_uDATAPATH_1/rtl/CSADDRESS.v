@@ -49,8 +49,7 @@ input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_JumpAddress_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Register;
-reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Signal;
+
 
 //=======================================================
 //  Structural coding

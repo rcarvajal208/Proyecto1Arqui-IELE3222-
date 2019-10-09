@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CC_MUXX_LOAD #(parameter DATAWIDTH_SCRATCHPAD_SELECTION=5,parameter DATAWIDTH_MIR_SELECTION=6, parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DECODER_OUT=14, parameter DATA_REGMEMORY=6'b000010)(
+module CC_MUXX_LOAD #(parameter DATAWIDTH_SCRATCHPAD_SELECTION=5,parameter DATAWIDTH_MIR_SELECTION=6, parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_DECODER_OUT=14)(
 	//////////// OUTPUTS //////////
 	CC_MUXX_LOAD_data_OutBus,
 	CC_MUXX_LOAD_Load_OutBus,
@@ -38,9 +38,9 @@ module CC_MUXX_LOAD #(parameter DATAWIDTH_SCRATCHPAD_SELECTION=5,parameter DATAW
 //=======================================================
 //  PORT declarations
 //=======================================================
-output reg	[DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_data_OutBus; 
-output reg	[DATAWIDTH_DECODER_OUT-1:0] CC_MUXX_LOAD_Load_OutBus; 
-output reg	[DATAWIDTH_DECODER_OUT-1:0] CC_MUXX_LOAD_Clear_OutBus; 
+output 		[DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_data_OutBus; 
+output 		[DATAWIDTH_DECODER_OUT-1:0] CC_MUXX_LOAD_Load_OutBus; 
+output 		[DATAWIDTH_DECODER_OUT-1:0] CC_MUXX_LOAD_Clear_OutBus; 
 input 		CC_MUXX_LOAD_RD_In;
 input 		CC_MUXX_LOAD_Select_In;
 input			[DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_ALU_data_InBus;
@@ -61,16 +61,15 @@ always @(*)
 	//Se selecciona la dirección a la que se va a guardar
 begin
 	if (CC_MUXX_LOAD_Select_In == 1'b0)
-		CC_MUXX_LOAD_Address = CC_MUXX_LOAD_ScratchpadSelection_InBus;  
+		CC_MUXX_LOAD_Address[4:0] = CC_MUXX_LOAD_ScratchpadSelection_InBus;  
 	else
 		CC_MUXX_LOAD_Address = CC_MUXX_LOAD_MIRSelection_InBus; 
 end
-
+ 
 always @(*)
 	//Se determina si se lee la ALU o MAIN_MEMORY
 begin
-	if (CC_MUXX_LOAD_RD_In == 1'b1)
-		CC_MUXX_LOAD_Address = DATA_REGMEMORY; 
+	if (CC_MUXX_LOAD_RD_In == 1'b1) 
 		CC_MUXX_LOAD_Signal_Register = CC_MUXX_LOAD_Memory_data_InBus;
 	else
 		CC_MUXX_LOAD_Signal_Register = CC_MUXX_LOAD_ALU_data_InBus; 

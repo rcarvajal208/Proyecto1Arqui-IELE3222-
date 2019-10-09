@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CONTROL #(parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
+module CONTROL #(parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
 	//////////// OUTPUTS //////////
 	CONTROL_SelectA_OutBus,
 	CONTROL_SelectB_OutBus,
@@ -44,7 +44,7 @@ module CONTROL #(parameter DATAWIDTH_DIRECTION=6, parameter DATAWIDTH_ALU_SELECT
 //  PARAMETER declarations
 //=======================================================
 parameter DATAWIDTH_PSR = 4;
-parameter DATAWIDTH_COND = 11;
+parameter DATAWIDTH_ADDRESS = 11;
 parameter DATAWIDTH_TIPO = 2;
 parameter DATAWIDTH_COND = 3;
 
@@ -52,9 +52,9 @@ parameter DATAWIDTH_COND = 3;
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	[DATAWIDTH_DIRECTION-1:0]	CONTROL_SelectA_OutBus;
-output 	[DATAWIDTH_DIRECTION-1:0]  CONTROL_SelectB_OutBus;
-output 	[DATAWIDTH_DIRECTION-1:0]	CONTROL_SelectC_OutBus;
+output 	[DATAWIDTH_MIR_DIRECTION-1:0]	CONTROL_SelectA_OutBus;
+output 	[DATAWIDTH_MIR_DIRECTION-1:0]  CONTROL_SelectB_OutBus;
+output 	[DATAWIDTH_MIR_DIRECTION-1:0]	CONTROL_SelectC_OutBus;
 output 	CONTROL_DirA_Out;
 output 	CONTROL_DirB_Out;
 output 	CONTROL_DirC_Out;
@@ -86,7 +86,7 @@ wire [DATAWIDTH_COND-1:0] COND;
 //=======================================================
 //  Structural coding
 //=======================================================
-MICROCODE_STORE #( .DATAWIDTH_DIRECTION(DATAWIDTH_DIRECTION), .DATAWIDTH_ALU_SELECTION(DATAWIDTH_ALU_SELECTION), .DATAWIDTH_DECODEROP(DATAWIDTH_DECODEROP), .DATAWIDTH_CONDITION(DATAWIDTH_COND), .DATAWIDTH_JUMPADDRESS(DATAWIDTH_ADDRESS)) MICROCODE_STORE_u0 (
+MICROCODE_STORE #( .DATAWIDTH_MIR_DIRECTION(DATAWIDTH_MIR_DIRECTION), .DATAWIDTH_ALU_SELECTION(DATAWIDTH_ALU_SELECTION), .DATAWIDTH_DECODEROP(DATAWIDTH_DECODEROP), .DATAWIDTH_CONDITION(DATAWIDTH_COND), .DATAWIDTH_JUMPADDRESS(DATAWIDTH_ADDRESS)) MICROCODE_STORE_u0 (
 // port map - connection between master ports and signals/registers   
 	.MICROCODE_STORE_SelectA_OutBus(CONTROL_SelectA_OutBus),
 	.MICROCODE_STORE_SelectB_OutBus(CONTROL_SelectB_OutBus),
