@@ -1,6 +1,6 @@
 Flow report for BB_SYSTEM
-Wed Oct 09 14:38:48 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed Oct 09 18:37:57 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -29,34 +29,33 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Wed Oct 09 14:38:48 2019      ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Flow Status                        ; Successful - Wed Oct 09 18:37:57 2019       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0 / 22,320 ( 0 % )                          ;
+;     Total combinational functions  ; 0 / 22,320 ( 0 % )                          ;
+;     Dedicated logic registers      ; 0 / 22,320 ( 0 % )                          ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 34 / 154 ( 22 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +64,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/09/2019 14:38:23 ;
+; Start date & time ; 10/09/2019 18:37:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BB_SYSTEM           ;
 +-------------------+---------------------+
@@ -76,7 +75,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 150461129178804.157064990312204        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 26830025823982.157066424256512         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TB_SYSTEM      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_SYSTEM                              ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR        ; simulation/modelsim                    ; --            ; --          ; eda_simulation ;
@@ -98,29 +97,41 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4731 MB             ; 00:00:58                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:58                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 4757 MB             ; 00:00:24                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 5546 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4694 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4803 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4660 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:34                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-OBJVK5C  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; LIEEEML02609     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; LIEEEML02609     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; LIEEEML02609     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; LIEEEML02609     ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; LIEEEML02609     ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
+quartus_fit --read_settings_files=off --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
+quartus_asm --read_settings_files=off --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
+quartus_sta BB_SYSTEM -c BB_SYSTEM
+quartus_eda --read_settings_files=off --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 
 
 

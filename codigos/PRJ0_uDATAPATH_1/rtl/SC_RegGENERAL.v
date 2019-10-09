@@ -23,8 +23,7 @@ module SC_RegGENERAL #(parameter DATAWIDTH_BUS=32)(
 	SC_RegGENERAL_data_OutBus,
 	//////////// INPUTS //////////
 	SC_RegGENERAL_CLOCK_50,
-	SC_RegGENERAL_RESET_InHigh,
-	SC_RegGENERAL_clear_InLow, 
+	SC_RegGENERAL_RESET_InHigh, 
 	SC_RegGENERAL_load_InLow, 
 	SC_RegGENERAL_data_InBus
 );
@@ -37,8 +36,7 @@ module SC_RegGENERAL #(parameter DATAWIDTH_BUS=32)(
 //=======================================================
 output		[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_OutBus;
 input		SC_RegGENERAL_CLOCK_50;
-input		SC_RegGENERAL_RESET_InHigh;
-input		SC_RegGENERAL_clear_InLow;
+input		SC_RegGENERAL_RESET_InHigh; 
 input		SC_RegGENERAL_load_InLow;	
 input		[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_InBus;
 
@@ -53,9 +51,7 @@ reg [DATAWIDTH_BUS-1:0] RegGENERAL_Signal;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (SC_RegGENERAL_clear_InLow == 1'b0)
-		RegGENERAL_Signal = 0;
-	else if (SC_RegGENERAL_load_InLow == 1'b0)
+	if (SC_RegGENERAL_load_InLow == 1'b0)
 		RegGENERAL_Signal = SC_RegGENERAL_data_InBus;
 	else
 		RegGENERAL_Signal = RegGENERAL_Register;

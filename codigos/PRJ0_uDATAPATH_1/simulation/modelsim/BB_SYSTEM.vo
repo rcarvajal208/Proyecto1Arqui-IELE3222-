@@ -1,4 +1,4 @@
-// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -14,9 +14,9 @@
 
 // VENDOR "Altera"
 // PROGRAM "Quartus Prime"
-// VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
 
-// DATE "02/20/2019 09:05:42"
+// DATE "10/09/2019 18:37:57"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -30,11 +30,11 @@
 
 module BB_SYSTEM (
 	BB_SYSTEM_data_OutBUS,
-	BB_SYSTEM_CLOCK_50,
-	BB_SYSTEM_RESET_InHigh);
-output 	[7:0] BB_SYSTEM_data_OutBUS;
-input 	BB_SYSTEM_CLOCK_50;
-input 	BB_SYSTEM_RESET_InHigh;
+	CLOCK,
+	RESET);
+output 	[31:0] BB_SYSTEM_data_OutBUS;
+input 	CLOCK;
+input 	RESET;
 
 // Design Ports Information
 // BB_SYSTEM_data_OutBUS[0]	=>  Location: PIN_A15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
@@ -45,8 +45,32 @@ input 	BB_SYSTEM_RESET_InHigh;
 // BB_SYSTEM_data_OutBUS[5]	=>  Location: PIN_F3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
 // BB_SYSTEM_data_OutBUS[6]	=>  Location: PIN_B1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
 // BB_SYSTEM_data_OutBUS[7]	=>  Location: PIN_L3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
-// BB_SYSTEM_CLOCK_50	=>  Location: PIN_R8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// BB_SYSTEM_RESET_InHigh	=>  Location: PIN_J15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[8]	=>  Location: PIN_T11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[9]	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[10]	=>  Location: PIN_B16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[11]	=>  Location: PIN_C15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[12]	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[13]	=>  Location: PIN_D15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[14]	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[15]	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[16]	=>  Location: PIN_T14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[17]	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[18]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[19]	=>  Location: PIN_K15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[20]	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[21]	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[22]	=>  Location: PIN_G15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[23]	=>  Location: PIN_R4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[24]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[25]	=>  Location: PIN_P14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[26]	=>  Location: PIN_L16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[27]	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[28]	=>  Location: PIN_F8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[29]	=>  Location: PIN_E6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[30]	=>  Location: PIN_N11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[31]	=>  Location: PIN_R11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLOCK	=>  Location: PIN_C9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RESET	=>  Location: PIN_T10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -64,8 +88,8 @@ tri1 devoe;
 initial $sdf_annotate("BB_SYSTEM_v.sdo");
 // synopsys translate_on
 
-wire \BB_SYSTEM_CLOCK_50~input_o ;
-wire \BB_SYSTEM_RESET_InHigh~input_o ;
+wire \CLOCK~input_o ;
+wire \RESET~input_o ;
 wire \BB_SYSTEM_data_OutBUS[0]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[1]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[2]~output_o ;
@@ -74,6 +98,30 @@ wire \BB_SYSTEM_data_OutBUS[4]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[5]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[6]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[7]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[8]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[9]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[10]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[11]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[12]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[13]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[14]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[15]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[16]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[17]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[18]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[19]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[20]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[21]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[22]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[23]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[24]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[25]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[26]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[27]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[28]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[29]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[30]~output_o ;
+wire \BB_SYSTEM_data_OutBUS[31]~output_o ;
 
 
 hard_block auto_generated_inst(
@@ -185,24 +233,336 @@ defparam \BB_SYSTEM_data_OutBUS[7]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[7]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X27_Y0_N22
-cycloneive_io_ibuf \BB_SYSTEM_CLOCK_50~input (
-	.i(BB_SYSTEM_CLOCK_50),
-	.ibar(gnd),
-	.o(\BB_SYSTEM_CLOCK_50~input_o ));
+// Location: IOOBUF_X36_Y0_N23
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[8]~output_o ),
+	.obar());
 // synopsys translate_off
-defparam \BB_SYSTEM_CLOCK_50~input .bus_hold = "false";
-defparam \BB_SYSTEM_CLOCK_50~input .simulate_z_as = "z";
+defparam \BB_SYSTEM_data_OutBUS[8]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[8]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X53_Y14_N1
-cycloneive_io_ibuf \BB_SYSTEM_RESET_InHigh~input (
-	.i(BB_SYSTEM_RESET_InHigh),
-	.ibar(gnd),
-	.o(\BB_SYSTEM_RESET_InHigh~input_o ));
+// Location: IOOBUF_X7_Y34_N9
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[9]~output_o ),
+	.obar());
 // synopsys translate_off
-defparam \BB_SYSTEM_RESET_InHigh~input .bus_hold = "false";
-defparam \BB_SYSTEM_RESET_InHigh~input .simulate_z_as = "z";
+defparam \BB_SYSTEM_data_OutBUS[9]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y22_N2
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[10]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[10]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[10]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y30_N2
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[11]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[11]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[11]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y34_N2
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[12]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[12]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[12]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[12]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y26_N23
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[13]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[13]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[13]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[13]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y0_N9
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[14]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[14]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[14]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[14]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X38_Y0_N2
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[15]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[15]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[15]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[15]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X45_Y0_N23
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[16]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[16]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[16]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[16]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y0_N23
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[17]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[17]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[17]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[17]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y22_N9
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[18]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[18]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[18]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[18]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y13_N9
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[19]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[19]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[19]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[19]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y34_N16
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[20]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[20]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[20]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[20]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y34_N23
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[21]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[21]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[21]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[21]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y20_N16
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[22]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[22]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[22]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[22]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y0_N23
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[23]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[23]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[23]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[23]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y34_N16
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[24]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[24]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[24]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[24]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X49_Y0_N9
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[25]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[25]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[25]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[25]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y11_N9
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[26]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[26]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[26]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[26]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X3_Y34_N2
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[27]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[27]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[27]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[27]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X20_Y34_N16
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[28]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[28]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[28]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[28]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y34_N16
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[29]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[29]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[29]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[29]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X43_Y0_N16
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[30]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[30]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[30]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[30]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y0_N2
+cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[31]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\BB_SYSTEM_data_OutBUS[31]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \BB_SYSTEM_data_OutBUS[31]~output .bus_hold = "false";
+defparam \BB_SYSTEM_data_OutBUS[31]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X31_Y34_N1
+cycloneive_io_ibuf \CLOCK~input (
+	.i(CLOCK),
+	.ibar(gnd),
+	.o(\CLOCK~input_o ));
+// synopsys translate_off
+defparam \CLOCK~input .bus_hold = "false";
+defparam \CLOCK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y0_N15
+cycloneive_io_ibuf \RESET~input (
+	.i(RESET),
+	.ibar(gnd),
+	.o(\RESET~input_o ));
+// synopsys translate_off
+defparam \RESET~input .bus_hold = "false";
+defparam \RESET~input .simulate_z_as = "z";
 // synopsys translate_on
 
 assign BB_SYSTEM_data_OutBUS[0] = \BB_SYSTEM_data_OutBUS[0]~output_o ;
@@ -220,6 +580,54 @@ assign BB_SYSTEM_data_OutBUS[5] = \BB_SYSTEM_data_OutBUS[5]~output_o ;
 assign BB_SYSTEM_data_OutBUS[6] = \BB_SYSTEM_data_OutBUS[6]~output_o ;
 
 assign BB_SYSTEM_data_OutBUS[7] = \BB_SYSTEM_data_OutBUS[7]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[8] = \BB_SYSTEM_data_OutBUS[8]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[9] = \BB_SYSTEM_data_OutBUS[9]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[10] = \BB_SYSTEM_data_OutBUS[10]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[11] = \BB_SYSTEM_data_OutBUS[11]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[12] = \BB_SYSTEM_data_OutBUS[12]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[13] = \BB_SYSTEM_data_OutBUS[13]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[14] = \BB_SYSTEM_data_OutBUS[14]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[15] = \BB_SYSTEM_data_OutBUS[15]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[16] = \BB_SYSTEM_data_OutBUS[16]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[17] = \BB_SYSTEM_data_OutBUS[17]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[18] = \BB_SYSTEM_data_OutBUS[18]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[19] = \BB_SYSTEM_data_OutBUS[19]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[20] = \BB_SYSTEM_data_OutBUS[20]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[21] = \BB_SYSTEM_data_OutBUS[21]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[22] = \BB_SYSTEM_data_OutBUS[22]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[23] = \BB_SYSTEM_data_OutBUS[23]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[24] = \BB_SYSTEM_data_OutBUS[24]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[25] = \BB_SYSTEM_data_OutBUS[25]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[26] = \BB_SYSTEM_data_OutBUS[26]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[27] = \BB_SYSTEM_data_OutBUS[27]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[28] = \BB_SYSTEM_data_OutBUS[28]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[29] = \BB_SYSTEM_data_OutBUS[29]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[30] = \BB_SYSTEM_data_OutBUS[30]~output_o ;
+
+assign BB_SYSTEM_data_OutBUS[31] = \BB_SYSTEM_data_OutBUS[31]~output_o ;
 
 endmodule
 

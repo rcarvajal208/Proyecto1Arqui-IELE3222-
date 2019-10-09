@@ -43,7 +43,7 @@ input		[CSAI_DATAWIDTH-1:0]	ADDRESS_INCREMENTER_CSAddress_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-reg [CSAI_DATAWIDTH-1:0] CSAI_ADDRESS = ADDRESS_INCREMENTER_CSAddress_InBus;
+reg [CSAI_DATAWIDTH-1:0] CSAI_ADDRESS;
 reg [CSAI_DATAWIDTH-1:0] CSAI_Signal;
 //=======================================================
 //  Structural coding
@@ -52,9 +52,9 @@ reg [CSAI_DATAWIDTH-1:0] CSAI_Signal;
 always @(*)
 begin
 	if (ADDRESS_INCREMENTER_ACK == 1'b0)
-		CSAI_Signal = CSAI_ADDRESS + 1;
+		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus + 1;
 	else
-		CSAI_Signal = CSAI_ADDRESS;
+		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus;
 	end	
 //STATE REGISTER: SEQUENTIAL
 always @(posedge ADDRESS_INCREMENTER_CLOCK_50, posedge ADDRESS_INCREMENTER_RESET_InHigh)

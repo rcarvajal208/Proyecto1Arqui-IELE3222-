@@ -1,6 +1,6 @@
 Analysis & Synthesis report for BB_SYSTEM
-Wed Oct 09 14:38:48 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed Oct 09 18:37:33 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -10,14 +10,54 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM
+ 10. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0
+ 11. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0
+ 12. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u0
+ 13. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u1
+ 14. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_u0
+ 15. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u0
+ 16. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u1
+ 17. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u2
+ 18. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_u0
+ 19. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_u1
+ 20. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u0
+ 21. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1
+ 22. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2
+ 23. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3
+ 24. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4
+ 25. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5
+ 26. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6
+ 27. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7
+ 28. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8
+ 29. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9
+ 30. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10
+ 31. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11
+ 32. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12
+ 33. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u13
+ 34. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0
+ 35. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0
+ 36. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0
+ 37. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0
+ 38. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0
+ 39. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|PSR:PSR_u0
+ 40. Parameter Settings for User Entity Instance: MAIN_MEMORY:MAIN_MEMORY_u0
+ 41. Port Connectivity Checks: "CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0"
+ 42. Port Connectivity Checks: "CONTROL:CONTROL_u0"
+ 43. Post-Synthesis Netlist Statistics for Top Partition
+ 44. Elapsed Time Per Partition
+ 45. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -25,32 +65,31 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Oct 09 14:38:48 2019           ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 09 18:37:33 2019       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 34                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -69,7 +108,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -122,7 +161,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -146,7 +185,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -157,62 +196,644 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; rtl/SC_RegGENERAL.v              ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v       ;         ;
+; rtl/SC_RegFIXED.v                ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v         ;         ;
+; rtl/CC_MUXX.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v             ;         ;
+; rtl/CC_ALU.v                     ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v              ;         ;
+; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v               ;         ;
+; rtl/CONTROL.v                    ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v             ;         ;
+; rtl/MAIN_MEMORY.v                ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v         ;         ;
+; rtl/DATAPATH.v                   ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v            ;         ;
+; rtl/MICROCODE_STORE.v            ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v     ;         ;
+; rtl/BRANCH_LOGIC.v               ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v        ;         ;
+; rtl/ADDRESS_INCREMENTER.v        ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v ;         ;
+; rtl/CSADDRESS.v                  ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v           ;         ;
+; rtl/PSR.v                        ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v                 ;         ;
+; rtl/CC_MUXX_LOAD.v               ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v        ;         ;
+; rtl/CC_MUXX_EXTERNO.v            ; yes             ; User Verilog HDL File  ; C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v     ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+;                                             ;                                 ;
+; Total combinational functions               ; 0                               ;
+; Logic element usage by number of LUT inputs ;                                 ;
+;     -- 4 input functions                    ; 0                               ;
+;     -- 3 input functions                    ; 0                               ;
+;     -- <=2 input functions                  ; 0                               ;
+;                                             ;                                 ;
+; Logic elements by mode                      ;                                 ;
+;     -- normal mode                          ; 0                               ;
+;     -- arithmetic mode                      ; 0                               ;
+;                                             ;                                 ;
+; Total registers                             ; 0                               ;
+;     -- Dedicated logic registers            ; 0                               ;
+;     -- I/O registers                        ; 0                               ;
+;                                             ;                                 ;
+; I/O pins                                    ; 34                              ;
+;                                             ;                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                               ;
+;                                             ;                                 ;
+; Maximum fan-out node                        ; BB_SYSTEM_data_OutBUS[0]~output ;
+; Maximum fan-out                             ; 1                               ;
+; Total fan-out                               ; 34                              ;
+; Average fan-out                             ; 0.50                            ;
++---------------------------------------------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |BB_SYSTEM                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |BB_SYSTEM          ; BB_SYSTEM   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM ;
++--------------------------------+-------+----------------------------------+
+; Parameter Name                 ; Value ; Type                             ;
++--------------------------------+-------+----------------------------------+
+; DATAWIDTH_BUS                  ; 32    ; Signed Integer                   ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                   ;
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                   ;
+; DATAWIDTH_ALU_SELECTION        ; 4     ; Signed Integer                   ;
+; DATAWIDTH_DECODEROP            ; 8     ; Signed Integer                   ;
+; DATAWIDTH_DECODER_SELECTION    ; 4     ; Signed Integer                   ;
+; DATAWIDTH_DECODER_OUT          ; 14    ; Signed Integer                   ;
++--------------------------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0 ;
++--------------------------------+-------+--------------------------+
+; Parameter Name                 ; Value ; Type                     ;
++--------------------------------+-------+--------------------------+
+; DATAWIDTH_BUS                  ; 32    ; Signed Integer           ;
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer           ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer           ;
+; DATAWIDTH_DECODEROP            ; 8     ; Signed Integer           ;
+; DATAWIDTH_ALU_SELECTION        ; 4     ; Signed Integer           ;
+; DATAWIDTH_DECODER_SELECTION    ; 4     ; Signed Integer           ;
+; DATAWIDTH_DECODER_OUT          ; 14    ; Signed Integer           ;
++--------------------------------+-------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0 ;
++-------------------------+-------+--------------------------------------------------+
+; Parameter Name          ; Value ; Type                                             ;
++-------------------------+-------+--------------------------------------------------+
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                   ;
+; DATAWIDTH_ALU_SELECTION ; 4     ; Signed Integer                                   ;
++-------------------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u0 ;
++-------------------------+-------+----------------------------------------------------+
+; Parameter Name          ; Value ; Type                                               ;
++-------------------------+-------+----------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                     ;
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                     ;
++-------------------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u1 ;
++-------------------------+-------+----------------------------------------------------+
+; Parameter Name          ; Value ; Type                                               ;
++-------------------------+-------+----------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                     ;
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                     ;
++-------------------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_u0 ;
++-------------------------+-------+--------------------------------------------------------------+
+; Parameter Name          ; Value ; Type                                                         ;
++-------------------------+-------+--------------------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                               ;
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                               ;
+; DATAWIDTH_DECODER_OUT   ; 14    ; Signed Integer                                               ;
++-------------------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u0 ;
++--------------------------------+-------+-------------------------------------------------------------+
+; Parameter Name                 ; Value ; Type                                                        ;
++--------------------------------+-------+-------------------------------------------------------------+
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                              ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                              ;
++--------------------------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u1 ;
++--------------------------------+-------+-------------------------------------------------------------+
+; Parameter Name                 ; Value ; Type                                                        ;
++--------------------------------+-------+-------------------------------------------------------------+
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                              ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                              ;
++--------------------------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u2 ;
++--------------------------------+-------+-------------------------------------------------------------+
+; Parameter Name                 ; Value ; Type                                                        ;
++--------------------------------+-------+-------------------------------------------------------------+
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                              ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                              ;
++--------------------------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_u0 ;
++--------------------+--------+----------------------------------------------------------------+
+; Parameter Name     ; Value  ; Type                                                           ;
++--------------------+--------+----------------------------------------------------------------+
+; DATAWIDTH_BUS      ; 32     ; Signed Integer                                                 ;
+; DATA_REGFIXED_INIT ; 000000 ; Unsigned Binary                                                ;
++--------------------+--------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_u1 ;
++--------------------+--------+----------------------------------------------------------------+
+; Parameter Name     ; Value  ; Type                                                           ;
++--------------------+--------+----------------------------------------------------------------+
+; DATAWIDTH_BUS      ; 32     ; Signed Integer                                                 ;
+; DATA_REGFIXED_INIT ; 000001 ; Unsigned Binary                                                ;
++--------------------+--------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u0 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u13 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0 ;
++-------------------------+-------+-------------------------------+
+; Parameter Name          ; Value ; Type                          ;
++-------------------------+-------+-------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                ;
+; DATAWIDTH_ALU_SELECTION ; 4     ; Signed Integer                ;
+; DATAWIDTH_DECODEROP     ; 8     ; Signed Integer                ;
++-------------------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0 ;
++-------------------------+-------+------------------------------------------------------------------+
+; Parameter Name          ; Value ; Type                                                             ;
++-------------------------+-------+------------------------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                                   ;
+; DATAWIDTH_ALU_SELECTION ; 4     ; Signed Integer                                                   ;
+; DATAWIDTH_DECODEROP     ; 8     ; Signed Integer                                                   ;
+; DATAWIDTH_CONDITION     ; 3     ; Signed Integer                                                   ;
+; DATAWIDTH_JUMPADDRESS   ; 11    ; Signed Integer                                                   ;
++-------------------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0 ;
++------------------------+-------+-------------------------------------------------------------+
+; Parameter Name         ; Value ; Type                                                        ;
++------------------------+-------+-------------------------------------------------------------+
+; BRANCH_LOGIC_PSR       ; 4     ; Signed Integer                                              ;
+; BRANCH_LOGIC_CONDITION ; 3     ; Signed Integer                                              ;
+; BRANCH_LOGIC_TIPO      ; 2     ; Signed Integer                                              ;
++------------------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0 ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; CSAI_DATAWIDTH ; 11    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0 ;
++---------------------+-------+----------------------------------------------------------+
+; Parameter Name      ; Value ; Type                                                     ;
++---------------------+-------+----------------------------------------------------------+
+; DATAWIDTH_CSADDRESS ; 11    ; Signed Integer                                           ;
+; DATAWIDTH_OPS       ; 8     ; Signed Integer                                           ;
+; DATAWIDTH_CBL       ; 2     ; Signed Integer                                           ;
++---------------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|PSR:PSR_u0 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; PSR_PSR        ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MAIN_MEMORY:MAIN_MEMORY_u0 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0"                                                                                                                                          ;
++--------------------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                           ; Type   ; Severity ; Details                                                                                                                                                               ;
++--------------------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; MICROCODE_STORE_SelectA_OutBus ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (6 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
+; MICROCODE_STORE_SelectB_OutBus ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (6 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
+; MICROCODE_STORE_SelectC_OutBus ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (6 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
+; MICROCODE_STORE_DirA_Out       ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "MICROCODE_STORE_DirA_Out[5..1]" have no fanouts                           ;
+; MICROCODE_STORE_DirB_Out       ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "MICROCODE_STORE_DirB_Out[5..1]" have no fanouts                           ;
+; MICROCODE_STORE_DirC_Out       ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "MICROCODE_STORE_DirC_Out[5..1]" have no fanouts                           ;
++--------------------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CONTROL:CONTROL_u0"                                                                                                                                                                     ;
++------------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                   ; Type   ; Severity ; Details                                                                                                                                                               ;
++------------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CONTROL_SelectA_OutBus ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "CONTROL_SelectA_OutBus[5..1]" have no fanouts                             ;
+; CONTROL_SelectB_OutBus ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "CONTROL_SelectB_OutBus[5..1]" have no fanouts                             ;
+; CONTROL_SelectC_OutBus ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "CONTROL_SelectC_OutBus[5..1]" have no fanouts                             ;
+; CONTROL_DirA_Out       ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (6 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
+; CONTROL_DirB_Out       ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (6 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
+; CONTROL_DirC_Out       ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (6 bits) it drives.  The 5 most-significant bit(s) in the port expression will be connected to GND. ;
++------------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 34                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Wed Oct 09 14:38:22 2019
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Oct 09 18:37:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/udatapath.v
-    Info (12023): Found entity 1: uDATAPATH File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v Line: 21
+    Info (12023): Found entity 1: uDATAPATH File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_reggeneral.v
-    Info (12023): Found entity 1: SC_RegGENERAL File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v Line: 21
+    Info (12023): Found entity 1: SC_RegGENERAL File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regfixed.v
-    Info (12023): Found entity 1: SC_RegFIXED File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v Line: 21
+    Info (12023): Found entity 1: SC_RegFIXED File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_muxx.v
-    Info (12023): Found entity 1: CC_MUXX File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v Line: 21
+    Info (12023): Found entity 1: CC_MUXX File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_decoder.v
-    Info (12023): Found entity 1: CC_DECODER File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_DECODER.v Line: 21
+    Info (12023): Found entity 1: CC_DECODER File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_DECODER.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_alu.v
-    Info (12023): Found entity 1: CC_ALU File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 21
+    Info (12023): Found entity 1: CC_ALU File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file bb_system.v
-    Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 20
+    Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/control.v
-    Info (12023): Found entity 1: CONTROL File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 19
+    Info (12023): Found entity 1: CONTROL File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/main_memory.v
-    Info (12023): Found entity 1: MAIN_MEMORY File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 19
+    Info (12023): Found entity 1: MAIN_MEMORY File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/datapath.v
-    Info (12023): Found entity 1: DATAPATH File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 21
+    Info (12023): Found entity 1: DATAPATH File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/microcode_store.v
-    Info (12023): Found entity 1: MICROCODE_STORE File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 19
+    Info (12023): Found entity 1: MICROCODE_STORE File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/branch_logic.v
-    Info (12023): Found entity 1: BRANCH_LOGIC File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v Line: 19
+    Info (12023): Found entity 1: BRANCH_LOGIC File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/address_incrementer.v
-    Info (12023): Found entity 1: ADDRESS_INCREMENTER File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v Line: 21
+    Info (12023): Found entity 1: ADDRESS_INCREMENTER File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/csaddress.v
-    Info (12023): Found entity 1: CSADDRESS File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v Line: 19
+    Info (12023): Found entity 1: CSADDRESS File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/psr.v
-    Info (12023): Found entity 1: PSR File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v Line: 19
+    Info (12023): Found entity 1: PSR File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_muxx_load.v
-    Info (12023): Found entity 1: CC_MUXX_LOAD File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v Line: 21
-Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(50): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 50
-Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(51): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 51
-Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(46): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 46
-Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(47): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 47
-Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(48): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 48
-Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(49): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 49
+    Info (12023): Found entity 1: CC_MUXX_LOAD File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_muxx_externo.v
+    Info (12023): Found entity 1: CC_MUXX_EXTERNO File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v Line: 21
+Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(50): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 50
+Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(51): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 51
+Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(46): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 46
+Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(47): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 47
+Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(48): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 48
+Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(49): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 49
 Info (12127): Elaborating entity "BB_SYSTEM" for the top level hierarchy
-Info (12128): Elaborating entity "DATAPATH" for hierarchy "DATAPATH:DATAPATH_u0" File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 107
-Error (10130): Verilog HDL error at DATAPATH.v(174): parameter "DATAWIDTH_SCRATCHPAD_DIRECTION" is not a formal parameter of instantiated module File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 174
-Error (10130): Verilog HDL error at DATAPATH.v(174): parameter "DATAWIDTH_MIR_DIRECTION" is not a formal parameter of instantiated module File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 174
-Error (12152): Can't elaborate user hierarchy "DATAPATH:DATAPATH_u0" File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 107
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 6 warnings
-    Error: Peak virtual memory: 4731 megabytes
-    Error: Processing ended: Wed Oct 09 14:38:48 2019
-    Error: Elapsed time: 00:00:26
-    Error: Total CPU time (on all processors): 00:00:58
+Info (12128): Elaborating entity "DATAPATH" for hierarchy "DATAPATH:DATAPATH_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 107
+Warning (10034): Output port "DATAPATH_DecodeOP_OutBus" at DATAPATH.v(59) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 59
+Warning (10034): Output port "DATAPATH_DataOut_OutBus" at DATAPATH.v(65) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 65
+Warning (10034): Output port "DATAPATH_ConditionCode_Out" at DATAPATH.v(58) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 58
+Warning (10034): Output port "DATAPATH_IR13_Out" at DATAPATH.v(60) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 60
+Info (12128): Elaborating entity "CC_ALU" for hierarchy "DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 128
+Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(52): object "addition0" assigned a value but never read File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 52
+Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(53): object "addition1" assigned a value but never read File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 53
+Info (12128): Elaborating entity "CC_MUXX" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 152
+Info (12128): Elaborating entity "CC_MUXX_LOAD" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 186
+Info (12128): Elaborating entity "CC_MUXX_EXTERNO" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 196
+Warning (10240): Verilog HDL Always Construct warning at CC_MUXX_EXTERNO.v(50): inferring latch(es) for variable "CC_MUXX_EXTERNO_Signal_Register", which holds its previous value in one or more paths through the always construct File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v Line: 50
+Info (10041): Inferred latch for "CC_MUXX_EXTERNO_Signal_Register[5]" at CC_MUXX_EXTERNO.v(53) File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v Line: 53
+Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 221
+Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_u1" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 227
+Info (12128): Elaborating entity "SC_RegGENERAL" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 237
+Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:CONTROL_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 129
+Info (12128): Elaborating entity "MICROCODE_STORE" for hierarchy "CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 105
+Warning (10034): Output port "MICROCODE_STORE_DirA_Out" at MICROCODE_STORE.v(50) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 50
+Warning (10034): Output port "MICROCODE_STORE_DirB_Out" at MICROCODE_STORE.v(51) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 51
+Warning (10034): Output port "MICROCODE_STORE_DirC_Out" at MICROCODE_STORE.v(52) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 52
+Warning (10034): Output port "MICROCODE_STORE_ALUOperation_OutBus" at MICROCODE_STORE.v(55) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 55
+Warning (10034): Output port "MICROCODE_STORE_Condition_OutBus" at MICROCODE_STORE.v(56) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 56
+Warning (10034): Output port "MICROCODE_STORE_JumpAddress_OutBus" at MICROCODE_STORE.v(57) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 57
+Warning (10034): Output port "MICROCODE_STORE_SelectA_OutBus" at MICROCODE_STORE.v(47) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 47
+Warning (10034): Output port "MICROCODE_STORE_SelectB_OutBus" at MICROCODE_STORE.v(48) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 48
+Warning (10034): Output port "MICROCODE_STORE_SelectC_OutBus" at MICROCODE_STORE.v(49) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 49
+Warning (10034): Output port "MICROCODE_STORE_RD_Out" at MICROCODE_STORE.v(53) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 53
+Warning (10034): Output port "MICROCODE_STORE_WRMain_Out" at MICROCODE_STORE.v(54) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 54
+Info (12128): Elaborating entity "BRANCH_LOGIC" for hierarchy "CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 115
+Warning (10034): Output port "BRANCH_LOGIC_Tipo_OutBus" at BRANCH_LOGIC.v(39) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v Line: 39
+Info (12128): Elaborating entity "ADDRESS_INCREMENTER" for hierarchy "CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 125
+Warning (10230): Verilog HDL assignment warning at ADDRESS_INCREMENTER.v(55): truncated value with size 32 to match size of target (11) File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v Line: 55
+Info (12128): Elaborating entity "CSADDRESS" for hierarchy "CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 135
+Warning (10034): Output port "CSADDRESS_CSAddress_OutBus" at CSADDRESS.v(40) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v Line: 40
+Warning (12158): Entity "CSADDRESS" contains only dangling pins File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 135
+Info (12128): Elaborating entity "PSR" for hierarchy "CONTROL:CONTROL_u0|PSR:PSR_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 146
+Warning (10034): Output port "PSR_Psr_OutBus" at PSR.v(41) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v Line: 41
+Warning (12158): Entity "PSR" contains only dangling pins File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 146
+Info (12128): Elaborating entity "MAIN_MEMORY" for hierarchy "MAIN_MEMORY:MAIN_MEMORY_u0" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 140
+Warning (10034): Output port "MAIN_MEMORY_Data_OutBus" at MAIN_MEMORY.v(42) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 42
+Warning (10034): Output port "MAIN_MEMORY_ACK_Out" at MAIN_MEMORY.v(41) has no driver File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 41
+Warning (12158): Entity "MAIN_MEMORY" contains only dangling pins File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 140
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "DIRA[5]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 68
+    Warning (12110): Net "DIRA[4]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 68
+    Warning (12110): Net "DIRA[3]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 68
+    Warning (12110): Net "DIRA[2]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 68
+    Warning (12110): Net "DIRA[1]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 68
+    Warning (12110): Net "DIRB[5]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 69
+    Warning (12110): Net "DIRB[4]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 69
+    Warning (12110): Net "DIRB[3]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 69
+    Warning (12110): Net "DIRB[2]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 69
+    Warning (12110): Net "DIRB[1]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 69
+    Warning (12110): Net "DIRC[5]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 70
+    Warning (12110): Net "DIRC[4]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 70
+    Warning (12110): Net "DIRC[3]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 70
+    Warning (12110): Net "DIRC[2]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 70
+    Warning (12110): Net "DIRC[1]" is missing source, defaulting to GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 70
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[0]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[1]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[2]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[3]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[4]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[5]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[6]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[7]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[8]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[9]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[10]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[11]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[12]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[13]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[14]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[15]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[16]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[17]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[18]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[19]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[20]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[21]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[22]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[23]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[24]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[25]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[26]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[27]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[28]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[29]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[30]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[31]" is stuck at GND File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 50
+    Warning (15610): No output dependent on input pin "RESET" File: C:/Users/rs.carvajal/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 51
+Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 32 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 86 warnings
+    Info: Peak virtual memory: 4772 megabytes
+    Info: Processing ended: Wed Oct 09 18:37:33 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
 
 
