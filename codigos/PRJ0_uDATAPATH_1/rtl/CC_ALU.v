@@ -24,6 +24,7 @@ module CC_ALU #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_ALU_SELECTION=4)
 	CC_ALU_carry_OutLow,
 	CC_ALU_negative_OutLow,
 	CC_ALU_zero_OutLow,
+	CC_ALU_SetCode_Out,
 	CC_ALU_data_OutBus,
 	//////////// INPUTS //////////
 	CC_ALU_dataA_InBus,
@@ -40,6 +41,7 @@ module CC_ALU #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_ALU_SELECTION=4)
 output 			CC_ALU_overflow_OutLow;
 output 			CC_ALU_carry_OutLow;
 output 			CC_ALU_negative_OutLow;
+output 			CC_ALU_SetCode_Out;
 output 			CC_ALU_zero_OutLow;
 output reg		[DATAWIDTH_BUS-1:0] CC_ALU_data_OutBus;
 input			[DATAWIDTH_BUS-1:0] CC_ALU_dataA_InBus;

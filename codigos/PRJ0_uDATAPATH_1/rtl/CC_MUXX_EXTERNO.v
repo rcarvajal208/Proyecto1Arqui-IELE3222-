@@ -48,7 +48,7 @@ reg [DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_Signal_Register;
 always @(*)
 begin
 	if (CC_MUXX_EXTERNO_Select_In == 1'b0)
-		CC_MUXX_EXTERNO_Signal_Register[4:0] = CC_MUXX_EXTERNO_ScratchpadSelection_InBus;  
+		CC_MUXX_EXTERNO_Signal_Register = {1'b0 , CC_MUXX_EXTERNO_ScratchpadSelection_InBus};  
 	else
 		CC_MUXX_EXTERNO_Signal_Register = CC_MUXX_EXTERNO_MIRSelection_InBus; 
 end

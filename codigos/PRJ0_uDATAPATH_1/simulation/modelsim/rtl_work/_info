@@ -7,234 +7,372 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim
-vBB_SYSTEM
-Z1 !s110 1550671571
+Z0 dC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim
+vADDRESS_INCREMENTER
+Z1 !s110 1570803359
 !i10b 1
-!s100 mcgfO9R?>FC[[OC8G6_0h3
-Ih81U^55gE5_czPoiI?8Kb0
+!s100 =J2MklA^4_Llm;JW5VPdR2
+I1oOS7W_A3d[KmJT60dUTS0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1550670844
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/BB_SYSTEM.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/BB_SYSTEM.v
-Z3 L0 21
-Z4 OV;L;10.5b;63
+Z3 w1570802094
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v
+Z4 L0 21
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1550671571.000000
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/BB_SYSTEM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/BB_SYSTEM.v|
+Z6 !s108 1570803359.000000
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v|
 !i113 1
-Z6 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1
-Z7 tCvgOpt 0
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl
+Z9 tCvgOpt 0
+n@a@d@d@r@e@s@s_@i@n@c@r@e@m@e@n@t@e@r
+vBB_SYSTEM
+Z10 !s110 1570803358
+!i10b 1
+!s100 z?<4TdS@j0CU4:038a2k>0
+IaC4^5VYNVZ<9TCXJ71MQ00
+R2
+R0
+w1570802093
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
+L0 20
+R5
+r1
+!s85 0
+31
+Z11 !s108 1570803358.000000
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1
+R9
 n@b@b_@s@y@s@t@e@m
+vBRANCH_LOGIC
+R1
+!i10b 1
+!s100 XV5k7PFPd;Vj<blFV_C9_1
+IW0Bo5;AZbJcF:;:^DTJG90
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v
+Z12 L0 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v|
+!i113 1
+R7
+R8
+R9
+n@b@r@a@n@c@h_@l@o@g@i@c
 vCC_ALU
-R1
+Z13 !s110 1570803357
 !i10b 1
-!s100 4hk2A<D6EH[WSFJ1<Nof13
-IG2FIS[91Sfe;V2N6Fhc7f2
+!s100 GFjj<2icT0A7n79M51L@;2
+IZmGRnTl8JaknS70eNgUG50
 R2
 R0
-w1550264282
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_ALU.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_ALU.v
 R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v
 R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_ALU.v|
+Z14 !s108 1570803357.000000
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v|
 !i113 1
-R6
-Z8 !s92 -vlog01compat -work work +incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl
 R7
+R8
+R9
 n@c@c_@a@l@u
-vCC_DECODER
-R1
-!i10b 1
-!s100 ^hJ8XJ;bm^MkRk]TRY]bC2
-IH:YdNBG3Z8ab9g]]_UIlm0
-R2
-R0
-w1550264193
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_DECODER.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_DECODER.v
-R3
-R4
-r1
-!s85 0
-31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_DECODER.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_DECODER.v|
-!i113 1
-R6
-R8
-R7
-n@c@c_@d@e@c@o@d@e@r
 vCC_MUXX
-R1
+R13
 !i10b 1
-!s100 WGWVM]@C8RWPSG:jRA8lK3
-IZ92Ai9_XZSY0@P2:hNTVG1
+!s100 Q_@1D@jg0KHfcc1KgNnZe0
+IbL:4K^hMZUFfA>]=`^b[L0
 R2
 R0
-w1550264134
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v
 R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v
 R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v|
+R14
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v|
 !i113 1
-R6
-R8
 R7
+R8
+R9
 n@c@c_@m@u@x@x
-vSC_RegFIXED
-R1
+vCC_MUXX_EXTERNO
+Z15 !s110 1570803360
 !i10b 1
-!s100 9JNkV<l`<O2]FF>>@?]RA2
-I8C1SJ@h?AA8nT40;V0W3L1
+!s100 B7EU89fJACM0V_CVSgb?j1
+Im=SjFoAA;@]zA>:hKNKC`3
 R2
 R0
-Z9 w1550072672
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v
-R3
+w1570802821
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v
 R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v|
+Z16 !s108 1570803360.000000
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v|
 !i113 1
-R6
-R8
 R7
+R8
+R9
+n@c@c_@m@u@x@x_@e@x@t@e@r@n@o
+vCC_MUXX_LOAD
+R15
+!i10b 1
+!s100 9UIVZ[DVjg_3cU<Ume]gV2
+I[WlInT<`kaejDoP3WaD3[2
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v
+R4
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v|
+!i113 1
+R7
+R8
+R9
+n@c@c_@m@u@x@x_@l@o@a@d
+vCONTROL
+R10
+!i10b 1
+!s100 hXV>7nmDhcVVjYJ]bXhPI3
+I7dhf0hD@MIQ1[TcQ`lQTe1
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v|
+!i113 1
+R7
+R8
+R9
+n@c@o@n@t@r@o@l
+vCSADDRESS
+R1
+!i10b 1
+!s100 1c^>H]=cb_BmFabOV4>9_2
+IDKBZnSRbX0V6:VeVS1T2@2
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v|
+!i113 1
+R7
+R8
+R9
+n@c@s@a@d@d@r@e@s@s
+vDATAPATH
+R10
+!i10b 1
+!s100 OhmY;fI0X:[@<Il<f_5Sa0
+IfC64F<IfG??;M5VGY1V7k2
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v|
+!i113 1
+R7
+R8
+R9
+n@d@a@t@a@p@a@t@h
+vMAIN_MEMORY
+R10
+!i10b 1
+!s100 I2j3XgYb5a5]l=^aHb:]R1
+I6aKTAV:9b;Fjhg`^EfMP>0
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v|
+!i113 1
+R7
+R8
+R9
+n@m@a@i@n_@m@e@m@o@r@y
+vMICROCODE_STORE
+R1
+!i10b 1
+!s100 _@3>IQU<ATVn_mC?N[7oc3
+IH`MK]407RgjSjHYb3AW@P0
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
+R12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v|
+!i113 1
+R7
+R8
+R9
+n@m@i@c@r@o@c@o@d@e_@s@t@o@r@e
+vPSR
+R15
+!i10b 1
+!s100 f0;Y4aBj6TTloB4:YMRS;1
+I:fbMJ3>7]b[A<2AJTdfR`1
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v
+R12
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v|
+!i113 1
+R7
+R8
+R9
+n@p@s@r
+vSC_RegFIXED
+R13
+!i10b 1
+!s100 UZ[D5I<GC:`PgUjImDFUe3
+InWFi019H5H?;I=ePbI7J_3
+R2
+R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v|
+!i113 1
+R7
+R8
+R9
 n@s@c_@reg@f@i@x@e@d
 vSC_RegGENERAL
-R1
+R13
 !i10b 1
-!s100 [6I<n;cl801V>H:zdW>MP2
-IY;QNjl3NI9`jH<em;jPC;2
+!s100 jJ2nT[h?L:GgoXXJNcI;J3
+IQ8aiRZn12o1J]g1<fNL?;1
 R2
 R0
+R3
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1570803356.000000
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v|
+!i113 1
+R7
+R8
 R9
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v
-R3
-R4
-r1
-!s85 0
-31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v|
-!i113 1
-R6
-R8
-R7
 n@s@c_@reg@g@e@n@e@r@a@l
-vSC_RegSHIFTER
-R1
-!i10b 1
-!s100 [Snl8_FOYflac^l7IIP431
-IK1ofZOj9>aSGkQ@gA=BZB3
-R2
-R0
-w1550276555
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegSHIFTER.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegSHIFTER.v
-R3
-R4
-r1
-!s85 0
-31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegSHIFTER.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_RegSHIFTER.v|
-!i113 1
-R6
-R8
-R7
-n@s@c_@reg@s@h@i@f@t@e@r
-vSC_STATEMACHINE
-R1
-!i10b 1
-!s100 D<hk^?[3hN9ghUZVfP2m51
-Ijg3@f4^[KcImOM;n@;^;=0
-R2
-R0
-w1550671255
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_STATEMACHINE.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_STATEMACHINE.v
-R3
-R4
-r1
-!s85 0
-31
-Z10 !s108 1550671570.000000
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_STATEMACHINE.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/SC_STATEMACHINE.v|
-!i113 1
-R6
-R8
-R7
-n@s@c_@s@t@a@t@e@m@a@c@h@i@n@e
 vTB_SYSTEM
-R1
+!s110 1570803361
 !i10b 1
 !s100 ZN]WCd=K<KjB]gABAAlhK3
-I]_PHO7Kb;:k=E]WL2UKn?0
+IInJlhQZ7niW2mz^^>bOh12
 R2
 R0
-w1550068183
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt
-L0 19
-R4
-r1
-!s85 0
-31
-R5
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt|
-!i113 1
-R6
-!s92 -vlog01compat -work work +incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/simulation/modelsim
-R7
-n@t@b_@s@y@s@t@e@m
-vuDATAPATH
-!s110 1550671570
-!i10b 1
-!s100 2UQ5zP@Pl8@[=9n85<_6>2
-In]N8_O>?n[8:Xm]WL>ez11
-R2
-R0
-w1550278848
-8/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v
-F/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v
 R3
-R4
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt
+R12
+R5
 r1
 !s85 0
 31
-R10
-!s107 /home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl|/home/fsegura/FESQ/Dropbox/0FESQ_WORKTODAY/0FESQ_ACADEMICS/0FESQ_WORK/DE0NANO/0SYSTEMS/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v|
+!s108 1570803361.000000
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt|
 !i113 1
-R6
-R8
 R7
-nu@d@a@t@a@p@a@t@h
+!s92 -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim
+R9
+n@t@b_@s@y@s@t@e@m

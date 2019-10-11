@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CONTROL #(parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
+module CONTROL #( parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
 	//////////// OUTPUTS //////////
 	CONTROL_SelectA_OutBus,
 	CONTROL_SelectB_OutBus,
@@ -52,12 +52,12 @@ parameter DATAWIDTH_COND = 3;
 //  PORT declarations
 //=======================================================
 //////////// OUTPUTS //////////
-output 	[DATAWIDTH_MIR_DIRECTION-1:0]	CONTROL_SelectA_OutBus;
-output 	[DATAWIDTH_MIR_DIRECTION-1:0]  CONTROL_SelectB_OutBus;
-output 	[DATAWIDTH_MIR_DIRECTION-1:0]	CONTROL_SelectC_OutBus;
-output 	CONTROL_DirA_Out;
-output 	CONTROL_DirB_Out;
-output 	CONTROL_DirC_Out;
+output	CONTROL_SelectA_OutBus;
+output	CONTROL_SelectB_OutBus;
+output	CONTROL_SelectC_OutBus;
+output 	[DATAWIDTH_MIR_DIRECTION-1:0] CONTROL_DirA_Out;
+output 	[DATAWIDTH_MIR_DIRECTION-1:0] CONTROL_DirB_Out;
+output 	[DATAWIDTH_MIR_DIRECTION-1:0] CONTROL_DirC_Out;
 output 	CONTROL_RD_Out;
 output	CONTROL_WRMain_Out;
 output	[DATAWIDTH_ALU_SELECTION-1:0] CONTROL_ALUOperation_OutBus;
