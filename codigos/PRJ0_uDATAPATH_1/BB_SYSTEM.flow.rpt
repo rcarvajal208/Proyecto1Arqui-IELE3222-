@@ -1,6 +1,6 @@
 Flow report for BB_SYSTEM
-Fri Oct 11 10:50:47 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Sat Oct 12 11:02:18 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -29,20 +29,19 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 11 10:50:47 2019       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Flow Status                        ; Successful - Sat Oct 12 11:02:18 2019       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
@@ -65,7 +64,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/11/2019 10:49:46 ;
+; Start date & time ; 10/12/2019 11:01:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BB_SYSTEM           ;
 +-------------------+---------------------+
@@ -76,7 +75,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 150461129178804.157080898600576        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 26830025811051.157089610363300         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TB_SYSTEM      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_SYSTEM                              ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR        ; simulation/modelsim                    ; --            ; --          ; eda_simulation ;
@@ -103,12 +102,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:32     ; 1.0                     ; 4755 MB             ; 00:01:05                           ;
-; Fitter                    ; 00:00:12     ; 1.0                     ; 5542 MB             ; 00:00:13                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4691 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4800 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4656 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:54     ; --                      ; --                  ; 00:01:26                           ;
+; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 4744 MB             ; 00:00:26                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 5543 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4694 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4803 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:37                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +116,11 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-OBJVK5C  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-OBJVK5C  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-OBJVK5C  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-OBJVK5C  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-OBJVK5C  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; LIEEEML02620     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; LIEEEML02620     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; LIEEEML02620     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; LIEEEML02620     ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; LIEEEML02620     ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

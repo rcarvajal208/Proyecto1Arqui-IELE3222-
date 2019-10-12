@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MICROCODE_STORE #(parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, parameter DATAWIDTH_JUMPADDRESS=11)(
+module MICROCODE_STORE #(parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, parameter DATAWIDTH_JUMPADDRESS=11, parameter DATAWITH_MICROINSTRUCTION=41)(
 	
 	//////////// OUTPUTS //////////
 	MICROCODE_STORE_SelectA_OutBus,
@@ -64,12 +64,32 @@ input		[DATAWIDTH_JUMPADDRESS-1:0]	MICROCODE_STORE_CSAddress_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
+reg [DATAWIDTH_MICROINSTRUCTION-1:0] OUT;
 
 //=======================================================
 //  Structural coding
 //=======================================================
 
-
+always@(*)
+begin
+	case (MICROCODE_STORE_CSAddress_InBus)	
+		//READ 
+		11'b00000000000: OUT = 41'b10000001000000100101010010100000000000000; //0 (R[IR] ← AND(R[PC],R[PC]); READ;)
+		//DECODE
+		11'b00000000001: OUT = 41'b00000000000000000000000010111100000000000; //1 (DECODE)
+		//ADDCC 
+		11'b11001000000: OUT = 41'b00000000000000000000000010110111001000010; //1600 (IF R[IR[13]] THEN GOTO 1692;)
+		11'b11001000001: OUT = 41'b00000010000001000000100001111011111111111; //1601 (R[rd] ← ADDCC(R[rs1],[rs2]);)
+		11'b11001000010: OUT = 41'b10010100000000100001000110000000000000000; //1602 (SEXT13(R[IR]);)
+		11'b11001000011: OUT = 41'b00000011000010000000100001111011111111111; //1603 (R[rd] ← ADDCC(R[rs1],[temp0]);)
+		//SUBCC 
+		11'b11000110000: OUT = 41'b10010100000000100001000110010111000110010; //1584 (R[temp0] ← SEXT13(R[IR]); IF IR[13] THEN GOTO 1586;) Extract rs2 operand, is second source immediate?
+		11'b11000110001: OUT = 41'b00000000000001100001000100000000000000000; //1585 (R[temp0] ← R[rs2];) Extract sign extended immediate operand
+		11'b11000110010: OUT = 41'b10000100000000100001000011100000000000000; //1586 (R[temp0] ← NOR(R[temp0], R[0]);) Form one's complement of subtrahend
+		11'b11000110011: OUT = 41'b10000100000000100001000110111011001000011; //1587 (R[temp0] ← INC(R[temp0]); GOTO 1603) Form two's complement of subtrahend, add terms for original substraction
+		
+		default :   CC_MUX_Signal_Register = CC_MUX_data0_InBus; // channel 0 is selected 
+	endcase
+end 
 
 endmodule

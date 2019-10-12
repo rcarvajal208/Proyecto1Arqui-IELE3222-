@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for BB_SYSTEM
-Fri Oct 11 10:50:44 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Sat Oct 12 11:02:14 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -49,7 +49,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -57,19 +57,18 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +-----------------------------------------------------------------------------+
 ; TimeQuest Timing Analyzer Summary                                           ;
 +-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Quartus Prime Version ; Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Timing Analyzer       ; TimeQuest                                           ;
 ; Revision Name         ; BB_SYSTEM                                           ;
 ; Device Family         ; Cyclone IV E                                        ;
@@ -85,7 +84,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -102,7 +101,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; BB_SYSTEM.SDC ; OK     ; Fri Oct 11 10:50:41 2019 ;
+; BB_SYSTEM.SDC ; OK     ; Sat Oct 12 11:02:13 2019 ;
 +---------------+--------+--------------------------+
 
 
@@ -466,17 +465,17 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Oct 11 10:50:39 2019
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Sat Oct 12 11:02:12 2019
 Info: Command: quartus_sta BB_SYSTEM -c BB_SYSTEM
-Info: qsta_default_script.tcl version: #1
+Info: qsta_default_script.tcl version: #3
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'BB_SYSTEM.SDC'
-Warning (332174): Ignored filter at BB_SYSTEM.sdc(9): CLOCK_50 could not be matched with a port File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
-Warning (332049): Ignored create_clock at BB_SYSTEM.sdc(9): Argument <targets> is an empty collection File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
-    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
+Warning (332174): Ignored filter at BB_SYSTEM.sdc(9): CLOCK_50 could not be matched with a port File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
+Warning (332049): Ignored create_clock at BB_SYSTEM.sdc(9): Argument <targets> is an empty collection File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -517,9 +516,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Fri Oct 11 10:50:44 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Sat Oct 12 11:02:14 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

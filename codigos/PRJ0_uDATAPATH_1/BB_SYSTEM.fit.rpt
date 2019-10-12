@@ -1,6 +1,6 @@
 Fitter report for BB_SYSTEM
-Fri Oct 11 10:50:32 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Sat Oct 12 11:02:04 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -40,7 +40,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -48,20 +48,19 @@ functions, and any output files from any of the foregoing
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 11 10:50:32 2019       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Fitter Status                      ; Successful - Sat Oct 12 11:02:04 2019       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
@@ -99,7 +98,7 @@ agreement for further details.
 ; Router Effort Multiplier                                                   ; 1.0                                   ; 1.0                                   ;
 ; Optimize Hold Timing                                                       ; All Paths                             ; All Paths                             ;
 ; Optimize Multi-Corner Timing                                               ; On                                    ; On                                    ;
-; PowerPlay Power Optimization During Fitting                                ; Normal compilation                    ; Normal compilation                    ;
+; Power Optimization During Fitting                                          ; Normal compilation                    ; Normal compilation                    ;
 ; SSN Optimization                                                           ; Off                                   ; Off                                   ;
 ; Optimize Timing                                                            ; Normal compilation                    ; Normal compilation                    ;
 ; Optimize Timing for ECOs                                                   ; Off                                   ; Off                                   ;
@@ -144,7 +143,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -152,7 +151,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -206,7 +205,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.pin.
+The pin-out file can be found in C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.pin.
 
 
 +-------------------------------------------------------------------+
@@ -997,9 +996,9 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Critical Warning (169085): No exact pin location assignment(s) for 26 pins of 34 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (332104): Reading SDC File: 'BB_SYSTEM.SDC'
-Warning (332174): Ignored filter at BB_SYSTEM.sdc(9): CLOCK_50 could not be matched with a port File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
-Warning (332049): Ignored create_clock at BB_SYSTEM.sdc(9): Argument <targets> is an empty collection File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
-    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
+Warning (332174): Ignored filter at BB_SYSTEM.sdc(9): CLOCK_50 could not be matched with a port File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
+Warning (332049): Ignored create_clock at BB_SYSTEM.sdc(9): Argument <targets> is an empty collection File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1039,26 +1038,26 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin CLOCK uses I/O standard 2.5 V at C9 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 50
-Info (144001): Generated suppressed messages file C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.fit.smsg
+    Info (169178): Pin CLOCK uses I/O standard 2.5 V at C9 File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 50
+Info (144001): Generated suppressed messages file C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 5542 megabytes
-    Info: Processing ended: Fri Oct 11 10:50:32 2019
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 5543 megabytes
+    Info: Processing ended: Sat Oct 12 11:02:05 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.fit.smsg.
+The suppressed messages can be found in C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.fit.smsg.
 
 
