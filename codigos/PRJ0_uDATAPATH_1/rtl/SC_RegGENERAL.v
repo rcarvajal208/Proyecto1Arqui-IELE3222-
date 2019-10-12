@@ -1,8 +1,4 @@
 /*######################################################################
-//#	G0B1T: HDL EXAMPLES. 2018.
-//######################################################################
-//# Copyright (C) 2018. F.E.Segura-Quijano (FES) fsegura@uniandes.edu.co
-//# 
 //# This program is free software: you can redistribute it and/or modify
 //# it under the terms of the GNU General Public License as published by
 //# the Free Software Foundation, version 3 of the License.
@@ -34,7 +30,7 @@ module SC_RegGENERAL #(parameter DATAWIDTH_BUS=32)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output		[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_OutBus;
+output	[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_OutBus;
 input		SC_RegGENERAL_CLOCK_50;
 input		SC_RegGENERAL_RESET_InHigh; 
 input		SC_RegGENERAL_load_InLow;	
@@ -51,6 +47,7 @@ reg [DATAWIDTH_BUS-1:0] RegGENERAL_Signal;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
+	// A partir de la señal de Cargar proveniente del Multiplexor, se carga el dato proveniente del bus de datos o se mantiene el dato existente es este
 	if (SC_RegGENERAL_load_InLow == 1'b0)
 		RegGENERAL_Signal = SC_RegGENERAL_data_InBus;
 	else
@@ -59,6 +56,7 @@ begin
 //STATE REGISTER: SEQUENTIAL
 always @(posedge SC_RegGENERAL_CLOCK_50, posedge SC_RegGENERAL_RESET_InHigh)
 begin
+	// Se carga 0 en el registro si se oprime Reset, de lo contrario se mantiene el mismo dato
 	if (SC_RegGENERAL_RESET_InHigh == 1'b1)
 		RegGENERAL_Register <= 0;
 	else

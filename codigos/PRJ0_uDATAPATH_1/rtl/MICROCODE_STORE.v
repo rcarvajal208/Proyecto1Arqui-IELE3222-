@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module MICROCODE_STORE #(parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, parameter DATAWIDTH_JUMPADDRESS=11, parameter DATAWITH_MICROINSTRUCTION=41)(
+module MICROCODE_STORE #(parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_CONDITION=3, parameter DATAWIDTH_JUMPADDRESS=11, parameter DATAWIDTH_MICROINSTRUCTION=41)(
 	
 	//////////// OUTPUTS //////////
 	MICROCODE_STORE_SelectA_OutBus,
@@ -59,7 +59,7 @@ output	[DATAWIDTH_JUMPADDRESS -1:0] MICROCODE_STORE_JumpAddress_OutBus;
 //////////// INPUTS //////////
 input 	MICROCODE_STORE_CLOCK_50;
 input 	MICROCODE_STORE_ResetInHigh_In;
-input		[DATAWIDTH_JUMPADDRESS-1:0]	MICROCODE_STORE_CSAddress_InBus;
+input		[DATAWIDTH_JUMPADDRESS-1:0] MICROCODE_STORE_CSAddress_InBus;
 
 //=======================================================
 //  REG/WIRE declarations
@@ -72,6 +72,7 @@ reg [DATAWIDTH_MICROINSTRUCTION-1:0] OUT;
 
 always@(*)
 begin
+	// Se asigna las instrucciones en formato ARC a la salida del módulo
 	case (MICROCODE_STORE_CSAddress_InBus)	
 		//READ 
 		11'b00000000000: OUT = 41'b10000001000000100101010010100000000000000; //0 (R[IR] ← AND(R[PC],R[PC]); READ;)
@@ -88,7 +89,7 @@ begin
 		11'b11000110010: OUT = 41'b10000100000000100001000011100000000000000; //1586 (R[temp0] ← NOR(R[temp0], R[0]);) Form one's complement of subtrahend
 		11'b11000110011: OUT = 41'b10000100000000100001000110111011001000011; //1587 (R[temp0] ← INC(R[temp0]); GOTO 1603) Form two's complement of subtrahend, add terms for original substraction
 		
-		default :   CC_MUX_Signal_Register = CC_MUX_data0_InBus; // channel 0 is selected 
+		default:		     OUT = 41'b10000001000000100101010010100000000000000; //Vuelve a READ			 
 	endcase
 end 
 

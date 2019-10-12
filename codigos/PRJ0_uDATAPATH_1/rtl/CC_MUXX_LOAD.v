@@ -1,8 +1,4 @@
 /*######################################################################
-//#	G0B1T: HDL EXAMPLES. 2018.
-//######################################################################
-//# Copyright (C) 2018. F.E.Segura-Quijano (FES) fsegura@uniandes.edu.co
-//# 
 //# This program is free software: you can redistribute it and/or modify
 //# it under the terms of the GNU General Public License as published by
 //# the Free Software Foundation, version 3 of the License.
@@ -51,8 +47,8 @@ reg [DATAWIDTH_DECODER_OUT-1:0] CC_MUXX_LOAD_Decoder_Register;
 //=======================================================
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
-	//Se determina si se lee la ALU o MAIN_MEMORY
 begin
+	//Se determina si se lee la ALU o MAIN_MEMORY a partir de la entrada de Read que llega de esta última
 	if (CC_MUXX_LOAD_RD_In == 1'b1) 
 		CC_MUXX_LOAD_Signal_Register = CC_MUXX_LOAD_Memory_data_InBus;
 	else
@@ -60,7 +56,7 @@ begin
 end
 
 always@(*)
-	//Se decodifica la señal de salida para los registros
+	//Se decodifica la señal de salida para los registros en base a la dirección que otorga el Multiplexor Externo 
 begin
 	case (CC_MUXX_LOAD_Address_InBus)	 
 		6'b000010: CC_MUXX_LOAD_Decoder_Register = 14'b11111111111110;
@@ -77,7 +73,7 @@ begin
 		6'b001101: CC_MUXX_LOAD_Decoder_Register = 14'b11011111111111;
 		6'b001110: CC_MUXX_LOAD_Decoder_Register = 14'b10111111111111;
 		6'b001111: CC_MUXX_LOAD_Decoder_Register = 14'b01111111111111;
-		default : CC_MUXX_LOAD_Decoder_Register = 14'b11111111111111; 
+		default:   CC_MUXX_LOAD_Decoder_Register = 14'b11111111111111; 
 	endcase
 end
 //=======================================================

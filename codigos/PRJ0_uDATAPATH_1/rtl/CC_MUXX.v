@@ -1,8 +1,4 @@
-/*######################################################################
-//#	G0B1T: HDL EXAMPLES. 2018.
-//######################################################################
-//# Copyright (C) 2018. F.E.Segura-Quijano (FES) fsegura@uniandes.edu.co
-//# 
+/*###################################################################### 
 //# This program is free software: you can redistribute it and/or modify
 //# it under the terms of the GNU General Public License as published by
 //# the Free Software Foundation, version 3 of the License.
@@ -77,7 +73,7 @@ reg [DATAWIDTH_BUS-1:0] CC_MUX_Signal_Register;
 always@(*)
 begin
 	case (CC_MUX_Address_InBus)	
-	// Example to more outputs: WaitStart: begin sResetCounter = 0; sCuenteUP = 0; end
+	//De acuerdo a la señal de dirección proveniente del registro externo, se elige el registro respectivo del cual se lee los datos
 		6'b000000: CC_MUX_Signal_Register = CC_MUX_data0_InBus;
 		6'b000001: CC_MUX_Signal_Register = CC_MUX_data1_InBus;
 		6'b000010: CC_MUX_Signal_Register = CC_MUX_data2_InBus;
@@ -94,7 +90,7 @@ begin
 		6'b001101: CC_MUX_Signal_Register = CC_MUX_data13_InBus;
 		6'b001110: CC_MUX_Signal_Register = CC_MUX_data14_InBus;
 		6'b001111: CC_MUX_Signal_Register = CC_MUX_data15_InBus;
-		default :   CC_MUX_Signal_Register = CC_MUX_data0_InBus; // channel 0 is selected 
+		default:   CC_MUX_Signal_Register = CC_MUX_data0_InBus; // Por defecto se selecciona el registro fijo 0 con valor 0
 	endcase
 end 
 //=======================================================

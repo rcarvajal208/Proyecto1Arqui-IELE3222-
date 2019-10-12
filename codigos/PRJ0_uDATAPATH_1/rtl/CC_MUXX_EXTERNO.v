@@ -1,8 +1,4 @@
 /*######################################################################
-//#	G0B1T: HDL EXAMPLES. 2018.
-//######################################################################
-//# Copyright (C) 2018. F.E.Segura-Quijano (FES) fsegura@uniandes.edu.co
-//# 
 //# This program is free software: you can redistribute it and/or modify
 //# it under the terms of the GNU General Public License as published by
 //# the Free Software Foundation, version 3 of the License.
@@ -47,6 +43,7 @@ reg [DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_Signal_Register;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
+	// Elige si la dirección del registro viene desde el Scratchpad o Control de acuerdo al bus de Select
 	if (CC_MUXX_EXTERNO_Select_In == 1'b0)
 		CC_MUXX_EXTERNO_Signal_Register = {1'b0 , CC_MUXX_EXTERNO_ScratchpadSelection_InBus};  
 	else
