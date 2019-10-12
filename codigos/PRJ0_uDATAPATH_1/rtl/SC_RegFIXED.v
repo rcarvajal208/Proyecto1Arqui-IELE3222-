@@ -1,6 +1,4 @@
 /*######################################################################
-//#	G0B1T: HDL EXAMPLES. 2018.
-//######################################################################
 //# Copyright (C) 2018. F.E.Segura-Quijano (FES) fsegura@uniandes.edu.co
 //# 
 //# This program is free software: you can redistribute it and/or modify
