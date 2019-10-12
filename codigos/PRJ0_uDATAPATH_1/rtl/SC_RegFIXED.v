@@ -18,7 +18,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module SC_RegFIXED #(parameter DATAWIDTH_BUS=32, parameter DATA_REGFIXED_INIT=6'b000000)(
+module SC_RegFIXED #(parameter DATAWIDTH_BUS=32, parameter DATA_REGFIXED_INIT=32'b00000000000000000000000000000000)(
 	//////////// OUTPUTS //////////
 	SC_RegFIXED_data_OutBus,
 	//////////// INPUTS //////////

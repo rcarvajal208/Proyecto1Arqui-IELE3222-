@@ -14,33 +14,29 @@
 //# You should have received a copy of the GNU General Public License
 //# along with this program.  If not, see <http://www.gnu.org/licenses/>
 //####################################################################*/
+
+
 //=======================================================
 //  MODULE Definition
 //=======================================================
 module BB_SYSTEM (
 //////////// OUTPUTS //////////
-	BB_SYSTEM_data_OutBUS,
+	BB_SYSTEM_data_OutBUS,			//Salida del Registro general 3 (Rout)
 //////////// INPUTS //////////
-	CLOCK,
+	CLOCK,								
 	RESET
 );
 //=======================================================
 //  PARAMETER declarations
 //=======================================================
-// DATAPATH WIDTH BUS.
-parameter DATAWIDTH_BUS = 32;
-// DATAPATH MIR DIRECTION BUS.
-parameter DATAWIDTH_MIR_DIRECTION=6;
-// DATAPATH SCRATCHPAD DIRECTION BUS.
-parameter DATAWIDTH_SCRATCHPAD_DIRECTION=5; 
-// ALU CONTROL BUS.
-parameter DATAWIDTH_ALU_SELECTION = 4;
-// DECODE OP BUS.
-parameter DATAWIDTH_DECODEROP = 8;
-// DECODER SELECTION BUS.
-parameter DATAWIDTH_DECODER_SELECTION=4; 
-// DECODER OUT BUS.
-parameter DATAWIDTH_DECODER_OUT=14;
+
+parameter DATAWIDTH_BUS = 32; 					// DATAPATH WIDTH BUS.
+parameter DATAWIDTH_MIR_DIRECTION=6; 			// DATAPATH MIR DIRECTION BUS.
+parameter DATAWIDTH_SCRATCHPAD_DIRECTION=5; 	// DATAPATH SCRATCHPAD DIRECTION BUS.
+parameter DATAWIDTH_ALU_SELECTION = 4; 		// ALU CONTROL BUS.
+parameter DATAWIDTH_DECODEROP = 8;				// DECODE OP BUS.
+parameter DATAWIDTH_DECODER_SELECTION=4; 		// DECODER SELECTION BUS.
+parameter DATAWIDTH_DECODER_OUT=14; 			// DECODER OUT BUS.
 
 
 //=======================================================
@@ -91,7 +87,6 @@ DATAPATH #( .DATAWIDTH_BUS(DATAWIDTH_BUS), .DATAWIDTH_MIR_DIRECTION(DATAWIDTH_MI
 	.DATAPATH_FlagCarry_Out(FLAGCARRY),
 	.DATAPATH_FlagZero_Out(FLAGZERO),
 	.DATAPATH_DataOut_OutBus(BB_SYSTEM_data_OutBUS),
-	.DATAPATH_Ops_OutBus(OPS),
 	//////////// INPUTS //////////
 	.DATAPATH_CLOCK_50(CLOCK),
 	.DATAPATH_ResetInHigh_In(RESET),
@@ -126,8 +121,7 @@ CONTROL #( .DATAWIDTH_MIR_DIRECTION(DATAWIDTH_MIR_DIRECTION), .DATAWIDTH_ALU_SEL
 	.CONTROL_FlagNegative_In(FLAGNEGATIVE),
 	.CONTROL_FlagCarry_In(FLAGCARRY),
 	.CONTROL_FlagZero_In(FLAGZERO),
-	.CONTROL_SetCodes_In(SETCODES),
-	.CONTROL_Ops_InBus(OPS)
+	.CONTROL_SetCodes_In(SETCODES)
 );
 MAIN_MEMORY #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) MAIN_MEMORY_u0 (
 	//////////// OUTPUTS //////////

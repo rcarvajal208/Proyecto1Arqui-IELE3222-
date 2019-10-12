@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module CONTROL #( parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8, parameter DATAWIDTH_OPS=8)(
+module CONTROL #( parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODEROP = 8)(
 	//////////// OUTPUTS //////////
 	CONTROL_SelectA_OutBus,
 	CONTROL_SelectB_OutBus,
@@ -38,8 +38,7 @@ module CONTROL #( parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_S
 	CONTROL_FlagNegative_In,
 	CONTROL_FlagCarry_In,
 	CONTROL_FlagZero_In,
-	CONTROL_SetCodes_In,
-	CONTROL_Ops_InBus
+	CONTROL_SetCodes_In
 );
 //=======================================================
 //  PARAMETER declarations
@@ -74,7 +73,6 @@ input		CONTROL_FlagNegative_In;
 input		CONTROL_FlagCarry_In;
 input		CONTROL_FlagZero_In;
 input		CONTROL_SetCodes_In;
-input		[DATAWIDTH_OPS-1:0]CONTROL_Ops_InBus;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================

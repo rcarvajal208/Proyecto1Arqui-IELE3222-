@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BB_SYSTEM
-Sat Oct 12 15:23:54 2019
+Sat Oct 12 16:26:06 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -19,27 +19,27 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  11. Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM
  12. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0
  13. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0
- 14. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u0
- 15. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u1
- 16. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_u0
- 17. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_A
- 18. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_B
- 19. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u2
+ 14. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS
+ 15. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS
+ 16. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX
+ 17. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX
+ 18. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX
+ 19. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX
  20. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0
  21. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1
  22. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC
- 23. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1
- 24. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2
- 25. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3
- 26. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4
- 27. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5
- 28. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6
- 29. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7
- 30. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8
- 31. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9
- 32. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10
- 33. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11
- 34. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12
+ 23. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1
+ 24. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2
+ 25. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3
+ 26. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4
+ 27. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5
+ 28. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6
+ 29. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7
+ 30. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8
+ 31. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9
+ 32. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10
+ 33. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11
+ 34. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12
  35. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR
  36. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0
  37. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0
@@ -48,11 +48,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  40. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0
  41. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|PSR:PSR_u0
  42. Parameter Settings for User Entity Instance: MAIN_MEMORY:MAIN_MEMORY_u0
- 43. Port Connectivity Checks: "CONTROL:CONTROL_u0"
- 44. Port Connectivity Checks: "DATAPATH:DATAPATH_u0"
- 45. Post-Synthesis Netlist Statistics for Top Partition
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
+ 43. Post-Synthesis Netlist Statistics for Top Partition
+ 44. Elapsed Time Per Partition
+ 45. Analysis & Synthesis Messages
 
 
 
@@ -78,7 +76,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 12 15:23:54 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 12 16:26:06 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
@@ -320,35 +318,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[3]                         ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]        ;
 ; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[2,18,26,30]                ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]        ;
 ; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[2]                         ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]        ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[10]  ;
 ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[1..9,11..13,19..31] ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[10] ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[1..9,11..13,19..31] ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[10] ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[1..9,11..13,19..31] ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[10] ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[10]  ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[1..9,11..13,19..31] ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[10] ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[1..9,11..13,19..31] ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[10] ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[1..9,11..13,19..31] ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[10] ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[10]  ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[10]  ;
 ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[1..9,11..13,19..31]  ; Merged with DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[10]  ;
 ; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[0]                         ; Stuck at VCC due to stuck port data_in                                                   ;
 ; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]                        ; Stuck at GND due to stuck port data_in                                                   ;
 ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[0,10,14..18]        ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[0,10,14..18]        ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[0,10,14..18]        ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[0,10,14..18]        ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[0,10,14..18]        ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[0,10,14..18]        ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
 ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[0,10,14..18]         ; Stuck at GND due to stuck port clock_enable                                              ;
 ; Total Number of Removed Registers = 512                                                      ;                                                                                          ;
 +----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
@@ -364,73 +362,73 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[16],  ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[15],  ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[18], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[17], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[16], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[15], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[10], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[18], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[17], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[16], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[15], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[10], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[18], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[17], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[16], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[15], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[10], ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[10],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[18],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[17],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[16],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[15],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[14],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[18], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[17], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[16], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[15], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[10], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[18], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[17], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[16], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[15], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[10], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[18], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[17], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[16], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[15], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[10], ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[10],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[18],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[17],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[16],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[15],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[14],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[10],  ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[18],  ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[17],  ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[16],  ;
@@ -438,18 +436,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[14],  ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[10]   ;
 ; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[0]  ; Stuck at VCC              ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[0],   ;
-;                                                                       ; due to stuck port data_in ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12|RegGENERAL_Register[0],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11|RegGENERAL_Register[0],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10|RegGENERAL_Register[0],  ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2|RegGENERAL_Register[0],   ;
-;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1|RegGENERAL_Register[0],   ;
+;                                                                       ; due to stuck port data_in ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[0],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[0],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[0],  ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2|RegGENERAL_Register[0],   ;
+;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1|RegGENERAL_Register[0],   ;
 ;                                                                       ;                           ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[0]    ;
 +-----------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
@@ -496,7 +494,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DATAWIDTH_ALU_SELECTION        ; 4     ; Signed Integer           ;
 ; DATAWIDTH_DECODER_SELECTION    ; 4     ; Signed Integer           ;
 ; DATAWIDTH_DECODER_OUT          ; 14    ; Signed Integer           ;
-; DATAWIDTH_OPS                  ; 8     ; Signed Integer           ;
 +--------------------------------+-------+--------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -512,92 +509,92 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u0 ;
-+-------------------------+-------+----------------------------------------------------+
-; Parameter Name          ; Value ; Type                                               ;
-+-------------------------+-------+----------------------------------------------------+
-; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                     ;
-; DATAWIDTH_BUS           ; 32    ; Signed Integer                                     ;
-+-------------------------+-------+----------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS ;
++-------------------------+-------+------------------------------------------------------+
+; Parameter Name          ; Value ; Type                                                 ;
++-------------------------+-------+------------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                       ;
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                       ;
++-------------------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u1 ;
-+-------------------------+-------+----------------------------------------------------+
-; Parameter Name          ; Value ; Type                                               ;
-+-------------------------+-------+----------------------------------------------------+
-; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                     ;
-; DATAWIDTH_BUS           ; 32    ; Signed Integer                                     ;
-+-------------------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_u0 ;
-+-------------------------+-------+--------------------------------------------------------------+
-; Parameter Name          ; Value ; Type                                                         ;
-+-------------------------+-------+--------------------------------------------------------------+
-; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                               ;
-; DATAWIDTH_BUS           ; 32    ; Signed Integer                                               ;
-; DATAWIDTH_DECODER_OUT   ; 14    ; Signed Integer                                               ;
-+-------------------------+-------+--------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS ;
++-------------------------+-------+------------------------------------------------------+
+; Parameter Name          ; Value ; Type                                                 ;
++-------------------------+-------+------------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                       ;
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                       ;
++-------------------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_A ;
-+--------------------------------+-------+------------------------------------------------------------+
-; Parameter Name                 ; Value ; Type                                                       ;
-+--------------------------------+-------+------------------------------------------------------------+
-; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                             ;
-; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                             ;
-+--------------------------------+-------+------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX ;
++-------------------------+-------+-------------------------------------------------------------------+
+; Parameter Name          ; Value ; Type                                                              ;
++-------------------------+-------+-------------------------------------------------------------------+
+; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                                                    ;
+; DATAWIDTH_BUS           ; 32    ; Signed Integer                                                    ;
+; DATAWIDTH_DECODER_OUT   ; 14    ; Signed Integer                                                    ;
++-------------------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_B ;
-+--------------------------------+-------+------------------------------------------------------------+
-; Parameter Name                 ; Value ; Type                                                       ;
-+--------------------------------+-------+------------------------------------------------------------+
-; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                             ;
-; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                             ;
-+--------------------------------+-------+------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX ;
++--------------------------------+-------+---------------------------------------------------------------+
+; Parameter Name                 ; Value ; Type                                                          ;
++--------------------------------+-------+---------------------------------------------------------------+
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                                ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                                ;
++--------------------------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_u2 ;
-+--------------------------------+-------+-------------------------------------------------------------+
-; Parameter Name                 ; Value ; Type                                                        ;
-+--------------------------------+-------+-------------------------------------------------------------+
-; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                              ;
-; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                              ;
-+--------------------------------+-------+-------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX ;
++--------------------------------+-------+---------------------------------------------------------------+
+; Parameter Name                 ; Value ; Type                                                          ;
++--------------------------------+-------+---------------------------------------------------------------+
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                                ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                                ;
++--------------------------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX ;
++--------------------------------+-------+---------------------------------------------------------------+
+; Parameter Name                 ; Value ; Type                                                          ;
++--------------------------------+-------+---------------------------------------------------------------+
+; DATAWIDTH_SCRATCHPAD_DIRECTION ; 5     ; Signed Integer                                                ;
+; DATAWIDTH_MIR_DIRECTION        ; 6     ; Signed Integer                                                ;
++--------------------------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0 ;
-+--------------------+--------+----------------------------------------------------------------+
-; Parameter Name     ; Value  ; Type                                                           ;
-+--------------------+--------+----------------------------------------------------------------+
-; DATAWIDTH_BUS      ; 32     ; Signed Integer                                                 ;
-; DATA_REGFIXED_INIT ; 000000 ; Unsigned Binary                                                ;
-+--------------------+--------+----------------------------------------------------------------+
++--------------------+----------------------------------+--------------------------------------+
+; Parameter Name     ; Value                            ; Type                                 ;
++--------------------+----------------------------------+--------------------------------------+
+; DATAWIDTH_BUS      ; 32                               ; Signed Integer                       ;
+; DATA_REGFIXED_INIT ; 00000000000000000000000000000000 ; Unsigned Binary                      ;
++--------------------+----------------------------------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1 ;
-+--------------------+--------+----------------------------------------------------------------+
-; Parameter Name     ; Value  ; Type                                                           ;
-+--------------------+--------+----------------------------------------------------------------+
-; DATAWIDTH_BUS      ; 32     ; Signed Integer                                                 ;
-; DATA_REGFIXED_INIT ; 000001 ; Unsigned Binary                                                ;
-+--------------------+--------+----------------------------------------------------------------+
++--------------------+----------------------------------+--------------------------------------+
+; Parameter Name     ; Value                            ; Type                                 ;
++--------------------+----------------------------------+--------------------------------------+
+; DATAWIDTH_BUS      ; 32                               ; Signed Integer                       ;
+; DATA_REGFIXED_INIT ; 00000000000000000000000000000001 ; Unsigned Binary                      ;
++--------------------+----------------------------------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -612,7 +609,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u1 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -622,7 +619,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u2 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -632,7 +629,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u3 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -642,7 +639,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u4 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -652,7 +649,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u5 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -662,7 +659,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u6 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -672,7 +669,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u7 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -682,7 +679,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u8 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -692,7 +689,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u9 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
 +----------------+-------+-------------------------------------------------------------------------+
@@ -702,7 +699,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u10 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10 ;
 +----------------+-------+--------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                     ;
 +----------------+-------+--------------------------------------------------------------------------+
@@ -712,7 +709,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u11 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11 ;
 +----------------+-------+--------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                     ;
 +----------------+-------+--------------------------------------------------------------------------+
@@ -722,7 +719,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_u12 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12 ;
 +----------------+-------+--------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                     ;
 +----------------+-------+--------------------------------------------------------------------------+
@@ -749,7 +746,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DATAWIDTH_MIR_DIRECTION ; 6     ; Signed Integer                ;
 ; DATAWIDTH_ALU_SELECTION ; 4     ; Signed Integer                ;
 ; DATAWIDTH_DECODEROP     ; 8     ; Signed Integer                ;
-; DATAWIDTH_OPS           ; 8     ; Signed Integer                ;
 +-------------------------+-------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -823,24 +819,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CONTROL:CONTROL_u0"                                                                                                                                                   ;
-+-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port              ; Type  ; Severity ; Details                                                                                                                                                   ;
-+-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; CONTROL_Ops_InBus ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "CONTROL_Ops_InBus[7..1]" will be connected to GND. ;
-+-------------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DATAPATH:DATAPATH_u0"                                                                                                                                 ;
-+---------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------+
-; Port                ; Type   ; Severity ; Details                                                                                                                                ;
-+---------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------+
-; DATAPATH_Ops_OutBus ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "DATAPATH_Ops_OutBus[7..1]" have no fanouts ;
-+---------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -871,7 +849,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Oct 12 15:23:41 2019
+    Info: Processing started: Sat Oct 12 16:25:54 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/udatapath.v
@@ -887,13 +865,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_alu.v
     Info (12023): Found entity 1: CC_ALU File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file bb_system.v
-    Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 20
+    Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/control.v
     Info (12023): Found entity 1: CONTROL File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/main_memory.v
     Info (12023): Found entity 1: MAIN_MEMORY File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/datapath.v
-    Info (12023): Found entity 1: DATAPATH File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 17
+    Info (12023): Found entity 1: DATAPATH File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/microcode_store.v
     Info (12023): Found entity 1: MICROCODE_STORE File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/branch_logic.v
@@ -908,27 +886,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_
     Info (12023): Found entity 1: CC_MUXX_LOAD File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/cc_muxx_externo.v
     Info (12023): Found entity 1: CC_MUXX_EXTERNO File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v Line: 17
-Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(45): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 45
 Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(46): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 46
+Warning (10222): Verilog HDL Parameter Declaration warning at DATAPATH.v(47): Parameter Declaration in module "DATAPATH" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 47
+Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(46): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 46
 Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(47): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 47
 Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(48): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 48
 Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(49): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 49
-Warning (10222): Verilog HDL Parameter Declaration warning at CONTROL.v(50): Parameter Declaration in module "CONTROL" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 50
 Info (12127): Elaborating entity "BB_SYSTEM" for the top level hierarchy
-Info (12128): Elaborating entity "DATAPATH" for hierarchy "DATAPATH:DATAPATH_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 107
-Warning (10034): Output port "DATAPATH_Ops_OutBus" at DATAPATH.v(59) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 59
+Info (12128): Elaborating entity "DATAPATH" for hierarchy "DATAPATH:DATAPATH_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 102
 Info (12128): Elaborating entity "CC_ALU" for hierarchy "DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 117
 Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(50): object "addition0" assigned a value but never read File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 50
 Warning (10036): Verilog HDL or VHDL warning at CC_ALU.v(51): object "addition1" assigned a value but never read File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 51
 Warning (10034): Output port "CC_ALU_SetCode_Out" at CC_ALU.v(40) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 40
-Info (12128): Elaborating entity "CC_MUXX" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 141
-Info (12128): Elaborating entity "CC_MUXX_LOAD" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 175
-Info (12128): Elaborating entity "CC_MUXX_EXTERNO" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_A" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 185
-Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 210
-Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 216
-Info (12128): Elaborating entity "SC_RegGENERAL" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 226
-Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:CONTROL_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 131
-Info (12128): Elaborating entity "MICROCODE_STORE" for hierarchy "CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 107
+Info (12128): Elaborating entity "CC_MUXX" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 141
+Info (12128): Elaborating entity "CC_MUXX_LOAD" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 176
+Info (12128): Elaborating entity "CC_MUXX_EXTERNO" for hierarchy "DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 186
+Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 214
+Info (12128): Elaborating entity "SC_RegFIXED" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 222
+Info (12128): Elaborating entity "SC_RegGENERAL" for hierarchy "DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 231
+Info (12128): Elaborating entity "CONTROL" for hierarchy "CONTROL:CONTROL_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 125
+Info (12128): Elaborating entity "MICROCODE_STORE" for hierarchy "CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 105
 Warning (10036): Verilog HDL or VHDL warning at MICROCODE_STORE.v(67): object "OUT" assigned a value but never read File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 67
 Warning (10034): Output port "MICROCODE_STORE_DirA_Out" at MICROCODE_STORE.v(50) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 50
 Warning (10034): Output port "MICROCODE_STORE_DirB_Out" at MICROCODE_STORE.v(51) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 51
@@ -941,64 +918,62 @@ Warning (10034): Output port "MICROCODE_STORE_SelectB_OutBus" at MICROCODE_STORE
 Warning (10034): Output port "MICROCODE_STORE_SelectC_OutBus" at MICROCODE_STORE.v(49) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 49
 Warning (10034): Output port "MICROCODE_STORE_RD_Out" at MICROCODE_STORE.v(53) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 53
 Warning (10034): Output port "MICROCODE_STORE_WRMain_Out" at MICROCODE_STORE.v(54) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 54
-Warning (12158): Entity "MICROCODE_STORE" contains only dangling pins File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 107
-Info (12128): Elaborating entity "BRANCH_LOGIC" for hierarchy "CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 117
+Info (12128): Elaborating entity "BRANCH_LOGIC" for hierarchy "CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 115
 Warning (10034): Output port "BRANCH_LOGIC_Tipo_OutBus" at BRANCH_LOGIC.v(39) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v Line: 39
-Info (12128): Elaborating entity "ADDRESS_INCREMENTER" for hierarchy "CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 127
+Info (12128): Elaborating entity "ADDRESS_INCREMENTER" for hierarchy "CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 125
 Warning (10230): Verilog HDL assignment warning at ADDRESS_INCREMENTER.v(55): truncated value with size 32 to match size of target (11) File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v Line: 55
-Info (12128): Elaborating entity "CSADDRESS" for hierarchy "CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 137
+Info (12128): Elaborating entity "CSADDRESS" for hierarchy "CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 135
 Warning (10034): Output port "CSADDRESS_CSAddress_OutBus" at CSADDRESS.v(40) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v Line: 40
-Info (12128): Elaborating entity "PSR" for hierarchy "CONTROL:CONTROL_u0|PSR:PSR_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 148
+Info (12128): Elaborating entity "PSR" for hierarchy "CONTROL:CONTROL_u0|PSR:PSR_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v Line: 146
 Warning (10034): Output port "PSR_Psr_OutBus" at PSR.v(41) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v Line: 41
-Info (12128): Elaborating entity "MAIN_MEMORY" for hierarchy "MAIN_MEMORY:MAIN_MEMORY_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 143
+Info (12128): Elaborating entity "MAIN_MEMORY" for hierarchy "MAIN_MEMORY:MAIN_MEMORY_u0" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 137
 Warning (10034): Output port "MAIN_MEMORY_Data_OutBus" at MAIN_MEMORY.v(42) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 42
 Warning (10034): Output port "MAIN_MEMORY_ACK_Out" at MAIN_MEMORY.v(41) has no driver File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v Line: 41
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[0]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[1]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[2]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[3]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[4]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[5]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[6]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[7]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[8]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[9]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[10]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[11]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[12]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[13]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[14]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[15]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[16]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[17]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[18]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[19]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[20]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[21]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[22]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[23]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[24]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[25]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[26]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[27]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[28]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[29]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[30]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
-    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[31]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 49
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[0]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[1]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[2]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[3]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[4]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[5]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[6]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[7]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[8]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[9]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[10]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[11]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[12]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[13]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[14]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[15]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[16]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[17]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[18]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[19]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[20]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[21]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[22]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[23]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[24]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[25]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[26]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[27]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[28]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[29]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[30]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
+    Warning (13410): Pin "BB_SYSTEM_data_OutBUS[31]" is stuck at GND File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 45
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 50
-    Warning (15610): No output dependent on input pin "RESET" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 51
+    Warning (15610): No output dependent on input pin "CLOCK" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 46
+    Warning (15610): No output dependent on input pin "RESET" File: C:/Users/js.gonzalez15/Documents/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 47
 Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 4760 megabytes
-    Info: Processing ended: Sat Oct 12 15:23:54 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Sat Oct 12 16:26:06 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:25
 
 
