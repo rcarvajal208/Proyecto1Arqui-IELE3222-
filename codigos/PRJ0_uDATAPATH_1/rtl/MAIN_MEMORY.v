@@ -50,11 +50,46 @@ input		MAIN_MEMORY_WRMain_In;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
-
+reg [DATAWIDTH_BUS-1:0] MAIN_MEMORY_Case_Register;
+reg [DATAWIDTH_BUS-1:0] MAIN_MEMORY_Signal_Register;
+reg [DATAWIDTH_BUS-1:0] MAIN_MEMORY_General_Register;
 //=======================================================
 //  Structural coding
 //=======================================================
-
+always@(*)
+begin
+	// Se asigna las instrucciones en formato ARC a la salida del módulo
+	case (MAIN_MEMORY_A_InBus)	
+	32'b00000000000000000000000000000000: MAIN_MEMORY_Case_Register = {4'b1000,4'b1000,4'b1000,4'b0000,4'b0010,4'b0000,4'b0000,4'b0101}; // 		addcc %g0,5,%g4
+	32'b00000000000000000000000000000001: MAIN_MEMORY_Case_Register = {4'b1000,4'b0010,4'b1000,4'b0000,4'b0010,4'b0000,4'b0000,4'b0001}; // 		addcc %g0,1,%g1
+	32'b00000000000000000000000000000010: MAIN_MEMORY_Case_Register = {4'b1000,4'b0110,4'b1000,4'b0000,4'b0100,4'b0000,4'b0000,4'b0010}; //F2: 	addcc %r1,%r2,%r3
+	32'b00000000000000000000000000000011: MAIN_MEMORY_Case_Register = {4'b1000,4'b0100,4'b1000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0001}; //		addcc %g0,%g1,%g2
+	32'b00000000000000000000000000000100: MAIN_MEMORY_Case_Register = {4'b1000,4'b0010,4'b1000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0011}; //		addcc %g0,%g3,%g1
+	32'b00000000000000000000000000000101: MAIN_MEMORY_Case_Register = {4'b1000,4'b1000,4'b1000,4'b0001,4'b0011,4'b1111,4'b1111,4'b1111}; //		addcc %g4,-1,%g4
+	32'b00000000000000000000000000000110: MAIN_MEMORY_Case_Register = {4'b0001,4'b0010,4'b1011,4'b1111,4'b1111,4'b1111,4'b1111,4'b1100}; //		bne F2
+	32'b00000000000000000000000000000111: MAIN_MEMORY_Case_Register = {4'b1000,4'b0110,4'b1000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0010}; //		addcc %g0,%g2,%g3
+	32'b00000000000000000000000000001000: MAIN_MEMORY_Case_Register = {4'b1000,4'b0110,4'b1010,4'b0000,4'b0100,4'b0000,4'b0000,4'b0011}; //F3:	subcc %g1,%g3,%g3
+	32'b00000000000000000000000000001001: MAIN_MEMORY_Case_Register = {4'b1000,4'b0010,4'b1000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0010}; //		addcc %g0,%g2,%g1
+	32'b00000000000000000000000000001010: MAIN_MEMORY_Case_Register = {4'b1000,4'b0100,4'b1000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0011}; //		addcc %g0,%g3,%g2
+	32'b00000000000000000000000000001011: MAIN_MEMORY_Case_Register = {4'b0001,4'b0010,4'b1011,4'b1111,4'b1111,4'b1111,4'b1111,4'b1101}; //		bne F3
+	default: MAIN_MEMORY_Case_Register = {4'b0000,4'b0001,4'b0000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0000}; //		nop
+	endcase
+end
+// Se evalua si el caso debe ser carado o no
+always @(*)
+begin
+	// A partir de la señal de Cargar proveniente del Multiplexor, se carga el dato proveniente del bus de datos o se mantiene el dato existente es este
+	if (MAIN_MEMORY_RD_In == 1'b1)
+		MAIN_MEMORY_Signal_Register <= MAIN_MEMORY_Case_Register;
+	else
+		MAIN_MEMORY_Signal_Register <= MAIN_MEMORY_General_Register;
+	end	
+	MAIN_MEMORY_General_Register <= MAIN_MEMORY_Signal_Register;
+//=======================================================
+//  Outputs
+//=======================================================
+// OUTPUT LOGIC : COMBINATIONAL 
+assign MAIN_MEMORY_Data_OutBus = MAIN_MEMORY_General_Register;
+assign MAIN_MEMORY_ACK_Out = 1'b1;
 
 endmodule
