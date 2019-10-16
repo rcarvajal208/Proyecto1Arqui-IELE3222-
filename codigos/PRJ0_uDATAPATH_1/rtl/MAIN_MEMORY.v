@@ -75,21 +75,11 @@ begin
 	default: MAIN_MEMORY_Case_Register = {4'b0000,4'b0001,4'b0000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0000}; //		nop
 	endcase
 end
-// Se evalua si el caso debe ser carado o no
-always @(*)
-begin
-	// A partir de la señal de Cargar proveniente del Multiplexor, se carga el dato proveniente del bus de datos o se mantiene el dato existente es este
-	if (MAIN_MEMORY_RD_In == 1'b1)
-		MAIN_MEMORY_Signal_Register <= MAIN_MEMORY_Case_Register;
-	else
-		MAIN_MEMORY_Signal_Register <= MAIN_MEMORY_General_Register;
-	end	
-	MAIN_MEMORY_General_Register <= MAIN_MEMORY_Signal_Register;
 //=======================================================
 //  Outputs
 //=======================================================
 // OUTPUT LOGIC : COMBINATIONAL 
-assign MAIN_MEMORY_Data_OutBus = MAIN_MEMORY_General_Register;
+assign MAIN_MEMORY_Data_OutBus = MAIN_MEMORY_Case_Register;
 assign MAIN_MEMORY_ACK_Out = 1'b1;
 
 endmodule

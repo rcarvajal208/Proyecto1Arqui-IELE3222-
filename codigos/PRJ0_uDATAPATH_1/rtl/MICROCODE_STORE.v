@@ -63,7 +63,7 @@ input		[DATAWIDTH_JUMPADDRESS-1:0] MICROCODE_STORE_CSAddress_InBus;
 //  REG/WIRE declarations
 //=======================================================
 reg [DATAWIDTH_MICROINSTRUCTION-1:0] OUT_Signal;
-
+reg [DATAWIDTH_MICROINSTRUCTION-1:0] OUT_Register;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -91,20 +91,29 @@ begin
 			default:	OUT_Signal = 41'b10000001000000100101010010100000000000000; //Vuelve a READ			 
 	endcase
 end 
+//STATE REGISTER: SEQUENTIAL
+always @(negedge MICROCODE_STORE_CLOCK_50, posedge MICROCODE_STORE_ResetInHigh_In)
+begin
+	// Se carga 0 en el registro si se oprime Reset, de lo contrario se mantiene el mismo dato
+	if (MICROCODE_STORE_ResetInHigh_In == 1'b1)
+		OUT_Register <= 11'b00000000000;
+	else
+		OUT_Register <= OUT_Signal;
+end
 //=======================================================
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL 
-assign	MICROCODE_STORE_SelectA_OutBus = OUT_Signal[34];
-assign	MICROCODE_STORE_SelectB_OutBus = OUT_Signal[27];
-assign	MICROCODE_STORE_SelectC_OutBus = OUT_Signal[20];
-assign	MICROCODE_STORE_DirA_Out = OUT_Signal[40:35];
-assign	MICROCODE_STORE_DirB_Out = OUT_Signal[33:28];
-assign	MICROCODE_STORE_DirC_Out = OUT_Signal[26:21];
-assign	MICROCODE_STORE_RD_Out = OUT_Signal[19];
-assign	MICROCODE_STORE_WRMain_Out = OUT_Signal[18];
-assign	MICROCODE_STORE_ALUOperation_OutBus = OUT_Signal[17:14];
-assign	MICROCODE_STORE_Condition_OutBus = OUT_Signal[13:11];
-assign	MICROCODE_STORE_JumpAddress_OutBus = OUT_Signal[10:0];
+assign	MICROCODE_STORE_SelectA_OutBus = OUT_Register[34];
+assign	MICROCODE_STORE_SelectB_OutBus = OUT_Register[27];
+assign	MICROCODE_STORE_SelectC_OutBus = OUT_Register[20];
+assign	MICROCODE_STORE_DirA_Out = OUT_Register[40:35];
+assign	MICROCODE_STORE_DirB_Out = OUT_Register[33:28];
+assign	MICROCODE_STORE_DirC_Out = OUT_Register[26:21];
+assign	MICROCODE_STORE_RD_Out = OUT_Register[19];
+assign	MICROCODE_STORE_WRMain_Out = OUT_Register[18];
+assign	MICROCODE_STORE_ALUOperation_OutBus = OUT_Register[17:14];
+assign	MICROCODE_STORE_Condition_OutBus = OUT_Register[13:11];
+assign	MICROCODE_STORE_JumpAddress_OutBus = OUT_Register[10:0];
 
 endmodule
