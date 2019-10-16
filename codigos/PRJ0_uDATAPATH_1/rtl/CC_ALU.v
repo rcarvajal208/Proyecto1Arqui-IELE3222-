@@ -49,6 +49,7 @@ input			[DATAWIDTH_ALU_SELECTION-1:0] CC_ALU_selection_InBus;
 wire caover,cout;
 wire [DATAWIDTH_BUS-2:0] addition0; // Variable usada para la operación suma y para determinar las flags
 wire addition1;							// Variable usada para la operación suma y para determinar las flags
+reg CC_ALU_General_SetCode;
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -59,18 +60,21 @@ begin
 		4'b0000:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus; 							//BUSA
 		4'b0001:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus | CC_ALU_dataB_InBus;	//OR
 		4'b0010:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus & CC_ALU_dataB_InBus;	//AND
-		4'b0011:  CC_ALU_data_OutBus = ~CC_ALU_dataA_InBus;							//NOT
+		4'b0011:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + CC_ALU_dataB_InBus;	//ADDCC   (***)
+					 CC_ALU_General_SetCode = 1'b1;
 		4'b0100:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus ^ CC_ALU_dataB_InBus;	//XOR
-		4'b0101:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
+		4'b0101:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus & CC_ALU_dataB_InBus;	//AND   	 (***)
+					 CC_ALU_General_SetCode = 1'b0;
 		4'b0110:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
-		4'b0111:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
-
+		4'b0111:  CC_ALU_data_OutBus = ~CC_ALU_dataA_InBus | ~CC_ALU_dataB_InBus;//NOR    (***)
+					 CC_ALU_General_SetCode = 1'b0;
 		4'b1000:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + CC_ALU_dataB_InBus;	//ADD
 		4'b1001:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus - CC_ALU_dataB_InBus;	//SUB
-		4'b1010:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A
+		4'b1010:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A  
 		4'b1011:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus - 1'b1;					//DECREMENT A
 		4'b1100:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
-		4'b1101:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
+		4'b1101:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A   (***)
+					 CC_ALU_General_SetCode = 1'b0;
 		4'b1110:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
 		4'b1111:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA DO NOTHING!!!!!!!!		
 		default :  CC_ALU_data_OutBus = CC_ALU_dataA_InBus; 							// channel 0 is selected
@@ -82,6 +86,8 @@ end
 /*Flags*/
 assign {caover,addition0[DATAWIDTH_BUS-2:0]}=CC_ALU_dataA_InBus[DATAWIDTH_BUS-2:0] + CC_ALU_dataB_InBus[DATAWIDTH_BUS-2:0]; 	// Determinación de carry del bit número 7
 assign {cout,addition1}= CC_ALU_dataA_InBus[DATAWIDTH_BUS-1] + CC_ALU_dataB_InBus[DATAWIDTH_BUS-1] + caover;						// Determinación de la flag Carry y la suma de busA y busB
+
+assign CC_ALU_SetCode_Out = CC_ALU_General_SetCode;
 assign CC_ALU_zero_OutLow=(CC_ALU_data_OutBus==8'b00000000) ? 1'b0 : 1'b1;																		// Determinación de la flag Zero
 assign CC_ALU_carry_OutLow = ~cout;	
 assign CC_ALU_overflow_OutLow = ~ (caover ^ cout);																										// Determinación de la flag Ov a partir de la flag Carry y el carry del bit 7
