@@ -88,8 +88,23 @@ begin
 		11'b11000110011: OUT_Signal = 41'b10000100000000100001000110111011001000011; //1587 (R[temp0] ← INC(R[temp0]); GOTO 1603) Form two's complement of subtrahend, add terms for original substraction
 		//BNE (Salta si no es igual a cero)
 		
-		default:		     OUT_Signal = 41'b10000001000000100101010010100000000000000; //Vuelve a READ			 
+			default:	OUT_Signal = 41'b10000001000000100101010010100000000000000; //Vuelve a READ			 
 	endcase
 end 
+//=======================================================
+//  Outputs
+//=======================================================
+//OUTPUT LOGIC: COMBINATIONAL 
+assign	MICROCODE_STORE_SelectA_OutBus = OUT_Signal[34];
+assign	MICROCODE_STORE_SelectB_OutBus = OUT_Signal[27];
+assign	MICROCODE_STORE_SelectC_OutBus = OUT_Signal[20];
+assign	MICROCODE_STORE_DirA_Out = OUT_Signal[40:35];
+assign	MICROCODE_STORE_DirB_Out = OUT_Signal[33:28];
+assign	MICROCODE_STORE_DirC_Out = OUT_Signal[26:21];
+assign	MICROCODE_STORE_RD_Out = OUT_Signal[19];
+assign	MICROCODE_STORE_WRMain_Out = OUT_Signal[18];
+assign	MICROCODE_STORE_ALUOperation_OutBus = OUT_Signal[17:14];
+assign	MICROCODE_STORE_Condition_OutBus = OUT_Signal[13:11];
+assign	MICROCODE_STORE_JumpAddress_OutBus = OUT_Signal[10:0];
 
 endmodule
