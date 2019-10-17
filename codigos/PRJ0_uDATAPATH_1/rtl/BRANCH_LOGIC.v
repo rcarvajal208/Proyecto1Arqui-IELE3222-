@@ -46,25 +46,46 @@ input		[BRANCH_LOGIC_PSR-1:0]	BRANCH_LOGIC_Psr_InBus;
 //  REG/WIRE declarations
 //=======================================================
 reg 		[BRANCH_LOGIC_CONDITION-1:0]	Condition_Signal;
-reg 		[BRANCH_LOGIC_PSR-1:0] PSR_Signal;
+reg 		[BRANCH_LOGIC_CONDITION-1:0]	Condition_Register;
+
 //=======================================================
 //  Structural coding
 //=======================================================
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
-begin
-	case (BRANCH_LOGIC_Condition_InBus)	 
-		3'b000: Condition_Signal = 2'b00;
-		3'b001: Condition_Signal = 2'b00;
-		
-		3'b010: Condition_Signal = 2'b00;
-		3'b011: Condition_Signal = 2'b00;
-		3'b100: Condition_Signal = 2'b00;
-		3'b101: Condition_Signal = 2'b00;
-		3'b110: Condition_Signal = 2'b00;
-		3'b111: Condition_Signal = 2'b10;
-	endcase
+begin	
+	// Crea la salida a partir de las entradas de banderas y el Bit 13, además de la codificación proveniente de la MIR, respectiva a COND 
+	if(BRANCH_LOGIC_Condition_InBus == 3'b001 & BRANCH_LOGIC_Psr_InBus[0] == 1'b1)			// Jump if n = 0
+		Condition_Signal = 2'b01;
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b010 & BRANCH_LOGIC_Psr_InBus[1] == 1'b1)		// Jump if z = 0
+		Condition_Signal = 2'b01;	
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b011 & BRANCH_LOGIC_Psr_InBus[2] == 1'b1)		// Jump if v = 0
+		Condition_Signal = 2'b01;	
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b100 & BRANCH_LOGIC_Psr_InBus[3] == 1'b1)		// Jump if c = 0
+		Condition_Signal = 2'b01;
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b101 & BRANCH_LOGIC_IR13_In == 1'b1)			// Jump if Bit13 = 0
+		Condition_Signal = 2'b01;
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b110)														// Jump ever
+		Condition_Signal = 2'b01;
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b111)														// Decode
+		Condition_Signal = 2'b10;
+	else
+		Condition_Signal = 2'b00;																				// Next
 end
+//STATE REGISTER: SEQUENTIAL
+always @(negedge BRANCH_LOGIC_CLOCK_50, posedge BRANCH_LOGIC_ResetInHigh_In)
+begin
+	if (BRANCH_LOGIC_ResetInHigh_In == 1'b1)
+		Condition_Register <= 0;
+	else
+		Condition_Register <= Condition_Signal;
+end
+
+//=======================================================
+//  Outputs
+//=======================================================
+//OUTPUT LOGIC: COMBINATIONAL
+assign BRANCH_LOGIC_Tipo_OutBus = Condition_Register;
 
 
 endmodule

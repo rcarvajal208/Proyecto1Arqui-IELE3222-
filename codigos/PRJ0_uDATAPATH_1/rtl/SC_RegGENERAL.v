@@ -41,6 +41,7 @@ input		[DATAWIDTH_BUS-1:0]	SC_RegGENERAL_data_InBus;
 //=======================================================
 reg [DATAWIDTH_BUS-1:0] RegGENERAL_Register;
 reg [DATAWIDTH_BUS-1:0] RegGENERAL_Signal;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -62,6 +63,7 @@ begin
 	else
 		RegGENERAL_Register <= RegGENERAL_Signal;
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

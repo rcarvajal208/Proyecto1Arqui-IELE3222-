@@ -53,6 +53,7 @@ input		MAIN_MEMORY_WRMain_In;
 reg [DATAWIDTH_BUS-1:0] MAIN_MEMORY_Case_Register;
 reg [DATAWIDTH_BUS-1:0] MAIN_MEMORY_Signal_Register;
 reg [DATAWIDTH_BUS-1:0] MAIN_MEMORY_General_Register;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -75,6 +76,7 @@ begin
 	default: MAIN_MEMORY_Case_Register = {4'b0000,4'b0001,4'b0000,4'b0000,4'b0000,4'b0000,4'b0000,4'b0000}; //		nop
 	endcase
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

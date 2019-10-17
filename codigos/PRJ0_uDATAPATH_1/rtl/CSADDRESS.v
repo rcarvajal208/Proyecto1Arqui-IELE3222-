@@ -50,6 +50,7 @@ input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_JumpAddress_InBus;
 reg	[DATAWIDTH_CSADDRESS-1:0]	CSADDRESS_Signal_Address;
 reg	[DATAWIDTH_CSADDRESS-1:0]	CSADDRESS_Signal_Decode;
 reg	[DATAWIDTH_CSADDRESS-1:0]	CSADDRESS_General_Address;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -62,13 +63,14 @@ begin
 	else
 		CSADDRESS_Signal_Decode = {1'b1 + CSADDRESS_DecodeOp_InBus + 2'b00};
 end
+always @(*)
 begin
 	// A partir de la señal de Cargar proveniente del Multiplexor, se carga el dato proveniente del bus de datos o se mantiene el dato existente es este
 	case (CSADDRESS_Tipo_InBus)	 
-		2'b00: CSADDRESS_Signal_Address = CSADDRESS_CSAI_InBus;		//Next (Señal recibidad de incrementer)
+		2'b00: CSADDRESS_Signal_Address = CSADDRESS_CSAI_InBus;				//Next (Señal recibidad de incrementer)
 		2'b01: CSADDRESS_Signal_Address = CSADDRESS_JumpAddress_InBus;		//Jump (Señal recibida de Microcode_Store)
-		2'b10: CSADDRESS_Signal_Address = CSADDRESS_Signal_Decode;	//Decodificación de registro de instrucciones OPS
-		default : CSADDRESS_Signal_Address = CSADDRESS_CSAI_InBus;		//Next (Señal recibidad de incrementer)
+		2'b10: CSADDRESS_Signal_Address = CSADDRESS_Signal_Decode;			//Decodificación de registro de instrucciones OPS
+		default: CSADDRESS_Signal_Address = CSADDRESS_CSAI_InBus;			//Next (Señal recibidad de incrementer)
 	endcase
 end
 //STATE REGISTER: SEQUENTIAL
@@ -80,6 +82,7 @@ begin
 	else
 		CSADDRESS_General_Address <= CSADDRESS_Signal_Address;
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

@@ -2,7 +2,144 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[15]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[16]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[17]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[18]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[19]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[20]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[21]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[22]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[23]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[24]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[25]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[26]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[27]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[28]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[29]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[30]",
+					"strict" : false
+				},
+				{
+					"name" : "BB_SYSTEM_data_OutBUS[31]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

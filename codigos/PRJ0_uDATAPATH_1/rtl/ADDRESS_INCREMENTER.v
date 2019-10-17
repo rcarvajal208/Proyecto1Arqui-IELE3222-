@@ -41,13 +41,14 @@ input		[CSAI_DATAWIDTH-1:0]	ADDRESS_INCREMENTER_CSAddress_InBus;
 //=======================================================
 reg [CSAI_DATAWIDTH-1:0] CSAI_ADDRESS;
 reg [CSAI_DATAWIDTH-1:0] CSAI_Signal;
+
 //=======================================================
 //  Structural coding
 //=======================================================
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (ADDRESS_INCREMENTER_ACK == 1'b0)
+	if (ADDRESS_INCREMENTER_ACK == 1'b1)
 		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus + 1;
 	else
 		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus;
@@ -60,6 +61,7 @@ begin
 	else
 		CSAI_ADDRESS <= CSAI_Signal;
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

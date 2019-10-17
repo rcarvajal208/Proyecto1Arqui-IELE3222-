@@ -45,6 +45,7 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_DIR
 //=======================================================
 parameter DATA_REGFIXED_INIT_0 = 32'b00000000000000000000000000000000;
 parameter DATA_REGFIXED_INIT_1 = 32'b00000000000000000000000000000001; 
+
 //=======================================================
 //  PORT declarations
 //=======================================================
@@ -70,6 +71,7 @@ parameter DATA_REGFIXED_INIT_1 = 32'b00000000000000000000000000000001;
 	input DATAPATH_SelectB_In;
 	input DATAPATH_SelectC_In;
 	input [DATAWIDTH_ALU_SELECTION-1:0] DATAPATH_ALUOperation_InBus;
+	
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================

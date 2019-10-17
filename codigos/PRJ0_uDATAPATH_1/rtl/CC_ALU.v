@@ -43,6 +43,7 @@ output reg		[DATAWIDTH_BUS-1:0] CC_ALU_data_OutBus;
 input			[DATAWIDTH_BUS-1:0] CC_ALU_dataA_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_ALU_dataB_InBus;
 input			[DATAWIDTH_ALU_SELECTION-1:0] CC_ALU_selection_InBus;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -50,6 +51,7 @@ wire caover,cout;
 wire [DATAWIDTH_BUS-2:0] addition0; // Variable usada para la operación suma y para determinar las flags
 wire addition1;							// Variable usada para la operación suma y para determinar las flags
 reg CC_ALU_General_SetCode;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -60,26 +62,35 @@ begin
 		4'b0000:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus; 							//BUSA
 		4'b0001:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus | CC_ALU_dataB_InBus;	//OR
 		4'b0010:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus & CC_ALU_dataB_InBus;	//AND
-		4'b0011:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + CC_ALU_dataB_InBus;	//ADDCC   (***)
+		4'b0011:  begin
+					 CC_ALU_data_OutBus = CC_ALU_dataA_InBus + CC_ALU_dataB_InBus;	//ADDCC   (***)
 					 CC_ALU_General_SetCode = 1'b1;
+					 end
 		4'b0100:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus ^ CC_ALU_dataB_InBus;	//XOR
-		4'b0101:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus & CC_ALU_dataB_InBus;	//AND   	 (***)
+		4'b0101:  begin
+					 CC_ALU_data_OutBus = CC_ALU_dataA_InBus & CC_ALU_dataB_InBus;	//AND   	 (***)
 					 CC_ALU_General_SetCode = 1'b0;
+					 end
 		4'b0110:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
-		4'b0111:  CC_ALU_data_OutBus = ~CC_ALU_dataA_InBus | ~CC_ALU_dataB_InBus;//NOR    (***)
+		4'b0111:  begin
+					 CC_ALU_data_OutBus = ~CC_ALU_dataA_InBus | ~CC_ALU_dataB_InBus;//NOR    (***)
 					 CC_ALU_General_SetCode = 1'b0;
+					 end
 		4'b1000:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + CC_ALU_dataB_InBus;	//ADD
 		4'b1001:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus - CC_ALU_dataB_InBus;	//SUB
 		4'b1010:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A  
 		4'b1011:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus - 1'b1;					//DECREMENT A
 		4'b1100:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
-		4'b1101:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A   (***)
+		4'b1101:  begin
+					 CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A   (***)
 					 CC_ALU_General_SetCode = 1'b0;
+					 end
 		4'b1110:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
 		4'b1111:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA DO NOTHING!!!!!!!!		
 		default :  CC_ALU_data_OutBus = CC_ALU_dataA_InBus; 							// channel 0 is selected
 	endcase
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

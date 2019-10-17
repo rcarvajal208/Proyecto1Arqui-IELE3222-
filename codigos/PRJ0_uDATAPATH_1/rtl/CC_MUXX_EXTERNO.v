@@ -33,10 +33,13 @@ output 		[DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_data_OutBus;
 input 		CC_MUXX_EXTERNO_Select_In;
 input			[DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_MIRSelection_InBus;
 input			[DATAWIDTH_SCRATCHPAD_DIRECTION-1:0] CC_MUXX_EXTERNO_ScratchpadSelection_InBus;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-reg [DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_Signal_Register;
+reg [DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_Signal;
+reg [DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_EXTERNO_Register;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -45,15 +48,25 @@ always @(*)
 begin
 	// Elige si la dirección del registro viene desde el Scratchpad o Control de acuerdo al bus de Select
 	if (CC_MUXX_EXTERNO_Select_In == 1'b0)
-		CC_MUXX_EXTERNO_Signal_Register = {1'b0 , CC_MUXX_EXTERNO_ScratchpadSelection_InBus};  
+		CC_MUXX_EXTERNO_Signal = {1'b0 , CC_MUXX_EXTERNO_ScratchpadSelection_InBus};  
 	else
-		CC_MUXX_EXTERNO_Signal_Register = CC_MUXX_EXTERNO_MIRSelection_InBus; 
+		CC_MUXX_EXTERNO_Signal = CC_MUXX_EXTERNO_MIRSelection_InBus; 
 end
+//STATE REGISTER: SEQUENTIAL
+/*always @(negedge MICROCODE_STORE_CLOCK_50, posedge MICROCODE_STORE_ResetInHigh_In)
+begin
+	// Se carga 0 en el registro si se oprime Reset, de lo contrario se mantiene el mismo dato
+	if (MICROCODE_STORE_ResetInHigh_In == 1'b1)
+		CC_MUXX_EXTERNO_Register <= 11'b00000000000;
+	else
+		CC_MUXX_EXTERNO_Register <= CC_MUXX_EXTERNO_Signal;
+end*/
+
 //=======================================================
 //  Outputs
 //=======================================================
 // OUTPUT LOGIC : COMBINATIONAL
-assign CC_MUXX_EXTERNO_data_OutBus = CC_MUXX_EXTERNO_Signal_Register;
+assign CC_MUXX_EXTERNO_data_OutBus = CC_MUXX_EXTERNO_Signal;
 	
 endmodule
 

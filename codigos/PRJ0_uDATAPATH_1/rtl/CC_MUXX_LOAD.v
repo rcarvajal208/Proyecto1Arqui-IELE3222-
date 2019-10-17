@@ -37,11 +37,13 @@ input 		CC_MUXX_LOAD_RD_In;
 input			[DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_ALU_data_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_Memory_data_InBus;
 input			[DATAWIDTH_MIR_DIRECTION-1:0] CC_MUXX_LOAD_Address_InBus;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 reg [DATAWIDTH_BUS-1:0] CC_MUXX_LOAD_Signal_Register;
 reg [DATAWIDTH_DECODER_OUT-1:0] CC_MUXX_LOAD_Decoder_Register;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -76,6 +78,7 @@ begin
 		default:   CC_MUXX_LOAD_Decoder_Register = 14'b11111111111111; 
 	endcase
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

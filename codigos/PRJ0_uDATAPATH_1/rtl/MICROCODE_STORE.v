@@ -64,6 +64,7 @@ input		[DATAWIDTH_JUMPADDRESS-1:0] MICROCODE_STORE_CSAddress_InBus;
 //=======================================================
 reg [DATAWIDTH_MICROINSTRUCTION-1:0] OUT_Signal;
 reg [DATAWIDTH_MICROINSTRUCTION-1:0] OUT_Register;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -88,7 +89,7 @@ begin
 		11'b11000110011: OUT_Signal = 41'b10000100000000100001000110111011001000011; //1587 (R[temp0] ← INC(R[temp0]); GOTO 1603) Form two's complement of subtrahend, add terms for original substraction
 		//BNE (Salta si no es igual a cero)
 		
-			default:	OUT_Signal = 41'b10000001000000100101010010100000000000000; //Vuelve a READ			 
+		default:	OUT_Signal = 41'b10000001000000100101010010100000000000000; //Vuelve a READ			 
 	endcase
 end 
 //STATE REGISTER: SEQUENTIAL
@@ -100,6 +101,7 @@ begin
 	else
 		OUT_Register <= OUT_Signal;
 end
+
 //=======================================================
 //  Outputs
 //=======================================================
