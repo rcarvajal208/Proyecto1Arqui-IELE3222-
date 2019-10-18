@@ -1,5 +1,5 @@
 Fitter report for BB_SYSTEM
-Fri Oct 18 01:00:32 2019
+Fri Oct 18 08:52:04 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 18 01:00:32 2019       ;
+; Fitter Status                      ; Successful - Fri Oct 18 08:52:04 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
@@ -156,14 +156,14 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.05        ;
+; Average used               ; 1.04        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.8%      ;
-;     Processor 3            ;   1.4%      ;
-;     Processor 4            ;   1.4%      ;
+;     Processor 2            ;   1.6%      ;
+;     Processor 3            ;   1.3%      ;
+;     Processor 4            ;   1.2%      ;
 +----------------------------+-------------+
 
 
@@ -1589,7 +1589,7 @@ Info (176215): I/O bank details before I/O pin placement
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "BB_SYSTEM_CLOCK_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "BB_SYSTEM_RESET_InHigh" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -1601,23 +1601,23 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
     Info (170196): Router estimated peak interconnect usage is 19% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:48
-Info (11888): Total time spent on timing analysis during the Fitter is 4.85 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:57
+Info (11888): Total time spent on timing analysis during the Fitter is 5.75 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin CLOCK uses I/O standard 2.5 V at E1 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 43
     Info (169178): Pin RESET uses I/O standard 2.5 V at M2 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 44
 Info (144001): Generated suppressed messages file C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 205 warnings
-    Info: Peak virtual memory: 5669 megabytes
-    Info: Processing ended: Fri Oct 18 01:00:33 2019
-    Info: Elapsed time: 00:01:13
-    Info: Total CPU time (on all processors): 00:01:27
+    Info: Peak virtual memory: 5575 megabytes
+    Info: Processing ended: Fri Oct 18 08:52:06 2019
+    Info: Elapsed time: 00:01:30
+    Info: Total CPU time (on all processors): 00:01:38
 
 
 +----------------------------+

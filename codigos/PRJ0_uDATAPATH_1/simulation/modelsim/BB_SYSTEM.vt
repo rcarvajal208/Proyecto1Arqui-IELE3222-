@@ -1,4 +1,4 @@
-// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Copyright (C) 2016  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -6,18 +6,19 @@
 // associated documentation or information are expressly subject 
 // to the terms and conditions of the Intel Program License 
 // Subscription Agreement, the Intel Quartus Prime License Agreement,
-// the Intel FPGA IP License Agreement, or other applicable license
-// agreement, including, without limitation, that your use is for
-// the sole purpose of programming logic devices manufactured by
-// Intel and sold by Intel or its authorized distributors.  Please
-// refer to the applicable agreement for further details.
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
 
 // *****************************************************************************
 // This file contains a Verilog test bench template that is freely editable to  
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "10/17/2019 17:43:07"
+// Generated on "10/18/2019 01:23:18"
                                                                                 
 // Verilog Test Bench template for design : BB_SYSTEM
 // 
@@ -28,7 +29,7 @@
 module BB_SYSTEM_vlg_tst();
 // constants                                           
 // general purpose registers
-reg eachvec;  
+reg eachvec;
 // test vector input registers
 reg CLOCK;
 reg RESET;
@@ -45,14 +46,14 @@ BB_SYSTEM i1 (
 initial                                                
 begin                                                  
 // code that executes only once                        
-// insert code here --> begin     
-
+// insert code here --> begin                          
+                                                       
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
 always                                                 
 // optional sensitivity list                           
-// @(event1 or event2 or .... eventn)  
+// @(event1 or event2 or .... eventn)                  
 begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin                          

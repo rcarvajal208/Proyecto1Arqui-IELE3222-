@@ -12,169 +12,169 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:14 on Oct 18,2019
+# Start time: 08:56:56 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v 
 # -- Compiling module SC_RegGENERAL
 # 
 # Top level modules:
 # 	SC_RegGENERAL
-# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:56 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:14 on Oct 18,2019
+# Start time: 08:56:57 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v 
 # -- Compiling module SC_RegFIXED
 # 
 # Top level modules:
 # 	SC_RegFIXED
-# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:57 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:14 on Oct 18,2019
+# Start time: 08:56:57 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v 
 # -- Compiling module CC_MUXX
 # 
 # Top level modules:
 # 	CC_MUXX
-# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:57 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:14 on Oct 18,2019
+# Start time: 08:56:57 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v 
 # -- Compiling module CC_ALU
 # 
 # Top level modules:
 # 	CC_ALU
-# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:57 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1 {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:15 on Oct 18,2019
+# Start time: 08:56:57 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v 
 # -- Compiling module BB_SYSTEM
 # 
 # Top level modules:
 # 	BB_SYSTEM
-# End time: 01:01:15 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:57 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:15 on Oct 18,2019
+# Start time: 08:56:57 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v 
 # -- Compiling module CONTROL
 # 
 # Top level modules:
 # 	CONTROL
-# End time: 01:01:15 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:58 on Oct 18,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:15 on Oct 18,2019
+# Start time: 08:56:58 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v 
 # -- Compiling module MAIN_MEMORY
 # 
 # Top level modules:
 # 	MAIN_MEMORY
-# End time: 01:01:15 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:58 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:15 on Oct 18,2019
+# Start time: 08:56:58 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v 
 # -- Compiling module DATAPATH
 # 
 # Top level modules:
 # 	DATAPATH
-# End time: 01:01:16 on Oct 18,2019, Elapsed time: 0:00:01
+# End time: 08:56:58 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:16 on Oct 18,2019
+# Start time: 08:56:58 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v 
 # -- Compiling module MICROCODE_STORE
 # 
 # Top level modules:
 # 	MICROCODE_STORE
-# End time: 01:01:16 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:58 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:16 on Oct 18,2019
+# Start time: 08:56:58 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v 
 # -- Compiling module BRANCH_LOGIC
 # 
 # Top level modules:
 # 	BRANCH_LOGIC
-# End time: 01:01:16 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:59 on Oct 18,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:16 on Oct 18,2019
+# Start time: 08:56:59 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v 
 # -- Compiling module ADDRESS_INCREMENTER
 # 
 # Top level modules:
 # 	ADDRESS_INCREMENTER
-# End time: 01:01:17 on Oct 18,2019, Elapsed time: 0:00:01
+# End time: 08:56:59 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:17 on Oct 18,2019
+# Start time: 08:56:59 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v 
 # -- Compiling module CSADDRESS
 # 
 # Top level modules:
 # 	CSADDRESS
-# End time: 01:01:17 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:59 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:17 on Oct 18,2019
+# Start time: 08:56:59 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v 
 # -- Compiling module PSR
 # 
 # Top level modules:
 # 	PSR
-# End time: 01:01:17 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:56:59 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:17 on Oct 18,2019
+# Start time: 08:56:59 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v 
 # -- Compiling module CC_MUXX_LOAD
 # 
 # Top level modules:
 # 	CC_MUXX_LOAD
-# End time: 01:01:18 on Oct 18,2019, Elapsed time: 0:00:01
+# End time: 08:57:00 on Oct 18,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:18 on Oct 18,2019
+# Start time: 08:57:00 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v 
 # -- Compiling module CC_MUXX_EXTERNO
 # 
 # Top level modules:
 # 	CC_MUXX_EXTERNO
-# End time: 01:01:18 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:57:00 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:01:18 on Oct 18,2019
+# Start time: 08:57:00 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt 
 # -- Compiling module TB_SYSTEM
 # 
 # Top level modules:
 # 	TB_SYSTEM
-# End time: 01:01:18 on Oct 18,2019, Elapsed time: 0:00:00
+# End time: 08:57:00 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
-# Start time: 01:01:19 on Oct 18,2019
+# Start time: 08:57:01 on Oct 18,2019
 # Loading work.TB_SYSTEM
 # Loading work.BB_SYSTEM
 # Loading work.DATAPATH
@@ -191,13 +191,45 @@
 # Loading work.CSADDRESS
 # Loading work.PSR
 # Loading work.MAIN_MEMORY
-# ** Error: (vsim-3063) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt(41): Port 'BB_SYSTEM_CLOCK_50' not found in the connected module (2nd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
-# ** Error: (vsim-3063) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt(41): Port 'BB_SYSTEM_RESET_InHigh' not found in the connected module (3rd connection).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./BB_SYSTEM_run_msim_rtl_verilog.do PAUSED at line 26
-# End time: 01:09:11 on Oct 18,2019, Elapsed time: 0:07:52
-# Errors: 2, Warnings: 0
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+ do TB_SYSTEM.do
+# ** Error: (vish-4014) No objects found matching '/TB_SYSTEM/TB_SYSTEM_data_OutBUS'.
+# Executing ONERROR command at macro ./TB_SYSTEM.do line 9
+# ** Error: (vish-4014) No objects found matching '/TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_ALU_u0/CC_ALU_dataB_InBUS'.
+# Executing ONERROR command at macro ./TB_SYSTEM.do line 21
+# ** Error: (vish-4014) No objects found matching '/TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_ALU_u0/CC_ALU_selection_InBUS'.
+# Executing ONERROR command at macro ./TB_SYSTEM.do line 27
+# Running testbench
+ do TB_SYSTEM.do
+# ** Error: (vish-4014) No objects found matching '/TB_SYSTEM/TB_SYSTEM_data_OutBus'.
+# Executing ONERROR command at macro ./TB_SYSTEM.do line 9
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# ** Error: (vish-4014) No objects found matching '/TB_SYSTEM/BB_SYSTEM_u0/MICROCODE_STORE_u0/MICROCODE_STORE_RD_Out'.
+# Executing ONERROR command at macro ./TB_SYSTEM.do line 23
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+ do TB_SYSTEM.do
+# Running testbench
+# End time: 09:26:53 on Oct 18,2019, Elapsed time: 0:29:52
+# Errors: 15, Warnings: 0

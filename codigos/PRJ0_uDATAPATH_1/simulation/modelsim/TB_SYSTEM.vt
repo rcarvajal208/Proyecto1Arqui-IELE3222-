@@ -41,8 +41,8 @@ module TB_SYSTEM();
 	BB_SYSTEM BB_SYSTEM_u0 (
 	// port map - connection between master ports and signals/registers   
 		.BB_SYSTEM_data_OutBUS(TB_SYSTEM_Data_OutBus),
-		.BB_SYSTEM_CLOCK_50(TB_SYSTEM_CLOCK_50),
-		.BB_SYSTEM_RESET_InHigh(TB_SYSTEM_RESET_InHigh)
+		.CLOCK(TB_SYSTEM_CLOCK_50),
+		.RESET(TB_SYSTEM_RESET_InHigh)
 	);
 initial                                                
 begin                                                  

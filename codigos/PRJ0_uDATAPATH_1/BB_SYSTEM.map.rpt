@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BB_SYSTEM
-Fri Oct 18 00:59:19 2019
+Fri Oct 18 08:50:33 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -79,7 +79,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 18 00:59:19 2019       ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 18 08:50:32 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
@@ -807,7 +807,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:21     ;
+; Top            ; 00:00:22     ;
 +----------------+--------------+
 
 
@@ -817,11 +817,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Fri Oct 18 00:58:32 2019
+    Info: Processing started: Fri Oct 18 08:49:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
-Info (12021): Found 1 design units, including 1 entities, in source file rtl/udatapath.v
-    Info (12023): Found entity 1: uDATAPATH File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/uDATAPATH.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_reggeneral.v
     Info (12023): Found entity 1: SC_RegGENERAL File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regfixed.v
@@ -892,9 +890,9 @@ Info (21057): Implemented 1542 device resources after synthesis - the final reso
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 1508 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Fri Oct 18 00:59:19 2019
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:01:18
+    Info: Peak virtual memory: 4807 megabytes
+    Info: Processing ended: Fri Oct 18 08:50:33 2019
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:01:24
 
 

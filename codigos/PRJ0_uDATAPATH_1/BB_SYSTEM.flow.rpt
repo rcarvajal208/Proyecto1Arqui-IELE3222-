@@ -1,5 +1,5 @@
 Flow report for BB_SYSTEM
-Fri Oct 18 01:00:52 2019
+Fri Oct 18 08:52:30 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Oct 18 01:00:52 2019       ;
+; Flow Status                        ; Successful - Fri Oct 18 08:52:30 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/18/2019 00:58:33 ;
+; Start date & time ; 10/18/2019 08:49:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BB_SYSTEM           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 150461129178804.157137831330820        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 150461129178804.157140657733132        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TB_SYSTEM      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_SYSTEM                              ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR        ; simulation/modelsim                    ; --            ; --          ; eda_simulation ;
@@ -103,12 +103,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:46     ; 1.0                     ; 4805 MB             ; 00:01:18                           ;
-; Fitter                    ; 00:01:12     ; 1.0                     ; 5669 MB             ; 00:01:26                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.2                     ; 4822 MB             ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4674 MB             ; 00:00:05                           ;
-; Total                     ; 00:02:13     ; --                      ; --                  ; 00:02:58                           ;
+; Analysis & Synthesis      ; 00:00:53     ; 1.0                     ; 4807 MB             ; 00:01:23                           ;
+; Fitter                    ; 00:01:28     ; 1.0                     ; 5575 MB             ; 00:01:37                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4695 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.2                     ; 4818 MB             ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4675 MB             ; 00:00:05                           ;
+; Total                     ; 00:02:38     ; --                      ; --                  ; 00:03:16                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
