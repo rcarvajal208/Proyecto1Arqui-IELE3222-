@@ -12,169 +12,169 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:56 on Oct 11,2019
+# Start time: 01:01:14 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v 
 # -- Compiling module SC_RegGENERAL
 # 
 # Top level modules:
 # 	SC_RegGENERAL
-# End time: 09:15:57 on Oct 11,2019, Elapsed time: 0:00:01
+# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:57 on Oct 11,2019
+# Start time: 01:01:14 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v 
 # -- Compiling module SC_RegFIXED
 # 
 # Top level modules:
 # 	SC_RegFIXED
-# End time: 09:15:57 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:57 on Oct 11,2019
+# Start time: 01:01:14 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v 
 # -- Compiling module CC_MUXX
 # 
 # Top level modules:
 # 	CC_MUXX
-# End time: 09:15:57 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:57 on Oct 11,2019
+# Start time: 01:01:14 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v 
 # -- Compiling module CC_ALU
 # 
 # Top level modules:
 # 	CC_ALU
-# End time: 09:15:57 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:14 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1 {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:58 on Oct 11,2019
+# Start time: 01:01:15 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v 
 # -- Compiling module BB_SYSTEM
 # 
 # Top level modules:
 # 	BB_SYSTEM
-# End time: 09:15:58 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:15 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:58 on Oct 11,2019
+# Start time: 01:01:15 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v 
 # -- Compiling module CONTROL
 # 
 # Top level modules:
 # 	CONTROL
-# End time: 09:15:58 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:15 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:58 on Oct 11,2019
+# Start time: 01:01:15 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v 
 # -- Compiling module MAIN_MEMORY
 # 
 # Top level modules:
 # 	MAIN_MEMORY
-# End time: 09:15:58 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:15 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:58 on Oct 11,2019
+# Start time: 01:01:15 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v 
 # -- Compiling module DATAPATH
 # 
 # Top level modules:
 # 	DATAPATH
-# End time: 09:15:58 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:16 on Oct 18,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:59 on Oct 11,2019
+# Start time: 01:01:16 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v 
 # -- Compiling module MICROCODE_STORE
 # 
 # Top level modules:
 # 	MICROCODE_STORE
-# End time: 09:15:59 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:16 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:59 on Oct 11,2019
+# Start time: 01:01:16 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v 
 # -- Compiling module BRANCH_LOGIC
 # 
 # Top level modules:
 # 	BRANCH_LOGIC
-# End time: 09:15:59 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:16 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:59 on Oct 11,2019
+# Start time: 01:01:16 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v 
 # -- Compiling module ADDRESS_INCREMENTER
 # 
 # Top level modules:
 # 	ADDRESS_INCREMENTER
-# End time: 09:15:59 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:17 on Oct 18,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:15:59 on Oct 11,2019
+# Start time: 01:01:17 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v 
 # -- Compiling module CSADDRESS
 # 
 # Top level modules:
 # 	CSADDRESS
-# End time: 09:16:00 on Oct 11,2019, Elapsed time: 0:00:01
+# End time: 01:01:17 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:00 on Oct 11,2019
+# Start time: 01:01:17 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v 
 # -- Compiling module PSR
 # 
 # Top level modules:
 # 	PSR
-# End time: 09:16:00 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:17 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:00 on Oct 11,2019
+# Start time: 01:01:17 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v 
 # -- Compiling module CC_MUXX_LOAD
 # 
 # Top level modules:
 # 	CC_MUXX_LOAD
-# End time: 09:16:00 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:18 on Oct 18,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:00 on Oct 11,2019
+# Start time: 01:01:18 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v 
 # -- Compiling module CC_MUXX_EXTERNO
 # 
 # Top level modules:
 # 	CC_MUXX_EXTERNO
-# End time: 09:16:00 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:18 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:01 on Oct 11,2019
+# Start time: 01:01:18 on Oct 18,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim" C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt 
 # -- Compiling module TB_SYSTEM
 # 
 # Top level modules:
 # 	TB_SYSTEM
-# End time: 09:16:01 on Oct 11,2019, Elapsed time: 0:00:00
+# End time: 01:01:18 on Oct 18,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
-# Start time: 09:16:01 on Oct 11,2019
+# Start time: 01:01:19 on Oct 18,2019
 # Loading work.TB_SYSTEM
 # Loading work.BB_SYSTEM
 # Loading work.DATAPATH
@@ -191,41 +191,13 @@
 # Loading work.CSADDRESS
 # Loading work.PSR
 # Loading work.MAIN_MEMORY
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt(41): [PCDPC] - Port size (32) does not match connection size (8) for port 'BB_SYSTEM_data_OutBUS'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(22).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
 # ** Error: (vsim-3063) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt(41): Port 'BB_SYSTEM_CLOCK_50' not found in the connected module (2nd connection).
 #    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
 # ** Error: (vsim-3063) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt(41): Port 'BB_SYSTEM_RESET_InHigh' not found in the connected module (3rd connection).
 #    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(108): [PCDPC] - Port size (6) does not match connection size (1) for port 'CONTROL_SelectA_OutBus'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(21).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(108): [PCDPC] - Port size (6) does not match connection size (1) for port 'CONTROL_SelectB_OutBus'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(22).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(108): [PCDPC] - Port size (6) does not match connection size (1) for port 'CONTROL_SelectC_OutBus'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(23).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(108): [PCDPC] - Port size (1) does not match connection size (6) for port 'CONTROL_DirA_Out'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(24).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(108): [PCDPC] - Port size (1) does not match connection size (6) for port 'CONTROL_DirB_Out'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(25).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v(108): [PCDPC] - Port size (1) does not match connection size (6) for port 'CONTROL_DirC_Out'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(89): [PCDPC] - Port size (1) does not match connection size (6) for port 'MICROCODE_STORE_SelectA_OutBus'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v(22).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(89): [PCDPC] - Port size (1) does not match connection size (6) for port 'MICROCODE_STORE_SelectB_OutBus'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v(23).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(89): [PCDPC] - Port size (1) does not match connection size (6) for port 'MICROCODE_STORE_SelectC_OutBus'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v(24).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(89): [PCDPC] - Port size (6) does not match connection size (1) for port 'MICROCODE_STORE_DirA_Out'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v(25).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(89): [PCDPC] - Port size (6) does not match connection size (1) for port 'MICROCODE_STORE_DirB_Out'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
-# ** Warning: (vsim-3015) C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CONTROL.v(89): [PCDPC] - Port size (6) does not match connection size (1) for port 'MICROCODE_STORE_DirC_Out'. The port definition is at: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v(27).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./BB_SYSTEM_run_msim_rtl_verilog.do PAUSED at line 26
-do BB_SYSTEM.do
-# Cannot open macro file: BB_SYSTEM.do
-# End time: 09:36:54 on Oct 11,2019, Elapsed time: 0:20:53
-# Errors: 2, Warnings: 13
+# End time: 01:09:11 on Oct 18,2019, Elapsed time: 0:07:52
+# Errors: 2, Warnings: 0

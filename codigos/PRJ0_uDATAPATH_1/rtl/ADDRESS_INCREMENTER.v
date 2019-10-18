@@ -49,7 +49,7 @@ reg [CSAI_DATAWIDTH-1:0] CSAI_Signal;
 always @(*)
 begin
 	if (ADDRESS_INCREMENTER_ACK == 1'b1)
-		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus + 1;
+		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus + 1'b1;
 	else
 		CSAI_Signal = ADDRESS_INCREMENTER_CSAddress_InBus;
 	end	
