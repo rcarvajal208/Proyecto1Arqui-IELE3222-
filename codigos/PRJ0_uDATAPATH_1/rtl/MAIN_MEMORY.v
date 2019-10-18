@@ -26,7 +26,6 @@ module MAIN_MEMORY #(parameter DATAWIDTH_BUS=32)(
 	MAIN_MEMORY_B_InBus,
 	MAIN_MEMORY_RD_In,
 	MAIN_MEMORY_WRMain_In
-	
 );
 //=======================================================
 //  PARAMETER declarations

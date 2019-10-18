@@ -8796,17 +8796,26 @@ CSADDRESS_JumpAddress_InBus[10] => Mux0.IN5
 
 
 |BB_SYSTEM|CONTROL:CONTROL_u0|PSR:PSR_u0
-PSR_Psr_OutBus[0] <= <GND>
-PSR_Psr_OutBus[1] <= <GND>
-PSR_Psr_OutBus[2] <= <GND>
-PSR_Psr_OutBus[3] <= <GND>
-PSR_CLOCK_50 => ~NO_FANOUT~
-PSR_ResetInHigh_In => ~NO_FANOUT~
-PSR_FlagOverflow_In => ~NO_FANOUT~
-PSR_FlagNegative_In => ~NO_FANOUT~
-PSR_FlagCarry_In => ~NO_FANOUT~
-PSR_FlagZero_In => ~NO_FANOUT~
-PSR_SetCodes_In => ~NO_FANOUT~
+PSR_Psr_OutBus[0] <= Psr_Register[0].DB_MAX_OUTPUT_PORT_TYPE
+PSR_Psr_OutBus[1] <= Psr_Register[1].DB_MAX_OUTPUT_PORT_TYPE
+PSR_Psr_OutBus[2] <= Psr_Register[2].DB_MAX_OUTPUT_PORT_TYPE
+PSR_Psr_OutBus[3] <= Psr_Register[3].DB_MAX_OUTPUT_PORT_TYPE
+PSR_CLOCK_50 => Psr_Register[0].CLK
+PSR_CLOCK_50 => Psr_Register[1].CLK
+PSR_CLOCK_50 => Psr_Register[2].CLK
+PSR_CLOCK_50 => Psr_Register[3].CLK
+PSR_ResetInHigh_In => Psr_Register[0].ACLR
+PSR_ResetInHigh_In => Psr_Register[1].ACLR
+PSR_ResetInHigh_In => Psr_Register[2].ACLR
+PSR_ResetInHigh_In => Psr_Register[3].ACLR
+PSR_FlagOverflow_In => Psr_Register[2].DATAIN
+PSR_FlagNegative_In => Psr_Register[0].DATAIN
+PSR_FlagCarry_In => Psr_Register[3].DATAIN
+PSR_FlagZero_In => Psr_Register[1].DATAIN
+PSR_SetCodes_In => Psr_Register[0].ENA
+PSR_SetCodes_In => Psr_Register[3].ENA
+PSR_SetCodes_In => Psr_Register[2].ENA
+PSR_SetCodes_In => Psr_Register[1].ENA
 
 
 |BB_SYSTEM|MAIN_MEMORY:MAIN_MEMORY_u0

@@ -42,6 +42,7 @@ parameter DATAWIDTH_DECODER_OUT=14; 			// DECODER OUT BUS.
 output	[DATAWIDTH_BUS-1:0] BB_SYSTEM_data_OutBUS;
 input 	CLOCK;
 input 	RESET;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -53,7 +54,6 @@ input 	RESET;
 	wire [DATAWIDTH_BUS-1:0]	BBUS;
 	wire RD;
 	wire WRMAIN;
-	
 // CONTROL
 	wire SELECTA;
 	wire SELECTB;
@@ -68,7 +68,6 @@ input 	RESET;
 	wire FLAGZERO;
 	wire SETCODES;
 	wire OPS;
-
 
 //=======================================================
 //  Structural coding

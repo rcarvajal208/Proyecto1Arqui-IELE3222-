@@ -44,6 +44,7 @@ input		[DATAWIDTH_CBL-1:0] CSADDRESS_Tipo_InBus;
 input		[DATAWIDTH_OPS-1:0] CSADDRESS_DecodeOp_InBus;
 input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_CSAI_InBus;
 input		[DATAWIDTH_CSADDRESS-1:0] CSADDRESS_JumpAddress_InBus;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================

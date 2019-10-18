@@ -33,6 +33,7 @@ module CC_DECODER #(parameter DATAWIDTH_DECODER_SELECTION=4, parameter DATAWIDTH
 //=======================================================
 output reg	[DATAWIDTH_DECODER_OUT-1:0] CC_DECODER_datadecoder_OutBUS;
 input		[DATAWIDTH_DECODER_SELECTION-1:0] CC_DECODER_selection_InBUS;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -61,6 +62,7 @@ begin
 		default : CC_DECODER_datadecoder_OutBUS = 14'b11111111111111; 
 	endcase
 end
+
 //=======================================================
 //  Outputs
 //=======================================================

@@ -33,11 +33,13 @@ module SC_RegFIXED #(parameter DATAWIDTH_BUS=32, parameter DATA_REGFIXED_INIT=32
 output reg		[DATAWIDTH_BUS-1:0] SC_RegFIXED_data_OutBus;
 input			SC_RegFIXED_CLOCK_50;
 input			SC_RegFIXED_RESET_InHigh;
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 reg [DATAWIDTH_BUS-1:0] RegFIXED_Register;
 reg [DATAWIDTH_BUS-1:0] RegFIXED_Signal;
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -50,6 +52,7 @@ always @ ( posedge SC_RegFIXED_CLOCK_50 , posedge SC_RegFIXED_RESET_InHigh)
 		RegFIXED_Register <= DATA_REGFIXED_INIT;
 	else
 		RegFIXED_Register <= RegFIXED_Signal;
+		
 //=======================================================
 //  Outputs
 //=======================================================

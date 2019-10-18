@@ -61,10 +61,12 @@ input			[DATAWIDTH_BUS-1:0] CC_MUX_data13_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data14_InBus;
 input			[DATAWIDTH_BUS-1:0] CC_MUX_data15_InBus;
 input			[DATAWIDTH_MIR_DIRECTION-1:0] CC_MUX_Address_InBus; 
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 reg [DATAWIDTH_BUS-1:0] CC_MUX_Signal_Register; 
+
 //=======================================================
 //  Structural coding
 //=======================================================
@@ -92,7 +94,8 @@ begin
 		6'b001111: CC_MUX_Signal_Register = CC_MUX_data15_InBus;
 		default:   CC_MUX_Signal_Register = CC_MUX_data0_InBus; // Por defecto se selecciona el registro fijo 0 con valor 0
 	endcase
-end 
+end
+ 
 //=======================================================
 //  Outputs
 //=======================================================
