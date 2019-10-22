@@ -20,7 +20,6 @@ vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE
 vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/PSR.v}
 vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v}
 vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v}
-vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL_IR.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim {C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt}
 

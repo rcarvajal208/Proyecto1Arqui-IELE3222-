@@ -60,9 +60,9 @@ always @(*)
 begin
 	//Proceso de decodificación según OP
 	if (CSADDRESS_DecodeOp_InBus[7:6] == 2'b00)
-		CSADDRESS_Signal_Decode = {1'b1 + CSADDRESS_DecodeOp_InBus[7:3] + 5'b00000};
+		CSADDRESS_Signal_Decode = {1'b1 , CSADDRESS_DecodeOp_InBus[7:3] , 5'b00000};
 	else
-		CSADDRESS_Signal_Decode = {1'b1 + CSADDRESS_DecodeOp_InBus + 2'b00};
+		CSADDRESS_Signal_Decode = {1'b1 , CSADDRESS_DecodeOp_InBus , 2'b00};
 end
 always @(*)
 begin

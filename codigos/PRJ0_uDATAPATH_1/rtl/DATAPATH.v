@@ -16,7 +16,7 @@
 //=======================================================
 //  MODULE Definition
 //=======================================================
-module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_DIRECTION=5, parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODER_SELECTION=4, parameter DATAWIDTH_DECODER_OUT=14)(
+module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_DIRECTION=5, parameter DATAWIDTH_MIR_DIRECTION=6, parameter DATAWIDTH_ALU_SELECTION=4, parameter DATAWIDTH_DECODER_SELECTION=4, parameter DATAWIDTH_DECODER_OUT=14, parameter DATAWIDTH_DECODEROP = 8)(
 	//////////// OUTPUTS //////////
 	DATAPATH_A_OutBus, 				//Bus de salida A
 	DATAPATH_B_OutBus, 				//Bus de salida B
@@ -26,6 +26,8 @@ module DATAPATH #(parameter DATAWIDTH_BUS=32, parameter DATAWIDTH_SCRATCHPAD_DIR
 	DATAPATH_FlagCarry_Out, 		//Bandera de carry
 	DATAPATH_FlagZero_Out,			//Bandera de ceros
 	DATAPATH_DataOut_OutBus, 		//Salida del registro de instrucción
+	DATAPATH_Bit13_Out, 				//Salida del registro de instrucción
+	DATAPATH_OPS_OutBus, 			//Salida del registro de instrucción
 	
 	//////////// INPUTS //////////
 	DATAPATH_CLOCK_50,				//Clock 
@@ -58,6 +60,8 @@ parameter DATA_REGFIXED_INIT_1 = 32'b00000000000000000000000000000001;
 	output DATAPATH_FlagCarry_Out;
 	output DATAPATH_FlagZero_Out;
 	output [DATAWIDTH_BUS-1:0] DATAPATH_DataOut_OutBus;
+	output DATAPATH_Bit13_Out;
+	output [DATAWIDTH_DECODEROP-1:0] DATAPATH_OPS_OutBus;
 	
 	//////////// INPUTS //////////
 	input DATAPATH_CLOCK_50;
@@ -82,6 +86,9 @@ wire [DATAWIDTH_MIR_DIRECTION-1:0] ADDRESS_C;
 wire [DATAWIDTH_DECODER_OUT-1:0] LOAD;
 wire [DATAWIDTH_BUS-1:0] MUX_C_BUS; 
 wire [DATAWIDTH_BUS-1:0] ALU_DATA; 
+wire [DATAWIDTH_BUS-1:0] SCRATCHPAD_RDestino; 
+wire [DATAWIDTH_BUS-1:0] SCRATCHPAD_RS1; 
+wire [DATAWIDTH_BUS-1:0] SCRATCHPAD_RS2; 
 // REGISTROS 
 wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_0; 
 wire [DATAWIDTH_BUS-1:0] REGISTRO_DATA_1;
@@ -183,7 +190,7 @@ CC_MUXX_EXTERNO #(.DATAWIDTH_SCRATCHPAD_DIRECTION(DATAWIDTH_SCRATCHPAD_DIRECTION
 	.CC_MUXX_EXTERNO_data_OutBus(ADDRESS_A),
 	.CC_MUXX_EXTERNO_Select_In(DATAPATH_SelectA_In),
 	.CC_MUXX_EXTERNO_MIRSelection_InBus(DATAPATH_DirA_InBus),
-	.CC_MUXX_EXTERNO_ScratchpadSelection_InBus(DATAPATH_A_OutBus[18:14])
+	.CC_MUXX_EXTERNO_ScratchpadSelection_InBus(SCRATCHPAD_RS1)
 
 );
 
@@ -193,7 +200,7 @@ CC_MUXX_EXTERNO #(.DATAWIDTH_SCRATCHPAD_DIRECTION(DATAWIDTH_SCRATCHPAD_DIRECTION
 	.CC_MUXX_EXTERNO_data_OutBus(ADDRESS_B),
 	.CC_MUXX_EXTERNO_Select_In(DATAPATH_SelectB_In),
 	.CC_MUXX_EXTERNO_MIRSelection_InBus(DATAPATH_DirB_InBus),
-	.CC_MUXX_EXTERNO_ScratchpadSelection_InBus(DATAPATH_A_OutBus[4:0])
+	.CC_MUXX_EXTERNO_ScratchpadSelection_InBus(SCRATCHPAD_RS2)
 
 );
 
@@ -203,7 +210,7 @@ CC_MUXX_EXTERNO #(.DATAWIDTH_SCRATCHPAD_DIRECTION(DATAWIDTH_SCRATCHPAD_DIRECTION
 	.CC_MUXX_EXTERNO_data_OutBus(ADDRESS_C),
 	.CC_MUXX_EXTERNO_Select_In(DATAPATH_SelectC_In),
 	.CC_MUXX_EXTERNO_MIRSelection_InBus(DATAPATH_DirC_InBus),
-	.CC_MUXX_EXTERNO_ScratchpadSelection_InBus(DATAPATH_A_OutBus[29:25])
+	.CC_MUXX_EXTERNO_ScratchpadSelection_InBus(SCRATCHPAD_RDestino)
 
 );  
 
@@ -243,13 +250,20 @@ SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_PC (
 // REGISTRO GENERAL MEMORIA PRINCIPAL
 //-------------------------------------------------------
 
-SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_IR (
+SC_RegGENERAL_IR #(.DATAWIDTH_BUS(DATAWIDTH_BUS), .DATAWIDTH_SCRATCHPAD_DIRECTION(DATAWIDTH_SCRATCHPAD_DIRECTION), .DATAWIDTH_DECODEROP(DATAWIDTH_DECODEROP)) SC_RegGENERAL_IR_u0 (
    
-	.SC_RegGENERAL_data_OutBus(REGISTRO_DATA_3),
-	.SC_RegGENERAL_CLOCK_50(DATAPATH_CLOCK_50),
-	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In), 
-	.SC_RegGENERAL_load_InLow(LOAD[1]),
-	.SC_RegGENERAL_data_InBus(MUX_C_BUS)
+	//////////// OUTPUTS //////////
+	.SC_RegGENERAL_IR_data_OutBus(REGISTRO_DATA_3),
+	.SC_RegGENERAL_IR_RDestino_OutBus(SCRATCHPAD_RDestino),
+	.SC_RegGENERAL_IR_RS1_OutBus(SCRATCHPAD_RS1),
+	.SC_RegGENERAL_IR_RS2_OutBus(SCRATCHPAD_RS2),
+	.SC_RegGENERAL_IR_OPS_OutBus(DATAPATH_OPS_OutBus),
+	.SC_RegGENERAL_IR_BIT13_OutBus(DATAPATH_Bit13_Out),
+	//////////// INPUTS //////////
+	.SC_RegGENERAL_IR_CLOCK_50(DATAPATH_CLOCK_50),
+	.SC_RegGENERAL_IR_RESET_InHigh(DATAPATH_ResetInHigh_In), 
+	.SC_RegGENERAL_IR_load_InLow(LOAD[1]),
+	.SC_RegGENERAL_IR_data_InBus(MUX_C_BUS)
 );
 
 //-------------------------------------------------------
@@ -356,7 +370,7 @@ SC_RegGENERAL #(.DATAWIDTH_BUS(DATAWIDTH_BUS)) SC_RegGENERAL_r13 (
 	.SC_RegGENERAL_RESET_InHigh(DATAPATH_ResetInHigh_In), 
 	.SC_RegGENERAL_load_InLow(LOAD[13]),
 	.SC_RegGENERAL_data_InBus(MUX_C_BUS)
-); 
+);  
 
 endmodule
 

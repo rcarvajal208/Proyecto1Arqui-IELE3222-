@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim
 vADDRESS_INCREMENTER
-Z1 !s110 1571407019
+Z1 !s110 1571706161
 !i10b 1
 !s100 iV?fn[]X7XHH]J4DIW9HG1
 I4lN6?;::RIUoN[<Un10@l2
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1571407019.000000
+Z5 !s108 1571706161.000000
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/ADDRESS_INCREMENTER.v|
 !i113 1
@@ -32,13 +32,13 @@ Z7 !s92 -vlog01compat -work work +incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-I
 Z8 tCvgOpt 0
 n@a@d@d@r@e@s@s_@i@n@c@r@e@m@e@n@t@e@r
 vBB_SYSTEM
-Z9 !s110 1571407017
+Z9 !s110 1571706159
 !i10b 1
-!s100 E`Y3JRikBbcd^HWCD[YZP1
-InN?lnWN8>W@g[L;cBnAz`3
+!s100 kI]mP6k21<j_oh_jOKE5[1
+ITWDZ:749Xk>>=MnNDP_d^2
 R2
 R0
-w1571365559
+w1571704907
 8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
 FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v
 Z10 L0 19
@@ -46,7 +46,7 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1571407017.000000
+Z11 !s108 1571706159.000000
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v|
 !i113 1
@@ -69,7 +69,7 @@ R4
 r1
 !s85 0
 31
-Z13 !s108 1571407018.000000
+Z13 !s108 1571706160.000000
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/BRANCH_LOGIC.v|
 !i113 1
@@ -124,13 +124,13 @@ R7
 R8
 n@c@c_@m@u@x@x
 vCC_MUXX_EXTERNO
-Z14 !s110 1571407020
+Z14 !s110 1571706162
 !i10b 1
-!s100 MM1LAo2Yk=<gDik^51a<C0
-IYbYAB5]Z:1fz[K]LDITEn2
+!s100 Z1fN`ZfT`eU_78=Va?K[k1
+I0FZOjRA4nX`W:Tf^=BDgY2
 R2
 R0
-R12
+w1571697180
 8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v
 FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v
 R3
@@ -138,7 +138,7 @@ R4
 r1
 !s85 0
 31
-Z15 !s108 1571407020.000000
+Z15 !s108 1571706162.000000
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_EXTERNO.v|
 !i113 1
@@ -161,7 +161,7 @@ R4
 r1
 !s85 0
 31
-R5
+R15
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX_LOAD.v|
 !i113 1
@@ -170,7 +170,7 @@ R7
 R8
 n@c@c_@m@u@x@x_@l@o@a@d
 vCONTROL
-Z16 !s110 1571407018
+R9
 !i10b 1
 !s100 PeQIJ3B9<44=9VgfIAg8V3
 IZDd38IM^3Dc>_Laha98Of3
@@ -195,11 +195,11 @@ n@c@o@n@t@r@o@l
 vCSADDRESS
 R1
 !i10b 1
-!s100 oZVY;8O1_G28F0G:U13M23
-Io^SH^MnCoD^1YM71LI6X:0
+!s100 ?KG?d[F=`3i2>Rh8_BY=f2
+ICZhWXXG`WBO1zcTb]RdVV0
 R2
 R0
-R12
+w1571701369
 8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v
 FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CSADDRESS.v
 R3
@@ -216,13 +216,13 @@ R7
 R8
 n@c@s@a@d@d@r@e@s@s
 vDATAPATH
-R16
+Z16 !s110 1571706160
 !i10b 1
-!s100 LgS5_=DLolFcHnLo@40bl3
-IPjZ56b=@lMY1IO<ok;V2[3
+!s100 `Di`o7m2e6K^DoR3^UMeO3
+ILY_j?PcoX>WQFVOh_3]@A1
 R2
 R0
-R12
+w1571705162
 8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v
 FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v
 R10
@@ -245,7 +245,7 @@ R16
 Ihn?P`kWV1dgWnTa=>a_381
 R2
 R0
-w1571373924
+w1571698767
 8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v
 FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v
 R3
@@ -253,7 +253,7 @@ R4
 r1
 !s85 0
 31
-R13
+R11
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MAIN_MEMORY.v|
 !i113 1
@@ -264,11 +264,11 @@ n@m@a@i@n_@m@e@m@o@r@y
 vMICROCODE_STORE
 R16
 !i10b 1
-!s100 N<nnJOSKE;TOeJa>WlmE;1
-IhLnJJ8OV@[`_n;h4U`^Xe2
+!s100 jE@hnRcY9EVY]eh2[ek0g0
+Ie_4KNSW2lVJSAN0z2DXVa2
 R2
 R0
-R12
+w1571697325
 8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
 FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v
 R3
@@ -285,7 +285,7 @@ R7
 R8
 n@m@i@c@r@o@c@o@d@e_@s@t@o@r@e
 vPSR
-R1
+R14
 !i10b 1
 !s100 ?5<5L@lPAR;9XhN8z[zh51
 I<KjATanDoN@>fD^A@@Dd51
@@ -308,7 +308,7 @@ R7
 R8
 n@p@s@r
 vSC_RegFIXED
-R9
+Z17 !s110 1571706158
 !i10b 1
 !s100 aD5l93a4[fZYc_znKgVne3
 IHVLd3M=7T=ZYj2AkKDgT33
@@ -322,7 +322,7 @@ R4
 r1
 !s85 0
 31
-R11
+Z18 !s108 1571706158.000000
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegFIXED.v|
 !i113 1
@@ -331,7 +331,7 @@ R7
 R8
 n@s@c_@reg@f@i@x@e@d
 vSC_RegGENERAL
-!s110 1571407016
+R17
 !i10b 1
 !s100 =BGUMSR0dJA@jDZ4eiQL@1
 I2?B<mG>1Wc5Xn09J^FmPG2
@@ -345,7 +345,7 @@ R4
 r1
 !s85 0
 31
-!s108 1571407016.000000
+R18
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL.v|
 !i113 1
@@ -353,8 +353,31 @@ R6
 R7
 R8
 n@s@c_@reg@g@e@n@e@r@a@l
-vTB_SYSTEM
+vSC_RegGENERAL_IR
 R14
+!i10b 1
+!s100 RAPfMCDC>LLPjdYh1imSG2
+I2I<@XfPGS?LUhZKT:F4Q=2
+R2
+R0
+w1571705799
+8C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL_IR.v
+FC:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL_IR.v
+R3
+R4
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL_IR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/SC_RegGENERAL_IR.v|
+!i113 1
+R6
+R7
+R8
+n@s@c_@reg@g@e@n@e@r@a@l_@i@r
+vTB_SYSTEM
+!s110 1571706163
 !i10b 1
 !s100 K3M0[ZC_Gdi7B_d<f_3Lo1
 Ic9DbL]59L[ohCa6DT3X202
@@ -368,7 +391,7 @@ R4
 r1
 !s85 0
 31
-R15
+!s108 1571706163.000000
 !s107 C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim|C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/simulation/modelsim/TB_SYSTEM.vt|
 !i113 1

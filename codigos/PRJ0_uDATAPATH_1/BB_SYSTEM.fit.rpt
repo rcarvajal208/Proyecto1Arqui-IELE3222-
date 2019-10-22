@@ -1,5 +1,5 @@
 Fitter report for BB_SYSTEM
-Fri Oct 18 08:52:04 2019
+Mon Oct 21 19:58:28 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -69,17 +69,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 18 08:52:04 2019       ;
+; Fitter Status                      ; Successful - Mon Oct 21 19:58:28 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,129 / 22,320 ( 5 % )                      ;
-;     Total combinational functions  ; 1,056 / 22,320 ( 5 % )                      ;
-;     Dedicated logic registers      ; 496 / 22,320 ( 2 % )                        ;
-; Total registers                    ; 496                                         ;
+; Total logic elements               ; 1,076 / 22,320 ( 5 % )                      ;
+;     Total combinational functions  ; 1,011 / 22,320 ( 5 % )                      ;
+;     Dedicated logic registers      ; 499 / 22,320 ( 2 % )                        ;
+; Total registers                    ; 499                                         ;
 ; Total pins                         ; 34 / 154 ( 22 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
@@ -156,14 +156,14 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.6%      ;
-;     Processor 3            ;   1.3%      ;
-;     Processor 4            ;   1.2%      ;
+;     Processor 2            ;   2.1%      ;
+;     Processor 3            ;   1.7%      ;
+;     Processor 4            ;   1.6%      ;
 +----------------------------+-------------+
 
 
@@ -185,8 +185,8 @@ agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1633 ) ; 0.00 % ( 0 / 1633 )        ; 0.00 % ( 0 / 1633 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1633 ) ; 0.00 % ( 0 / 1633 )        ; 0.00 % ( 0 / 1633 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 1591 ) ; 0.00 % ( 0 / 1591 )        ; 0.00 % ( 0 / 1591 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1591 ) ; 0.00 % ( 0 / 1591 )        ; 0.00 % ( 0 / 1591 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -209,7 +209,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 1623 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1581 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -225,26 +225,26 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 1,129 / 22,320 ( 5 % ) ;
-;     -- Combinational with no register       ; 633                    ;
-;     -- Register only                        ; 73                     ;
-;     -- Combinational with a register        ; 423                    ;
+; Total logic elements                        ; 1,076 / 22,320 ( 5 % ) ;
+;     -- Combinational with no register       ; 577                    ;
+;     -- Register only                        ; 65                     ;
+;     -- Combinational with a register        ; 434                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 844                    ;
-;     -- 3 input functions                    ; 184                    ;
-;     -- <=2 input functions                  ; 28                     ;
-;     -- Register only                        ; 73                     ;
+;     -- 4 input functions                    ; 811                    ;
+;     -- 3 input functions                    ; 173                    ;
+;     -- <=2 input functions                  ; 27                     ;
+;     -- Register only                        ; 65                     ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 973                    ;
-;     -- arithmetic mode                      ; 83                     ;
+;     -- normal mode                          ; 939                    ;
+;     -- arithmetic mode                      ; 72                     ;
 ;                                             ;                        ;
-; Total registers*                            ; 496 / 23,018 ( 2 % )   ;
-;     -- Dedicated logic registers            ; 496 / 22,320 ( 2 % )   ;
+; Total registers*                            ; 499 / 23,018 ( 2 % )   ;
+;     -- Dedicated logic registers            ; 499 / 22,320 ( 2 % )   ;
 ;     -- I/O registers                        ; 0 / 698 ( 0 % )        ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 86 / 1,395 ( 6 % )     ;
+; Total LABs:  partially or completely used   ; 79 / 1,395 ( 6 % )     ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 34 / 154 ( 22 % )      ;
 ;     -- Clock pins                           ; 2 / 7 ( 29 % )         ;
@@ -262,12 +262,12 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 4.1% / 3.9% / 4.4%     ;
-; Peak interconnect usage (total/H/V)         ; 29.5% / 26.6% / 33.6%  ;
-; Maximum fan-out                             ; 496                    ;
-; Highest non-global fan-out                  ; 148                    ;
-; Total fan-out                               ; 6072                   ;
-; Average fan-out                             ; 3.56                   ;
+; Average interconnect usage (total/H/V)      ; 3.8% / 3.8% / 3.8%     ;
+; Peak interconnect usage (total/H/V)         ; 32.9% / 31.9% / 34.3%  ;
+; Maximum fan-out                             ; 499                    ;
+; Highest non-global fan-out                  ; 160                    ;
+; Total fan-out                               ; 5915                   ;
+; Average fan-out                             ; 3.58                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -280,26 +280,26 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 1129 / 22320 ( 5 % ) ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 633                  ; 0                              ;
-;     -- Register only                        ; 73                   ; 0                              ;
-;     -- Combinational with a register        ; 423                  ; 0                              ;
+; Total logic elements                        ; 1076 / 22320 ( 5 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 577                  ; 0                              ;
+;     -- Register only                        ; 65                   ; 0                              ;
+;     -- Combinational with a register        ; 434                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 844                  ; 0                              ;
-;     -- 3 input functions                    ; 184                  ; 0                              ;
-;     -- <=2 input functions                  ; 28                   ; 0                              ;
-;     -- Register only                        ; 73                   ; 0                              ;
+;     -- 4 input functions                    ; 811                  ; 0                              ;
+;     -- 3 input functions                    ; 173                  ; 0                              ;
+;     -- <=2 input functions                  ; 27                   ; 0                              ;
+;     -- Register only                        ; 65                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 973                  ; 0                              ;
-;     -- arithmetic mode                      ; 83                   ; 0                              ;
+;     -- normal mode                          ; 939                  ; 0                              ;
+;     -- arithmetic mode                      ; 72                   ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 496                  ; 0                              ;
-;     -- Dedicated logic registers            ; 496 / 22320 ( 2 % )  ; 0 / 22320 ( 0 % )              ;
+; Total registers                             ; 499                  ; 0                              ;
+;     -- Dedicated logic registers            ; 499 / 22320 ( 2 % )  ; 0 / 22320 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 86 / 1395 ( 6 % )    ; 0 / 1395 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 79 / 1395 ( 6 % )    ; 0 / 1395 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 34                   ; 0                              ;
@@ -315,8 +315,8 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 6067                 ; 5                              ;
-;     -- Registered Connections               ; 1228                 ; 0                              ;
+;     -- Total Connections                    ; 5910                 ; 5                              ;
+;     -- Registered Connections               ; 1275                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -348,8 +348,8 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; CLOCK ; E1    ; 1        ; 0            ; 16           ; 7            ; 496                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; RESET ; M2    ; 2        ; 0            ; 16           ; 14           ; 496                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; CLOCK ; E1    ; 1        ; 0            ; 16           ; 7            ; 499                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; RESET ; M2    ; 2        ; 0            ; 16           ; 14           ; 499                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -359,37 +359,37 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; Name                      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +---------------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; BB_SYSTEM_data_OutBUS[0]  ; A15   ; 7        ; 38           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[10] ; B6    ; 8        ; 16           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[10] ; C6    ; 8        ; 18           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[11] ; T10   ; 4        ; 34           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[12] ; F8    ; 8        ; 20           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[13] ; F13   ; 6        ; 53           ; 21           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[14] ; J16   ; 5        ; 53           ; 14           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[15] ; F15   ; 6        ; 53           ; 22           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[16] ; E7    ; 8        ; 16           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[17] ; B7    ; 8        ; 18           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[18] ; A6    ; 8        ; 16           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[19] ; A5    ; 8        ; 14           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[12] ; G16   ; 6        ; 53           ; 20           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[13] ; R11   ; 4        ; 34           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[14] ; R10   ; 4        ; 34           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[15] ; F14   ; 6        ; 53           ; 24           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[16] ; A5    ; 8        ; 14           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[17] ; A6    ; 8        ; 16           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[18] ; B6    ; 8        ; 16           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[19] ; E8    ; 8        ; 20           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[1]  ; A13   ; 7        ; 49           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[20] ; C8    ; 8        ; 23           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[21] ; E6    ; 8        ; 14           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[22] ; P9    ; 4        ; 38           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[23] ; R10   ; 4        ; 34           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[24] ; P8    ; 3        ; 25           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[25] ; P11   ; 4        ; 38           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[26] ; B5    ; 8        ; 11           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[27] ; B16   ; 6        ; 53           ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[28] ; D8    ; 8        ; 23           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[29] ; A7    ; 8        ; 20           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[20] ; E7    ; 8        ; 16           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[21] ; A7    ; 8        ; 20           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[22] ; B16   ; 6        ; 53           ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[23] ; L8    ; 3        ; 18           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[24] ; C8    ; 8        ; 23           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[25] ; J14   ; 5        ; 53           ; 15           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[26] ; F8    ; 8        ; 20           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[27] ; M8    ; 3        ; 20           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[28] ; P8    ; 3        ; 25           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[29] ; N9    ; 4        ; 29           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[2]  ; B13   ; 7        ; 49           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[30] ; E8    ; 8        ; 20           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[31] ; C6    ; 8        ; 18           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[30] ; D8    ; 8        ; 23           ; 34           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[31] ; B7    ; 8        ; 18           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[3]  ; A11   ; 7        ; 40           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[4]  ; D1    ; 1        ; 0            ; 25           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[5]  ; F3    ; 1        ; 0            ; 26           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[6]  ; B1    ; 1        ; 0            ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; BB_SYSTEM_data_OutBUS[7]  ; L3    ; 2        ; 0            ; 10           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[8]  ; N9    ; 4        ; 29           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; BB_SYSTEM_data_OutBUS[9]  ; J14   ; 5        ; 53           ; 15           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[8]  ; G15   ; 6        ; 53           ; 20           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; BB_SYSTEM_data_OutBUS[9]  ; N8    ; 3        ; 20           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +---------------------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -405,26 +405,24 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; H2       ; DATA0                                    ; As input tri-stated      ; ~ALTERA_DATA0~            ; Dual Purpose Pin          ;
 ; H5       ; nCONFIG                                  ; -                        ; -                         ; Dedicated Programming Pin ;
 ; J3       ; nCE                                      ; -                        ; -                         ; Dedicated Programming Pin ;
-; J16      ; DIFFIO_R9n, DEV_OE                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[14] ; Dual Purpose Pin          ;
 ; H14      ; CONF_DONE                                ; -                        ; -                         ; Dedicated Programming Pin ;
 ; H13      ; MSEL0                                    ; -                        ; -                         ; Dedicated Programming Pin ;
 ; H12      ; MSEL1                                    ; -                        ; -                         ; Dedicated Programming Pin ;
 ; G12      ; MSEL2                                    ; -                        ; -                         ; Dedicated Programming Pin ;
 ; G12      ; MSEL3                                    ; -                        ; -                         ; Dedicated Programming Pin ;
+; G16      ; DIFFIO_R5n, INIT_DONE                    ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[12] ; Dual Purpose Pin          ;
+; G15      ; DIFFIO_R5p, CRC_ERROR                    ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[8]  ; Dual Purpose Pin          ;
 ; F16      ; DIFFIO_R4n, nCEO                         ; Use as programming pin   ; ~ALTERA_nCEO~             ; Dual Purpose Pin          ;
-; F15      ; DIFFIO_R4p, CLKUSR                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[15] ; Dual Purpose Pin          ;
 ; A15      ; DIFFIO_T19n, PADD1                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[0]  ; Dual Purpose Pin          ;
-; C8       ; DIFFIO_T11p, PADD17, DQS5T/CQ5T#,DPCLK10 ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[20] ; Dual Purpose Pin          ;
-; E8       ; DIFFIO_T10n, DATA2                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[30] ; Dual Purpose Pin          ;
-; F8       ; DIFFIO_T10p, DATA3                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[12] ; Dual Purpose Pin          ;
-; A7       ; DIFFIO_T9n, PADD18                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[29] ; Dual Purpose Pin          ;
-; B7       ; DIFFIO_T9p, DATA4                        ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[17] ; Dual Purpose Pin          ;
-; A6       ; DIFFIO_T7n, DATA14, DQS3T/CQ3T#,DPCLK11  ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[18] ; Dual Purpose Pin          ;
-; B6       ; DIFFIO_T7p, DATA13                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[10] ; Dual Purpose Pin          ;
-; E7       ; DATA5                                    ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[16] ; Dual Purpose Pin          ;
-; E6       ; DIFFIO_T6p, DATA6                        ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[21] ; Dual Purpose Pin          ;
-; A5       ; DIFFIO_T5n, DATA7                        ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[19] ; Dual Purpose Pin          ;
-; B5       ; DIFFIO_T5p, DATA8                        ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[26] ; Dual Purpose Pin          ;
+; C8       ; DIFFIO_T11p, PADD17, DQS5T/CQ5T#,DPCLK10 ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[24] ; Dual Purpose Pin          ;
+; E8       ; DIFFIO_T10n, DATA2                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[19] ; Dual Purpose Pin          ;
+; F8       ; DIFFIO_T10p, DATA3                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[26] ; Dual Purpose Pin          ;
+; A7       ; DIFFIO_T9n, PADD18                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[21] ; Dual Purpose Pin          ;
+; B7       ; DIFFIO_T9p, DATA4                        ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[31] ; Dual Purpose Pin          ;
+; A6       ; DIFFIO_T7n, DATA14, DQS3T/CQ3T#,DPCLK11  ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[17] ; Dual Purpose Pin          ;
+; B6       ; DIFFIO_T7p, DATA13                       ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[18] ; Dual Purpose Pin          ;
+; E7       ; DATA5                                    ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[20] ; Dual Purpose Pin          ;
+; A5       ; DIFFIO_T5n, DATA7                        ; Use as regular IO        ; BB_SYSTEM_data_OutBUS[16] ; Dual Purpose Pin          ;
 +----------+------------------------------------------+--------------------------+---------------------------+---------------------------+
 
 
@@ -435,12 +433,12 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 +----------+------------------+---------------+--------------+
 ; 1        ; 8 / 14 ( 57 % )  ; 3.3V          ; --           ;
 ; 2        ; 2 / 16 ( 13 % )  ; 3.3V          ; --           ;
-; 3        ; 1 / 25 ( 4 % )   ; 2.5V          ; --           ;
-; 4        ; 5 / 20 ( 25 % )  ; 2.5V          ; --           ;
-; 5        ; 2 / 18 ( 11 % )  ; 2.5V          ; --           ;
-; 6        ; 4 / 13 ( 31 % )  ; 2.5V          ; --           ;
+; 3        ; 4 / 25 ( 16 % )  ; 2.5V          ; --           ;
+; 4        ; 4 / 20 ( 20 % )  ; 2.5V          ; --           ;
+; 5        ; 1 / 18 ( 6 % )   ; 2.5V          ; --           ;
+; 6        ; 5 / 13 ( 38 % )  ; 2.5V          ; --           ;
 ; 7        ; 4 / 24 ( 17 % )  ; 3.3V          ; --           ;
-; 8        ; 13 / 24 ( 54 % ) ; 2.5V          ; --           ;
+; 8        ; 11 / 24 ( 46 % ) ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -453,9 +451,9 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; A2       ; 238        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A3       ; 239        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A4       ; 236        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; A5       ; 232        ; 8        ; BB_SYSTEM_data_OutBUS[19]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A6       ; 225        ; 8        ; BB_SYSTEM_data_OutBUS[18]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; A7       ; 220        ; 8        ; BB_SYSTEM_data_OutBUS[29]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A5       ; 232        ; 8        ; BB_SYSTEM_data_OutBUS[16]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A6       ; 225        ; 8        ; BB_SYSTEM_data_OutBUS[17]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; A7       ; 220        ; 8        ; BB_SYSTEM_data_OutBUS[21]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A8       ; 211        ; 8        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A9       ; 209        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A10      ; 198        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -469,9 +467,9 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; B2       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B3       ; 242        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B4       ; 237        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; B5       ; 233        ; 8        ; BB_SYSTEM_data_OutBUS[26]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; B6       ; 226        ; 8        ; BB_SYSTEM_data_OutBUS[10]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; B7       ; 221        ; 8        ; BB_SYSTEM_data_OutBUS[17]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B5       ; 233        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; B6       ; 226        ; 8        ; BB_SYSTEM_data_OutBUS[18]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; B7       ; 221        ; 8        ; BB_SYSTEM_data_OutBUS[31]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B8       ; 212        ; 8        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B9       ; 210        ; 7        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B10      ; 199        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -480,15 +478,15 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; B13      ; 180        ; 7        ; BB_SYSTEM_data_OutBUS[2]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B14      ; 182        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B16      ; 164        ; 6        ; BB_SYSTEM_data_OutBUS[27]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B16      ; 164        ; 6        ; BB_SYSTEM_data_OutBUS[22]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; C1       ; 7          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; C2       ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; C3       ; 245        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C4       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; C5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; C6       ; 224        ; 8        ; BB_SYSTEM_data_OutBUS[31]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C6       ; 224        ; 8        ; BB_SYSTEM_data_OutBUS[10]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C7       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; C8       ; 215        ; 8        ; BB_SYSTEM_data_OutBUS[20]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C8       ; 215        ; 8        ; BB_SYSTEM_data_OutBUS[24]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C9       ; 200        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; C11      ; 190        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -504,7 +502,7 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; D5       ; 241        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 234        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D8       ; 216        ; 8        ; BB_SYSTEM_data_OutBUS[28]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 216        ; 8        ; BB_SYSTEM_data_OutBUS[30]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D9       ; 201        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D11      ; 177        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -518,9 +516,9 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; E3       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E4       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E5       ;            ;          ; GNDA3                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E6       ; 231        ; 8        ; BB_SYSTEM_data_OutBUS[21]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; E7       ; 227        ; 8        ; BB_SYSTEM_data_OutBUS[16]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; E8       ; 218        ; 8        ; BB_SYSTEM_data_OutBUS[30]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E6       ; 231        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E7       ; 227        ; 8        ; BB_SYSTEM_data_OutBUS[20]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; E8       ; 218        ; 8        ; BB_SYSTEM_data_OutBUS[19]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E9       ; 205        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E10      ; 184        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E11      ; 183        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -536,14 +534,14 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; F5       ;            ; --       ; VCCA3                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; F6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; F8       ; 219        ; 8        ; BB_SYSTEM_data_OutBUS[12]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; F8       ; 219        ; 8        ; BB_SYSTEM_data_OutBUS[26]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F9       ; 197        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; F10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F12      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; F13      ; 161        ; 6        ; BB_SYSTEM_data_OutBUS[13]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; F14      ; 167        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; F15      ; 163        ; 6        ; BB_SYSTEM_data_OutBUS[15]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F13      ; 161        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; F14      ; 167        ; 6        ; BB_SYSTEM_data_OutBUS[15]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F15      ; 163        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 162        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G1       ; 16         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G2       ; 15         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -560,8 +558,8 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; G12      ; 156        ; 6        ; ^MSEL3                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; G13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G14      ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; G15      ; 160        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G16      ; 159        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G15      ; 160        ; 6        ; BB_SYSTEM_data_OutBUS[8]                                  ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G16      ; 159        ; 6        ; BB_SYSTEM_data_OutBUS[12]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; H1       ; 17         ; 1        ; ~ALTERA_DCLK~                                             ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; H2       ; 18         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; H3       ; 21         ; 1        ; #TCK                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -591,9 +589,9 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; J11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; J12      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J13      ; 146        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J14      ; 144        ; 5        ; BB_SYSTEM_data_OutBUS[9]                                  ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J14      ; 144        ; 5        ; BB_SYSTEM_data_OutBUS[25]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; J15      ; 143        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J16      ; 142        ; 5        ; BB_SYSTEM_data_OutBUS[14]                                 ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J16      ; 142        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K1       ; 37         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K2       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K3       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -617,7 +615,7 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L6       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L7       ; 75         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; L8       ; 79         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; L8       ; 79         ; 3        ; BB_SYSTEM_data_OutBUS[23]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; L9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -633,7 +631,7 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; M5       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M6       ; 64         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M7       ; 68         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; M8       ; 81         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; M8       ; 81         ; 3        ; BB_SYSTEM_data_OutBUS[27]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; M9       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; M10      ; 111        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; M11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -649,8 +647,8 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; N5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N6       ; 63         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; N8       ; 82         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N9       ; 93         ; 4        ; BB_SYSTEM_data_OutBUS[8]                                  ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N8       ; 82         ; 3        ; BB_SYSTEM_data_OutBUS[9]                                  ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; N9       ; 93         ; 4        ; BB_SYSTEM_data_OutBUS[29]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N11      ; 112        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N12      ; 117        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -665,10 +663,10 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P6       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; P7       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; P8       ; 85         ; 3        ; BB_SYSTEM_data_OutBUS[24]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; P9       ; 105        ; 4        ; BB_SYSTEM_data_OutBUS[22]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P8       ; 85         ; 3        ; BB_SYSTEM_data_OutBUS[28]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P9       ; 105        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P10      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; P11      ; 106        ; 4        ; BB_SYSTEM_data_OutBUS[25]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; P11      ; 106        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; P12      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P13      ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P14      ; 119        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -683,8 +681,8 @@ The pin-out file can be found in C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-
 ; R7       ; 76         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R8       ; 86         ; 3        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; R9       ; 88         ; 4        ; GND+                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; R10      ; 96         ; 4        ; BB_SYSTEM_data_OutBUS[23]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; R11      ; 98         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; R10      ; 96         ; 4        ; BB_SYSTEM_data_OutBUS[14]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; R11      ; 98         ; 4        ; BB_SYSTEM_data_OutBUS[13]                                 ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
 ; R12      ; 100        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R13      ; 107        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; R14      ; 120        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -783,36 +781,36 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                         ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                      ; Entity Name         ; Library Name ;
 +----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------+---------------------+--------------+
-; |BB_SYSTEM                                         ; 1129 (0)    ; 496 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 34   ; 0            ; 633 (0)      ; 73 (0)            ; 423 (0)          ; |BB_SYSTEM                                                               ; BB_SYSTEM           ; work         ;
-;    |CONTROL:CONTROL_u0|                            ; 88 (0)      ; 48 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 38 (0)       ; 0 (0)             ; 50 (0)           ; |BB_SYSTEM|CONTROL:CONTROL_u0                                            ; CONTROL             ; work         ;
+; |BB_SYSTEM                                         ; 1076 (0)    ; 499 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 34   ; 0            ; 577 (0)      ; 65 (0)            ; 434 (0)          ; |BB_SYSTEM                                                               ; BB_SYSTEM           ; work         ;
+;    |CONTROL:CONTROL_u0|                            ; 73 (0)      ; 51 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (0)       ; 0 (0)             ; 51 (0)           ; |BB_SYSTEM|CONTROL:CONTROL_u0                                            ; CONTROL             ; work         ;
 ;       |ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0| ; 11 (11)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (11)          ; |BB_SYSTEM|CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0 ; ADDRESS_INCREMENTER ; work         ;
-;       |BRANCH_LOGIC:BRANCH_LOGIC_u0|               ; 6 (6)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 3 (3)            ; |BB_SYSTEM|CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0               ; BRANCH_LOGIC        ; work         ;
-;       |CSADDRESS:CSADDRESS_u0|                     ; 36 (36)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (23)      ; 0 (0)             ; 13 (13)          ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0                     ; CSADDRESS           ; work         ;
-;       |MICROCODE_STORE:MICROCODE_STORE_u0|         ; 32 (32)     ; 20 (20)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 20 (20)          ; |BB_SYSTEM|CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0         ; MICROCODE_STORE     ; work         ;
+;       |BRANCH_LOGIC:BRANCH_LOGIC_u0|               ; 5 (5)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; |BB_SYSTEM|CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0               ; BRANCH_LOGIC        ; work         ;
+;       |CSADDRESS:CSADDRESS_u0|                     ; 15 (15)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 11 (11)          ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0                     ; CSADDRESS           ; work         ;
+;       |MICROCODE_STORE:MICROCODE_STORE_u0|         ; 39 (39)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 23 (23)          ; |BB_SYSTEM|CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0         ; MICROCODE_STORE     ; work         ;
 ;       |PSR:PSR_u0|                                 ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |BB_SYSTEM|CONTROL:CONTROL_u0|PSR:PSR_u0                                 ; PSR                 ; work         ;
-;    |DATAPATH:DATAPATH_u0|                          ; 1028 (0)    ; 448 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 574 (0)      ; 73 (0)            ; 381 (0)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0                                          ; DATAPATH            ; work         ;
-;       |CC_ALU:CC_ALU_u0|                           ; 228 (228)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 220 (220)    ; 0 (0)             ; 8 (8)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0                         ; CC_ALU              ; work         ;
-;       |CC_MUXX:CC_MUXX_ABUS|                       ; 330 (330)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 160 (160)    ; 0 (0)             ; 170 (170)        ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS                     ; CC_MUXX             ; work         ;
-;       |CC_MUXX:CC_MUXX_BBUS|                       ; 319 (319)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 153 (153)    ; 0 (0)             ; 166 (166)        ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS                     ; CC_MUXX             ; work         ;
-;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX|       ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX     ; CC_MUXX_EXTERNO     ; work         ;
-;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX|       ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX     ; CC_MUXX_EXTERNO     ; work         ;
-;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX|       ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX     ; CC_MUXX_EXTERNO     ; work         ;
-;       |CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|          ; 63 (63)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 31 (31)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX        ; CC_MUXX_LOAD        ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_IR|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 31 (31)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_Out|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 23 (23)           ; 9 (9)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out          ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_PC|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 28 (28)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R10|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 23 (23)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10          ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R11|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 30 (30)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11          ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R12|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 24 (24)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12          ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R3|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 27 (27)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R4|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 28 (28)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R5|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 30 (30)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R6|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 28 (28)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R7|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 29 (29)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R8|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 27 (27)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R9|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 31 (31)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_r13|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 30 (30)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13          ; SC_RegGENERAL       ; work         ;
-;    |MAIN_MEMORY:MAIN_MEMORY_u0|                    ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |BB_SYSTEM|MAIN_MEMORY:MAIN_MEMORY_u0                                    ; MAIN_MEMORY         ; work         ;
+;    |DATAPATH:DATAPATH_u0|                          ; 985 (0)     ; 448 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 530 (0)      ; 65 (0)            ; 390 (0)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0                                          ; DATAPATH            ; work         ;
+;       |CC_ALU:CC_ALU_u0|                           ; 222 (222)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 214 (214)    ; 0 (0)             ; 8 (8)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0                         ; CC_ALU              ; work         ;
+;       |CC_MUXX:CC_MUXX_ABUS|                       ; 321 (321)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 154 (154)    ; 0 (0)             ; 167 (167)        ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS                     ; CC_MUXX             ; work         ;
+;       |CC_MUXX:CC_MUXX_BBUS|                       ; 310 (310)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (130)    ; 0 (0)             ; 180 (180)        ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS                     ; CC_MUXX             ; work         ;
+;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX|       ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX     ; CC_MUXX_EXTERNO     ; work         ;
+;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX|       ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX     ; CC_MUXX_EXTERNO     ; work         ;
+;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX|       ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 2 (2)            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX     ; CC_MUXX_EXTERNO     ; work         ;
+;       |CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|          ; 59 (59)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 29 (29)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX        ; CC_MUXX_LOAD        ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_Out|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 17 (17)           ; 15 (15)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_PC|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 31 (31)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R10|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 28 (28)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R11|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 27 (27)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R12|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 27 (27)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R3|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 29 (29)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R4|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 30 (30)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R5|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 27 (27)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R6|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 31 (31)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R7|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 27 (27)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R8|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 28 (28)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R9|             ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 29 (29)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_r13|            ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 31 (31)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|       ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 23 (23)          ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0     ; SC_RegGENERAL_IR    ; work         ;
+;    |MAIN_MEMORY:MAIN_MEMORY_u0|                    ; 25 (25)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 0 (0)            ; |BB_SYSTEM|MAIN_MEMORY:MAIN_MEMORY_u0                                    ; MAIN_MEMORY         ; work         ;
 +----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -869,32 +867,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                       ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                     ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; CLOCK                                                                    ; PIN_E1             ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; CLOCK                                                                    ; PIN_E1             ; 493     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|CSADDRESS_General_Address[1]~5 ; LCCOMB_X23_Y21_N24 ; 3       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|CC_ALU_General_SetCode             ; LCCOMB_X24_Y19_N12 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|WideOr0~0                          ; LCCOMB_X24_Y19_N28 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~10       ; LCCOMB_X31_Y19_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~11       ; LCCOMB_X31_Y19_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~12       ; LCCOMB_X31_Y19_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~13       ; LCCOMB_X31_Y19_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~14       ; LCCOMB_X31_Y19_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~15       ; LCCOMB_X31_Y19_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~16       ; LCCOMB_X31_Y19_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~17       ; LCCOMB_X31_Y19_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~18       ; LCCOMB_X30_Y19_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~19       ; LCCOMB_X31_Y19_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~5        ; LCCOMB_X31_Y19_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~7        ; LCCOMB_X30_Y24_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~8        ; LCCOMB_X31_Y19_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~9        ; LCCOMB_X31_Y19_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; RESET                                                                    ; PIN_M2             ; 496     ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                        ;
++---------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                      ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK                                                                     ; PIN_E1             ; 4       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; CLOCK                                                                     ; PIN_E1             ; 496     ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|CSADDRESS_General_Address[10]~8 ; LCCOMB_X31_Y18_N14 ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|CC_ALU_General_SetCode              ; LCCOMB_X23_Y18_N8  ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|WideOr0~0                           ; LCCOMB_X23_Y18_N24 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~1         ; LCCOMB_X29_Y23_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~10        ; LCCOMB_X30_Y20_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~11        ; LCCOMB_X30_Y20_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~13        ; LCCOMB_X30_Y20_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~14        ; LCCOMB_X30_Y20_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~15        ; LCCOMB_X30_Y20_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~16        ; LCCOMB_X31_Y20_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~2         ; LCCOMB_X30_Y23_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~3         ; LCCOMB_X30_Y23_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~4         ; LCCOMB_X30_Y23_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~5         ; LCCOMB_X29_Y23_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~6         ; LCCOMB_X30_Y23_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~8         ; LCCOMB_X31_Y20_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|Decoder0~9         ; LCCOMB_X30_Y20_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; RESET                                                                     ; PIN_M2             ; 499     ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
++---------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -902,8 +900,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK ; PIN_E1   ; 493     ; 197                                  ; Global Clock         ; GCLK2            ; --                        ;
-; RESET ; PIN_M2   ; 496     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; CLOCK ; PIN_E1   ; 496     ; 309                                  ; Global Clock         ; GCLK2            ; --                        ;
+; RESET ; PIN_M2   ; 499     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +-------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -912,51 +910,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 2,491 / 71,559 ( 3 % ) ;
-; C16 interconnects     ; 51 / 2,597 ( 2 % )     ;
-; C4 interconnects      ; 2,041 / 46,848 ( 4 % ) ;
-; Direct links          ; 158 / 71,559 ( < 1 % ) ;
+; Block interconnects   ; 2,383 / 71,559 ( 3 % ) ;
+; C16 interconnects     ; 42 / 2,597 ( 2 % )     ;
+; C4 interconnects      ; 1,799 / 46,848 ( 4 % ) ;
+; Direct links          ; 156 / 71,559 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )        ;
-; Local interconnects   ; 564 / 24,624 ( 2 % )   ;
-; R24 interconnects     ; 52 / 2,496 ( 2 % )     ;
-; R4 interconnects      ; 2,442 / 62,424 ( 4 % ) ;
+; Local interconnects   ; 541 / 24,624 ( 2 % )   ;
+; R24 interconnects     ; 54 / 2,496 ( 2 % )     ;
+; R4 interconnects      ; 2,357 / 62,424 ( 4 % ) ;
 +-----------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.13) ; Number of LABs  (Total = 86) ;
+; Number of Logic Elements  (Average = 13.62) ; Number of LABs  (Total = 79) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 2                            ;
-; 2                                           ; 2                            ;
-; 3                                           ; 4                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 3                            ;
+; 1                                           ; 1                            ;
+; 2                                           ; 3                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 2                            ;
+; 6                                           ; 2                            ;
 ; 7                                           ; 1                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
-; 10                                          ; 3                            ;
-; 11                                          ; 3                            ;
-; 12                                          ; 3                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 2                            ;
+; 12                                          ; 2                            ;
 ; 13                                          ; 7                            ;
-; 14                                          ; 5                            ;
-; 15                                          ; 11                           ;
-; 16                                          ; 41                           ;
+; 14                                          ; 2                            ;
+; 15                                          ; 10                           ;
+; 16                                          ; 44                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.84) ; Number of LABs  (Total = 86) ;
+; LAB-wide Signals  (Average = 2.77) ; Number of LABs  (Total = 79) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 83                           ;
-; 1 Clock                            ; 82                           ;
-; 1 Clock enable                     ; 14                           ;
+; 1 Async. clear                     ; 75                           ;
+; 1 Clock                            ; 74                           ;
+; 1 Clock enable                     ; 12                           ;
 ; 1 Sync. load                       ; 1                            ;
-; 2 Clock enables                    ; 63                           ;
+; 2 Clock enables                    ; 56                           ;
 ; 2 Clocks                           ; 1                            ;
 +------------------------------------+------------------------------+
 
@@ -964,123 +962,123 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 18.53) ; Number of LABs  (Total = 86) ;
+; Number of Signals Sourced  (Average = 19.53) ; Number of LABs  (Total = 79) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 2                            ;
-; 2                                            ; 2                            ;
-; 3                                            ; 0                            ;
+; 2                                            ; 1                            ;
+; 3                                            ; 1                            ;
 ; 4                                            ; 2                            ;
-; 5                                            ; 3                            ;
+; 5                                            ; 0                            ;
 ; 6                                            ; 1                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 3                            ;
+; 7                                            ; 2                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 1                            ;
-; 11                                           ; 2                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 5                            ;
-; 16                                           ; 5                            ;
-; 17                                           ; 7                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 2                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 3                            ;
+; 17                                           ; 6                            ;
 ; 18                                           ; 5                            ;
-; 19                                           ; 7                            ;
-; 20                                           ; 7                            ;
+; 19                                           ; 4                            ;
+; 20                                           ; 9                            ;
 ; 21                                           ; 4                            ;
-; 22                                           ; 4                            ;
-; 23                                           ; 5                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 3                            ;
-; 26                                           ; 3                            ;
-; 27                                           ; 2                            ;
-; 28                                           ; 2                            ;
+; 22                                           ; 5                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 4                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 4                            ;
+; 27                                           ; 4                            ;
+; 28                                           ; 4                            ;
 ; 29                                           ; 2                            ;
-; 30                                           ; 1                            ;
-; 31                                           ; 4                            ;
-; 32                                           ; 2                            ;
+; 30                                           ; 4                            ;
+; 31                                           ; 2                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 11.98) ; Number of LABs  (Total = 86) ;
+; Number of Signals Sourced Out  (Average = 12.65) ; Number of LABs  (Total = 79) ;
 +--------------------------------------------------+------------------------------+
 ; 0                                                ; 0                            ;
-; 1                                                ; 2                            ;
-; 2                                                ; 3                            ;
-; 3                                                ; 4                            ;
-; 4                                                ; 1                            ;
-; 5                                                ; 5                            ;
+; 1                                                ; 3                            ;
+; 2                                                ; 2                            ;
+; 3                                                ; 3                            ;
+; 4                                                ; 2                            ;
+; 5                                                ; 2                            ;
 ; 6                                                ; 4                            ;
 ; 7                                                ; 2                            ;
-; 8                                                ; 0                            ;
-; 9                                                ; 6                            ;
-; 10                                               ; 8                            ;
-; 11                                               ; 10                           ;
-; 12                                               ; 6                            ;
-; 13                                               ; 3                            ;
-; 14                                               ; 4                            ;
-; 15                                               ; 5                            ;
-; 16                                               ; 4                            ;
-; 17                                               ; 5                            ;
-; 18                                               ; 1                            ;
-; 19                                               ; 2                            ;
-; 20                                               ; 0                            ;
-; 21                                               ; 2                            ;
-; 22                                               ; 4                            ;
-; 23                                               ; 1                            ;
-; 24                                               ; 2                            ;
+; 8                                                ; 3                            ;
+; 9                                                ; 4                            ;
+; 10                                               ; 4                            ;
+; 11                                               ; 5                            ;
+; 12                                               ; 4                            ;
+; 13                                               ; 6                            ;
+; 14                                               ; 2                            ;
+; 15                                               ; 6                            ;
+; 16                                               ; 3                            ;
+; 17                                               ; 3                            ;
+; 18                                               ; 6                            ;
+; 19                                               ; 3                            ;
+; 20                                               ; 2                            ;
+; 21                                               ; 3                            ;
+; 22                                               ; 3                            ;
+; 23                                               ; 2                            ;
+; 24                                               ; 1                            ;
 ; 25                                               ; 1                            ;
-; 26                                               ; 1                            ;
 +--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 28.13) ; Number of LABs  (Total = 86) ;
+; Number of Distinct Inputs  (Average = 28.59) ; Number of LABs  (Total = 79) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 2                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 1                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 2                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 3                            ;
+; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 2                            ;
-; 16                                           ; 3                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 0                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 3                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 1                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 2                            ;
-; 26                                           ; 2                            ;
-; 27                                           ; 2                            ;
-; 28                                           ; 0                            ;
-; 29                                           ; 4                            ;
-; 30                                           ; 3                            ;
-; 31                                           ; 5                            ;
-; 32                                           ; 6                            ;
-; 33                                           ; 6                            ;
-; 34                                           ; 3                            ;
-; 35                                           ; 3                            ;
-; 36                                           ; 9                            ;
-; 37                                           ; 12                           ;
-; 38                                           ; 3                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 2                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 2                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 4                            ;
+; 27                                           ; 3                            ;
+; 28                                           ; 6                            ;
+; 29                                           ; 3                            ;
+; 30                                           ; 1                            ;
+; 31                                           ; 4                            ;
+; 32                                           ; 3                            ;
+; 33                                           ; 5                            ;
+; 34                                           ; 5                            ;
+; 35                                           ; 7                            ;
+; 36                                           ; 2                            ;
+; 37                                           ; 7                            ;
+; 38                                           ; 8                            ;
+; 39                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1223,118 +1221,118 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; CLOCK           ; CLOCK                ; 76.0              ;
+; CLOCK           ; CLOCK                ; 89.0              ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                                                  ;
-+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
-; Source Register                                                              ; Destination Register                                                        ; Delay Added in ns ;
-+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[6] ; 2.050             ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[16]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[6] ; 1.434             ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[17]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[6] ; 1.434             ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[15]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[6] ; 1.434             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[3]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[3]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[3]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[3]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[3]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[18] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[18]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[18] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[18] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[18] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[4]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[4]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[4]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[4]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[2]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[2]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[2]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[15] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[15]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[28]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[0]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[0]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[0]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[0]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[0]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13|RegGENERAL_Register[0]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[37]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[16] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[16]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[16]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[16]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[16]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[16]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[16]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[1]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[1]   ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[1]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[1]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[1]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[14] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[14]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_IR|RegGENERAL_Register[3]  ; 0.801             ;
-+------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                       ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
+; Source Register                                                                   ; Destination Register                                                        ; Delay Added in ns ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[16] ; 2.227             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[17]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[16] ; 1.498             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[16]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[16] ; 1.498             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[15]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[16] ; 1.498             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[27]      ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[27]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[27]      ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[27]      ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[27]      ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13|RegGENERAL_Register[27]      ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[37]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[17] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[15] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[14] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[35]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[2]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[1]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[36]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[16] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[0]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[28]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[3]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[4]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[33]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[27]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[27] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[18] ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[40]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[34]            ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[27] ; 0.940             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[2]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[2]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[2]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[2]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[0]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[0]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[0]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[0]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[0]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13|RegGENERAL_Register[0]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[1]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[1]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[1]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[1]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[1]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13|RegGENERAL_Register[1]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[5]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|RegGENERAL_Register[5]  ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[5]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[5]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[5]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10|RegGENERAL_Register[5]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r13|RegGENERAL_Register[5]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[4]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9|RegGENERAL_Register[4]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12|RegGENERAL_Register[4]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11|RegGENERAL_Register[4]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3|RegGENERAL_Register[3]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[3]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out|RegGENERAL_Register[3]       ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
+; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5|RegGENERAL_Register[3]        ; DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4|RegGENERAL_Register[5]  ; 0.754             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
@@ -1366,200 +1364,6 @@ Warning (332049): Ignored create_clock at BB_SYSTEM.sdc(9): Argument <targets> i
     Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.sdc Line: 9
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332144): No user constrained base clocks found in the design
-Warning (332125): Found combinational loop of 192 nodes File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_MUXX.v Line: 77
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~4|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~10|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~10|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[4]~15|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[4]~15|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~10|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~10|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[0]~11|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[0]~11|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~2|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~3|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~3|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~7|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~7|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~10|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~6|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~6|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~7|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~5|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~5|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~6|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~8|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~8|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~9|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~9|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~10|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~3|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~3|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~4|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~4|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~7|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~7|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~10|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~10|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[1]~13|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[1]~13|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~3|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~5|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~9|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~8|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~2|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~3|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~6|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~6|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~7|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~5|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~5|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~6|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~8|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~8|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~9|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~9|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~10|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux10~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux10~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~10|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~10|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~9|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~9|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[2]~12|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[2]~12|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~2|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~9|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~4|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~11|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~11|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~10|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~5|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~5|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~7|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~4|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~4|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~7|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~4|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~8|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~8|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~9|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~5|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~5|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~8|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~4|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~4|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~7|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~7|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~10|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~10|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[3]~14|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[3]~14|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux10~2|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~4|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~11|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~5|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~3|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~3|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux13~4|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~7|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~4|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~5|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~7|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~4|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~6|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~6|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~9|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~9|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~10|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~9|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~6|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~3|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux10~2|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~10|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~10|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~1|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~1|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~2|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~0|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~0|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~1|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~4|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~4|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~8|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~3|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~3|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~4|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~6|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~6|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~7|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~7|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~8|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~2|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~3|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~3|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~4|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~6|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~6|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~7|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~5|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~5|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~6|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~8|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~8|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~9|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~9|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~10|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~3|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~3|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~11|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~2|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~3|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~5|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~5|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~9|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~4|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~4|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~5|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~7|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~7|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~8|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~8|combout"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~9|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~5|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~9|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~8|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~0|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~3|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~7|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~6|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~3|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~2|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~5|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~9|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~8|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~2|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~4|datac"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux9~3|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~8|datab"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux17~7|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux15~9|datad"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[4]~15|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[1]~13|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_EXTERNO_AMUX|CC_MUXX_EXTERNO_data_OutBus[3]~14|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux16~10|dataa"
-    Warning (332126): Node "DATAPATH_u0|CC_MUXX_ABUS|Mux14~10|dataa"
-Critical Warning (332081): Design contains combinational loop of 192 nodes. Estimating the delays through the loop.
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLOCK~input (placed in PIN E1 (CLK1, DIFFCLK_0n)) File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 43
@@ -1589,20 +1393,20 @@ Info (176215): I/O bank details before I/O pin placement
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "BB_SYSTEM_CLOCK_50" is assigned to location or region, but does not exist in design
     Warning (15706): Node "BB_SYSTEM_RESET_InHigh" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:10
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:16
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 19% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
+    Info (170196): Router estimated peak interconnect usage is 23% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:57
-Info (11888): Total time spent on timing analysis during the Fitter is 5.75 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:37
+Info (11888): Total time spent on timing analysis during the Fitter is 5.50 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1613,11 +1417,11 @@ Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin CLOCK uses I/O standard 2.5 V at E1 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 43
     Info (169178): Pin RESET uses I/O standard 2.5 V at M2 File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.v Line: 44
 Info (144001): Generated suppressed messages file C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/BB_SYSTEM.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 205 warnings
-    Info: Peak virtual memory: 5575 megabytes
-    Info: Processing ended: Fri Oct 18 08:52:06 2019
-    Info: Elapsed time: 00:01:30
-    Info: Total CPU time (on all processors): 00:01:38
+Info: Quartus Prime Fitter was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 5645 megabytes
+    Info: Processing ended: Mon Oct 21 19:58:30 2019
+    Info: Elapsed time: 00:01:12
+    Info: Total CPU time (on all processors): 00:01:23
 
 
 +----------------------------+
