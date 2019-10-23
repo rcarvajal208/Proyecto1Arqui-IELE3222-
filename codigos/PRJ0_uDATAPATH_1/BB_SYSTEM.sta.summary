@@ -3,75 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK'
-Slack : -11.035
-TNS   : -4681.175
+Slack : -11.335
+TNS   : -4838.437
 
 Type  : Slow 1200mV 85C Model Setup 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : -2.248
-TNS   : -2.248
+Slack : -2.589
+TNS   : -2.589
 
 Type  : Slow 1200mV 85C Model Hold 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : 0.086
+Slack : 0.081
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK'
-Slack : 0.390
+Slack : 0.864
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK'
 Slack : -3.000
-TNS   : -502.000
+TNS   : -493.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : 0.344
+Slack : 0.350
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK'
-Slack : -9.836
-TNS   : -4176.088
+Slack : -10.133
+TNS   : -4352.512
 
 Type  : Slow 1200mV 0C Model Setup 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : -1.986
-TNS   : -1.986
+Slack : -2.298
+TNS   : -2.298
 
 Type  : Slow 1200mV 0C Model Hold 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : 0.075
+Slack : 0.071
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK'
-Slack : 0.347
+Slack : 0.783
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK'
 Slack : -3.000
-TNS   : -502.000
+TNS   : -493.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : 0.370
+Slack : 0.372
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK'
-Slack : -6.558
-TNS   : -2757.886
+Slack : -6.771
+TNS   : -2826.473
 
 Type  : Fast 1200mV 0C Model Setup 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : -1.071
-TNS   : -1.071
+Slack : -1.273
+TNS   : -1.273
 
 Type  : Fast 1200mV 0C Model Hold 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
 Slack : 0.046
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK'
-Slack : 0.209
+Slack : 0.458
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK'
 Slack : -3.000
-TNS   : -538.413
+TNS   : -527.719
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[14]'
-Slack : 0.407
+Slack : 0.408
 TNS   : 0.000
 
 ------------------------------------------------------------

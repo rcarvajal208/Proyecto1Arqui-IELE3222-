@@ -72,20 +72,13 @@ begin
 	else
 		Condition_Signal = 2'b00;																				// Next
 end
-//STATE REGISTER: SEQUENTIAL
-always @(negedge BRANCH_LOGIC_CLOCK_50, posedge BRANCH_LOGIC_ResetInHigh_In)
-begin
-	if (BRANCH_LOGIC_ResetInHigh_In == 1'b1)
-		Condition_Register <= 0;
-	else
-		Condition_Register <= Condition_Signal;
-end
+
 
 //=======================================================
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-assign BRANCH_LOGIC_Tipo_OutBus = Condition_Register;
+assign BRANCH_LOGIC_Tipo_OutBus = Condition_Signal;
 
 
 endmodule

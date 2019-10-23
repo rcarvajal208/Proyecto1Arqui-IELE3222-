@@ -73,21 +73,12 @@ begin
 		2'b10: CSADDRESS_Signal_Address = CSADDRESS_Signal_Decode;			//Decodificación de registro de instrucciones OPS
 		default: CSADDRESS_Signal_Address = CSADDRESS_CSAI_InBus;			//Next (Señal recibidad de incrementer)
 	endcase
-end
-//STATE REGISTER: SEQUENTIAL
-always @(posedge CSADDRESS_CLOCK_50, posedge CSADDRESS_ResetInHigh_In)
-begin
-	// Se carga 0 en el registro si se oprime Reset, de lo contrario se mantiene el mismo dato
-	if (CSADDRESS_ResetInHigh_In == 1'b1)
-		CSADDRESS_General_Address <= 11'b00000000000;
-	else
-		CSADDRESS_General_Address <= CSADDRESS_Signal_Address;
-end
+end 
 
 //=======================================================
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-assign CSADDRESS_CSAddress_OutBus = CSADDRESS_General_Address;
+assign CSADDRESS_CSAddress_OutBus = CSADDRESS_Signal_Address;
 
 endmodule

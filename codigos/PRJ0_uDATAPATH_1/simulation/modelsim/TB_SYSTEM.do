@@ -23,6 +23,9 @@ add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/CONTROL_ALU
 add wave  -divider BRANCH_LOGIC
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/BRANCH_LOGIC_u0/BRANCH_LOGIC_Tipo_OutBus
 
+add wave  -divider ADDRESS_INCREMENTER
+add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/ADDRESS_INCREMENTER_u0/ADDRESS_INCREMENTER_CSAI_OutBus
+
 add wave  -divider CSADDRESS
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/CSADDRESS_u0/CSADDRESS_CSAddress_OutBus
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/CSADDRESS_u0/CSADDRESS_DecodeOp_InBus
@@ -31,6 +34,7 @@ add wave  -divider MAIN_MEMORY
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/MAIN_MEMORY_u0/MAIN_MEMORY_Data_OutBus
 
 add wave  -divider MICROCODE_STORE
+add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0/MICROCODE_STORE_Condition_OutBus
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0/MICROCODE_STORE_RD_Out
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/MICROCODE_STORE_u0/MICROCODE_STORE_CSAddress_InBus
 

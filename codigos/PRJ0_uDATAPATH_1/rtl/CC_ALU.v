@@ -80,7 +80,10 @@ begin
 		4'b1001:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus - CC_ALU_dataB_InBus;	//SUB
 		4'b1010:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A  
 		4'b1011:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus - 1'b1;					//DECREMENT A
-		4'b1100:  CC_ALU_data_OutBus = CC_ALU_dataA_InBus;								//BUSA Can be other function
+		4'b1100:  begin
+					 CC_ALU_data_OutBus = (CC_ALU_dataA_InBus[12]==1'b1) ? {19'b1111111111111111111,CC_ALU_dataA_InBus[12:0]} : {19'b0000000000000000000,CC_ALU_dataA_InBus[12:0]}; //SEXT13		(***)
+					 CC_ALU_General_SetCode = 1'b0;
+					 end
 		4'b1101:  begin
 					 CC_ALU_data_OutBus = CC_ALU_dataA_InBus + 1'b1;					//INCREMENT A   (***)
 					 CC_ALU_General_SetCode = 1'b0;
