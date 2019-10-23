@@ -3,19 +3,16 @@ quietly WaveActivateNextPane {} 0
 delete wave *
 add wave -noupdate /TB_SYSTEM/eachvec
 
-add wave  -divider uDATAPATH
+add wave  -divider DATAPATH
 add wave -noupdate /TB_SYSTEM/TB_SYSTEM_CLOCK_50
-add wave -noupdate /TB_SYSTEM/TB_SYSTEM_RESET_InHigh
-add wave  -radix Unsigned /TB_SYSTEM/TB_SYSTEM_Data_OutBus
-
-add wave  -divider MUX
-add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_MUXX_EXTERNO_CMUX/CC_MUXX_EXTERNO_data_OutBus
-add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_MUXX_LOAD_CBUSMUX/CC_MUXX_LOAD_data_OutBus
 
 add wave  -divider REGISTERS
 add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_PC/SC_RegGENERAL_data_OutBus
 add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_IR_u0/SC_RegGENERAL_IR_data_OutBus
-add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_Out/SC_RegGENERAL_data_OutBus 
+add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_R1/SC_RegGENERAL_data_OutBus 
+add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_R2/SC_RegGENERAL_data_OutBus 
+add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_R3/SC_RegGENERAL_data_OutBus 
+add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/SC_RegGENERAL_R4/SC_RegGENERAL_data_OutBus 
 
 add wave  -divider CONTROL
 add wave -noupdate -radix decimal /TB_SYSTEM/BB_SYSTEM_u0/CONTROL_u0/CONTROL_ALUOperation_OutBus
@@ -45,6 +42,13 @@ add wave  -noupdate -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_ALU_u
 add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_ALU_u0/CC_ALU_selection_InBus
 
 
+add wave  -divider DATAPATH
+add wave -noupdate /TB_SYSTEM/TB_SYSTEM_RESET_InHigh
+add wave  -radix Unsigned /TB_SYSTEM/TB_SYSTEM_Data_OutBus
+
+add wave  -divider MUX
+add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_MUXX_EXTERNO_CMUX/CC_MUXX_EXTERNO_data_OutBus
+add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/DATAPATH_u0/CC_MUXX_LOAD_CBUSMUX/CC_MUXX_LOAD_data_OutBus
 
 restart
 run 1ms
