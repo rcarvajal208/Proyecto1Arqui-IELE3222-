@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BB_SYSTEM
-Wed Oct 23 17:15:13 2019
+Thu Oct 24 20:39:07 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -31,17 +31,17 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  23. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC
  24. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0
  25. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out
- 26. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1
- 27. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2
- 28. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3
- 29. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4
- 30. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5
- 31. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6
- 32. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7
- 33. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8
- 34. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9
- 35. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10
- 36. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r11
+ 26. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5
+ 27. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6
+ 28. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7
+ 29. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8
+ 30. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9
+ 31. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10
+ 32. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11
+ 33. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12
+ 34. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R13
+ 35. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R14
+ 36. Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R15
  37. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0
  38. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0
  39. Parameter Settings for User Entity Instance: CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0
@@ -82,15 +82,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 23 17:15:13 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 24 20:39:07 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,441                                       ;
-;     Total combinational functions  ; 1,025                                       ;
-;     Dedicated logic registers      ; 488                                         ;
-; Total registers                    ; 488                                         ;
+; Total logic elements               ; 1,565                                       ;
+;     Total combinational functions  ; 1,149                                       ;
+;     Dedicated logic registers      ; 491                                         ;
+; Total registers                    ; 491                                         ;
 ; Total pins                         ; 34                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -234,20 +234,20 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,441       ;
+; Estimated Total logic elements              ; 1,565       ;
 ;                                             ;             ;
-; Total combinational functions               ; 1025        ;
+; Total combinational functions               ; 1149        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 853         ;
-;     -- 3 input functions                    ; 147         ;
-;     -- <=2 input functions                  ; 25          ;
+;     -- 4 input functions                    ; 932         ;
+;     -- 3 input functions                    ; 153         ;
+;     -- <=2 input functions                  ; 64          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 953         ;
+;     -- normal mode                          ; 1077        ;
 ;     -- arithmetic mode                      ; 72          ;
 ;                                             ;             ;
-; Total registers                             ; 488         ;
-;     -- Dedicated logic registers            ; 488         ;
+; Total registers                             ; 491         ;
+;     -- Dedicated logic registers            ; 491         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 34          ;
@@ -255,9 +255,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; CLOCK~input ;
-; Maximum fan-out                             ; 488         ;
-; Total fan-out                               ; 5881        ;
-; Average fan-out                             ; 3.72        ;
+; Maximum fan-out                             ; 491         ;
+; Total fan-out                               ; 6302        ;
+; Average fan-out                             ; 3.69        ;
 +---------------------------------------------+-------------+
 
 
@@ -266,36 +266,36 @@ agreement for further details.
 +----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name         ; Library Name ;
 +----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
-; |BB_SYSTEM                                         ; 1025 (0)            ; 488 (0)                   ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |BB_SYSTEM                                                               ; BB_SYSTEM           ; work         ;
-;    |CONTROL:CONTROL_u0|                            ; 76 (0)              ; 40 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0                                            ; CONTROL             ; work         ;
+; |BB_SYSTEM                                         ; 1149 (0)            ; 491 (0)                   ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |BB_SYSTEM                                                               ; BB_SYSTEM           ; work         ;
+;    |CONTROL:CONTROL_u0|                            ; 90 (0)              ; 43 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0                                            ; CONTROL             ; work         ;
 ;       |ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0| ; 11 (11)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|ADDRESS_INCREMENTER:ADDRESS_INCREMENTER_u0 ; ADDRESS_INCREMENTER ; work         ;
-;       |BRANCH_LOGIC:BRANCH_LOGIC_u0|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0               ; BRANCH_LOGIC        ; work         ;
-;       |CSADDRESS:CSADDRESS_u0|                     ; 24 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0                     ; CSADDRESS           ; work         ;
-;       |MICROCODE_STORE:MICROCODE_STORE_u0|         ; 40 (40)             ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0         ; MICROCODE_STORE     ; work         ;
+;       |BRANCH_LOGIC:BRANCH_LOGIC_u0|               ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0               ; BRANCH_LOGIC        ; work         ;
+;       |CSADDRESS:CSADDRESS_u0|                     ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0                     ; CSADDRESS           ; work         ;
+;       |MICROCODE_STORE:MICROCODE_STORE_u0|         ; 57 (57)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0         ; MICROCODE_STORE     ; work         ;
 ;       |PSR:PSR_u0|                                 ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|CONTROL:CONTROL_u0|PSR:PSR_u0                                 ; PSR                 ; work         ;
-;    |DATAPATH:DATAPATH_u0|                          ; 924 (0)             ; 448 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0                                          ; DATAPATH            ; work         ;
-;       |CC_ALU:CC_ALU_u0|                           ; 226 (226)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0                         ; CC_ALU              ; work         ;
-;       |CC_MUXX:CC_MUXX_ABUS|                       ; 320 (320)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS                     ; CC_MUXX             ; work         ;
-;       |CC_MUXX:CC_MUXX_BBUS|                       ; 310 (310)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS                     ; CC_MUXX             ; work         ;
-;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX     ; CC_MUXX_EXTERNO     ; work         ;
-;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX     ; CC_MUXX_EXTERNO     ; work         ;
+;    |DATAPATH:DATAPATH_u0|                          ; 1030 (0)            ; 448 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0                                          ; DATAPATH            ; work         ;
+;       |CC_ALU:CC_ALU_u0|                           ; 350 (350)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0                         ; CC_ALU              ; work         ;
+;       |CC_MUXX:CC_MUXX_ABUS|                       ; 304 (304)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS                     ; CC_MUXX             ; work         ;
+;       |CC_MUXX:CC_MUXX_BBUS|                       ; 302 (302)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS                     ; CC_MUXX             ; work         ;
+;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_AMUX     ; CC_MUXX_EXTERNO     ; work         ;
+;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_BMUX     ; CC_MUXX_EXTERNO     ; work         ;
 ;       |CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_EXTERNO:CC_MUXX_EXTERNO_CMUX     ; CC_MUXX_EXTERNO     ; work         ;
-;       |CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|          ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX        ; CC_MUXX_LOAD        ; work         ;
+;       |CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX|          ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX_LOAD:CC_MUXX_LOAD_CBUSMUX        ; CC_MUXX_LOAD        ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_Out|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_Out          ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_PC|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_PC           ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_R10|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R10          ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R1|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R2|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R3|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_R4|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4           ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R11|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R12|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R13|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R13          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R14|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R14          ; SC_RegGENERAL       ; work         ;
+;       |SC_RegGENERAL:SC_RegGENERAL_R15|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R15          ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_R5|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5           ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_R6|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R6           ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_R7|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R7           ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_R8|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R8           ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL:SC_RegGENERAL_R9|             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R9           ; SC_RegGENERAL       ; work         ;
-;       |SC_RegGENERAL:SC_RegGENERAL_r11|            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r11          ; SC_RegGENERAL       ; work         ;
 ;       |SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0|       ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|SC_RegGENERAL_IR:SC_RegGENERAL_IR_u0     ; SC_RegGENERAL_IR    ; work         ;
-;    |MAIN_MEMORY:MAIN_MEMORY_u0|                    ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|MAIN_MEMORY:MAIN_MEMORY_u0                                    ; MAIN_MEMORY         ; work         ;
+;    |MAIN_MEMORY:MAIN_MEMORY_u0|                    ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|MAIN_MEMORY:MAIN_MEMORY_u0                                    ; MAIN_MEMORY         ; work         ;
 +----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -305,80 +305,78 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------+-----------------------------------------------+------------------------+
 ; Latch Name                                                   ; Latch Enable Signal                           ; Free of Timing Hazards ;
 +--------------------------------------------------------------+-----------------------------------------------+------------------------+
-; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|CC_ALU_General_SetCode ; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|WideOr0 ; yes                    ;
+; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|CC_ALU_General_SetCode ; DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|WideOr1 ; yes                    ;
 ; Number of user-specified and inferred latches = 1            ;                                               ;                        ;
 +--------------------------------------------------------------+-----------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                          ;
-+----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-; Register name                                                                          ; Reason for Removal                                                                 ;
-+----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[24,25,30..32,38,39] ; Stuck at GND due to stuck port data_in                                             ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[22]                 ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[36] ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[20]                 ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[34] ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[1,9]                ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[10] ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[2,3,7]              ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[8]  ;
-; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[4]                  ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[5]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[18,26]               ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[10]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[10,30]               ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[14]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[22]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[22]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[14]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[6]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[0,6]                 ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[16]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[28]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[24]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[24]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[12]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[20]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[28]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[16]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[8]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[12]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[20]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[8]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[4]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[1,4]                 ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[17]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[31]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[25]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[29]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[15]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[27]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[29]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[25]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[13]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[23]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[23]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[21]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[11]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[17,19]               ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[9]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[15]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[21]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[13]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[7]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[11]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[27]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[9]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[5]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[7]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[19]                  ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[5]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[1,3]                 ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[3]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[2,18,26,30]          ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[2]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[0]                   ; Stuck at VCC due to stuck port data_in                                             ;
-; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]                  ; Stuck at GND due to stuck port data_in                                             ;
-; Total Number of Removed Registers = 79                                                 ;                                                                                    ;
-+----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                            ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Register name                                                                            ; Reason for Removal                                                                 ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[3,7,8,25,30,32,37,39] ; Stuck at GND due to stuck port data_in                                             ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[23,26]                ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[33] ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[9]                    ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[10] ;
+; CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[4]                    ; Merged with CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[5]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[18,26]                 ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[10]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[10,30]                 ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[14]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[22]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[22]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[14]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[6]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[0,6]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[16]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[28]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[24]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[24]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[12]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[20]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[28]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[16]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[8]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[12]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[20]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[8]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[4]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[1,4]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[17]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[31]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[25]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[29]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[15]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[27]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[29]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[25]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[13]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[23]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[23]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[21]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[11]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[17,19]                 ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[9]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[15]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[21]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[13]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[7]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[11]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[27]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[9]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[5]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[7]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[19]                    ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[5]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[1,3]                   ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[3]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[2,18,26,30]            ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R0|RegFIXED_Register[2]                     ; Merged with DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]  ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[0]                     ; Stuck at VCC due to stuck port data_in                                             ;
+; DATAPATH:DATAPATH_u0|SC_RegFIXED:SC_RegFIXED_R1|RegFIXED_Register[31]                    ; Stuck at GND due to stuck port data_in                                             ;
+; Total Number of Removed Registers = 76                                                   ;                                                                                    ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -386,10 +384,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 488   ;
+; Total registers                              ; 491   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 488   ;
+; Number of registers using Asynchronous Clear ; 491   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 452   ;
 ; Number of registers using Preset             ; 0     ;
@@ -401,17 +399,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux10                             ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux1                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux8                              ;
-; 6:1                ; 32 bits   ; 128 LEs       ; 96 LEs               ; 32 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Add0                                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux3                              ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux9                              ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux4                              ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|CSADDRESS:CSADDRESS_u0|Mux6                              ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Add0                                  ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |BB_SYSTEM|CONTROL:CONTROL_u0|BRANCH_LOGIC:BRANCH_LOGIC_u0|BRANCH_LOGIC_Tipo_OutBus[0] ;
 ; 64:1               ; 32 bits   ; 1344 LEs      ; 352 LEs              ; 992 LEs                ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_ABUS|Mux15                             ;
-; 64:1               ; 32 bits   ; 1344 LEs      ; 352 LEs              ; 992 LEs                ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS|Mux0                              ;
-; 13:1               ; 19 bits   ; 152 LEs       ; 76 LEs               ; 76 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Mux16                                 ;
-; 13:1               ; 12 bits   ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Mux29                                 ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Add0                                  ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 0 LEs                ; 24 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Add0                                  ;
+; 64:1               ; 32 bits   ; 1344 LEs      ; 352 LEs              ; 992 LEs                ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_MUXX:CC_MUXX_BBUS|Mux25                             ;
+; 14:1               ; 10 bits   ; 90 LEs        ; 40 LEs               ; 50 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Mux31                                 ;
+; 14:1               ; 3 bits    ; 27 LEs        ; 15 LEs               ; 12 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Mux21                                 ;
+; 14:1               ; 18 bits   ; 162 LEs       ; 108 LEs              ; 54 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Mux14                                 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; No         ; |BB_SYSTEM|DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|Add0                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 
 
@@ -580,46 +579,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R1 ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R2 ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R3 ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R4 ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R5 ;
 +----------------+-------+-------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                    ;
@@ -680,7 +639,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_r11 ;
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R11 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R12 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R13 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R14 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATAWIDTH_BUS  ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DATAPATH:DATAPATH_u0|SC_RegGENERAL:SC_RegGENERAL_R15 ;
 +----------------+-------+--------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                     ;
 +----------------+-------+--------------------------------------------------------------------------+
@@ -814,22 +813,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 34                          ;
-; cycloneiii_ff         ; 488                         ;
-;     CLR               ; 36                          ;
+; cycloneiii_ff         ; 491                         ;
+;     CLR               ; 39                          ;
 ;     ENA CLR           ; 452                         ;
-; cycloneiii_lcell_comb ; 1025                        ;
+; cycloneiii_lcell_comb ; 1149                        ;
 ;     arith             ; 72                          ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 63                          ;
-;     normal            ; 953                         ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 64                          ;
+;     normal            ; 1077                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 84                          ;
-;         4 data inputs ; 853                         ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 89                          ;
+;         4 data inputs ; 932                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 16.50                       ;
-; Average LUT depth     ; 12.97                       ;
+; Max LUT depth         ; 18.00                       ;
+; Average LUT depth     ; 14.09                       ;
 +-----------------------+-----------------------------+
 
 
@@ -838,7 +837,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:13     ;
 +----------------+--------------+
 
 
@@ -848,7 +847,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Wed Oct 23 17:14:29 2019
+    Info: Processing started: Thu Oct 24 20:38:23 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_reggeneral.v
@@ -998,18 +997,18 @@ Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "DATAPATH:DATAPATH_u0|SCRATCHPAD_RS2[5]" is missing source, defaulting to GND File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/DATAPATH.v Line: 91
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch DATAPATH:DATAPATH_u0|CC_ALU:CC_ALU_u0|CC_ALU_General_SetCode has unsafe behavior File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/CC_ALU.v Line: 61
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[17] File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 104
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTROL:CONTROL_u0|MICROCODE_STORE:MICROCODE_STORE_u0|OUT_Register[17] File: C:/Users/INTEL/Desktop/Proyecto1Arqui-IELE3222-/codigos/PRJ0_uDATAPATH_1/rtl/MICROCODE_STORE.v Line: 113
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1514 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1642 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 1480 logic cells
+    Info (21061): Implemented 1608 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Wed Oct 23 17:15:13 2019
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Thu Oct 24 20:39:07 2019
     Info: Elapsed time: 00:00:44
-    Info: Total CPU time (on all processors): 00:01:10
+    Info: Total CPU time (on all processors): 00:01:14
 
 

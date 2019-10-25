@@ -55,15 +55,15 @@ reg 		[BRANCH_LOGIC_CONDITION-1:0]	Condition_Register;
 always @(*)
 begin	
 	// Crea la salida a partir de las entradas de banderas y el Bit 13, además de la codificación proveniente de la MIR, respectiva a COND 
-	if(BRANCH_LOGIC_Condition_InBus == 3'b001 & BRANCH_LOGIC_Psr_InBus[0] == 1'b1)			// Jump if n = 0
+	if(BRANCH_LOGIC_Condition_InBus == 3'b001 & BRANCH_LOGIC_Psr_InBus[0] == 1'b1)			// Jump if n = 1
 		Condition_Signal = 2'b01;
-	else if(BRANCH_LOGIC_Condition_InBus == 3'b010 & BRANCH_LOGIC_Psr_InBus[1] == 1'b1)		// Jump if z = 0
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b010 & BRANCH_LOGIC_Psr_InBus[1] == 1'b1)		// Jump if z = 1
 		Condition_Signal = 2'b01;	
-	else if(BRANCH_LOGIC_Condition_InBus == 3'b011 & BRANCH_LOGIC_Psr_InBus[2] == 1'b1)		// Jump if v = 0
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b011 & BRANCH_LOGIC_Psr_InBus[2] == 1'b1)		// Jump if v = 1
 		Condition_Signal = 2'b01;	
-	else if(BRANCH_LOGIC_Condition_InBus == 3'b100 & BRANCH_LOGIC_Psr_InBus[3] == 1'b1)		// Jump if c = 0
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b100 & BRANCH_LOGIC_Psr_InBus[3] == 1'b1)		// Jump if c = 1
 		Condition_Signal = 2'b01;
-	else if(BRANCH_LOGIC_Condition_InBus == 3'b101 & BRANCH_LOGIC_IR13_In == 1'b1)			// Jump if Bit13 = 0
+	else if(BRANCH_LOGIC_Condition_InBus == 3'b101 & BRANCH_LOGIC_IR13_In == 1'b1)			// Jump if Bit13 = 1
 		Condition_Signal = 2'b01;
 	else if(BRANCH_LOGIC_Condition_InBus == 3'b110)														// Jump ever
 		Condition_Signal = 2'b01;
