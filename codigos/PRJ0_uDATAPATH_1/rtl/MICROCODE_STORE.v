@@ -95,8 +95,8 @@ begin
 		11'b11001000011: OUT_Signal = 41'b00000010010010000000100001100000000000000; //1603 (R[rd] ← ADDCC(R[rs1],[temp0]);)
 		11'b11001000100: OUT_Signal = 41'b00001000000010000010000110111000000000000; //1604 Increment (REgistro_PC)
 		//SUBCC (Resta con acarreo)	    AAAAAAMBBBBBBMCCCCCCMRWALUUCONJUMPADDRESS
-		11'b11000110000: OUT_Signal = 41'b10001100000110001001000110010111000110010; //1584 (R[temp0] ← SEXT13(R[IR]); IF IR[13] THEN GOTO 1586;) Extract rs2 operand, is second source immediate?
-		11'b11000110001: OUT_Signal = 41'b00000010000001001001000100000000000000000; //1585 (R[temp0] ← R[rs2];) Extract sign extended immediate operand
+		11'b11000110000: OUT_Signal = 41'b00001100000110001001000110010111000110010; //1584 (R[temp0] ← SEXT13(R[IR]); IF IR[13] THEN GOTO 1586;) Extract rs2 operand, is second source immediate?
+		11'b11000110001: OUT_Signal = 41'b00000000000001001001000100000000000000000; //1585 (R[temp0] ← R[rs2];) Extract sign extended immediate operand
 		11'b11000110010: OUT_Signal = 41'b00100100000000001001000011100000000000000; //1586 (R[temp0] ← NOR(R[temp0], R[0]);) Form one's complement of subtrahend
 		11'b11000110011: OUT_Signal = 41'b00100100010010001001000110111011001000011; //1587 (R[temp0] ← INC(R[temp0]); GOTO 1603) Form two's complement of subtrahend, add terms for original substraction
 		
